@@ -1,0 +1,121 @@
+
+.page_vision .rangeslider-wrap {
+  margin:10em auto;
+  padding: 2em;
+  width: 100%;
+  max-width: 80em;
+  font-size: 10px;
+}
+
+.rangeslider {
+  position: relative;
+  height: .4em;
+  margin-top: -.2em;
+  border-radius: .4em;
+  width: 100%;
+  background-color: black;
+}
+.rangeslider__handle {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #ff384c;
+  touch-action: pan-y;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  z-index: 3;
+  top: 10em;
+  box-shadow: none;
+  border: none;
+}
+
+.rangeslider--horizontal .rangeslider__fill{ }
+
+
+.rangeslider__handle__value {
+  transition: background-color .2s,  box-shadow .1s, transform .1s;
+  box-sizing: border-box;
+  width: 90px;
+  text-align: center;
+  padding: .3em 1em;;
+  background-color: #ff384c;
+  border-radius: 5px;
+  color: white;
+  left: -35px;
+  top: 1.8em;
+  position: absolute;
+  white-space: nowrap;
+  font-size: 2em;
+}
+.rangeslider__handle__value:before {
+  transition: border-top-color .2s;
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 10px);
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid;
+  border-bottom-color: #ff384c;
+}
+.rangeslider__handle__value:after {
+  content: "";
+}
+.rangeslider__fill {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  background-color: #ff384c;
+  border-radius: 5px;
+}
+.rangeslider__labels {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.rangeslider__labels__label {
+  top: 1.5em;
+  position: relative;
+  color: black;
+  font-size: 2em;
+}
+
+
+
+/*
+.rangeslider__labels__label:first-child:before, .rangeslider__labels__label:last-child:before {
+  height: 12px;
+  width: 2px;
+}
+.rangeslider__labels__label:first-child:before {
+
+}
+.rangeslider__labels__label:last-child:before {
+  background-color: gray;
+}
+.rangeslider__labels__label:first-child {
+  transform: translateX(-48%);
+}
+.rangeslider__labels__label:last-child {
+  transform: translateX(48%);
+}
+.rangeslider.rangeslider--active .rangeslider__handle, .rangeslider.rangeslider--active .rangeslider__handle * {
+  background-color: #ff384c;
+}
+.rangeslider.rangeslider--active .rangeslider__handle *:before {
+  border-top-color: #ff384c;
+}
+.rangeslider.rangeslider--active .rangeslider__handle__value {
+  transform: translateY(-5px);
+}
+*/
