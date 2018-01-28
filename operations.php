@@ -5,7 +5,7 @@ include("header.php");
 document.querySelector("#menu_desktop .a2").classList.add('active');
 </script>
 
-<main class="page_operations debugmode">
+<main class="page_operations">
 
   <section class="menu_tag layout_container center">
     <h2 class="title">Nous avons à notre actif 583 projets !</h2>

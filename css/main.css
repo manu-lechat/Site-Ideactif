@@ -8,7 +8,7 @@
 body, html { scroll-behavior: smooth;; font-family: SofiaProRegular; overflow-x:hidden;  color: #0A0A0A; background: #fff; text-rendering: optimizeLegibility; margin:0; padding:0; }
 * {  margin:0;  padding:0;  box-sizing: border-box;  }
 img{ max-width: 100%; }
-div{  box-sizing:border-box;  position: relative; z-index: 1; display: table; margin: 0 auto}
+div{  box-sizing:border-box; display: tamargin: 0 auto; position: relative;}
 section{  font-size: 10px;  position: relative; z-index: 1; width: 100%;  padding: 0; display: table; margin:0 auto; box-sizing:border-box; width: 100%; position: relative;  clear: both;   }
 h1, h2, h3{ font-weight: normal!important; }
 p, address{   font-size: 2em; font-style:normal; display: block; font-family: SofiaProLight;  line-height: 1.6em; padding-top: 0.3em; padding-bottom: 1em;   }
@@ -60,9 +60,6 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .bt_yellow_white{ background-color: #FFC258;   border: 2px solid #FFC258!important;color: #fff;  }
 .bt_yellow_white:hover{ background: #fff; color: #FFC258 }
 
-
-
-
 /* layout */
 
 .layout_FullWidth{ width: 100%; }
@@ -108,10 +105,10 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .menu_mobile_container .bt_close  .line2{ top: 12px; left: -4px; transform:rotate(-45deg)  }
 .menu_mobile_container .bt_search{ position: absolute;  display: block; right: 15px; top: 20px; width: 30px; height: 30px; opacity: 0.4  }
 .menu_mobile{ width: 100%;  position: absolute; top: 50%; left: 0; transform:translateY(-50%);}
-.menu_mobile a{ text-transform: uppercase;  display: inline-block; font-family: SofiaProMedium; transition:all .1s; opacity: 0.4; font-size: 2em;  font-weight: 500; letter-spacing: 0em; }
+.menu_mobile a{ text-transform: uppercase;  display: inline-block; font-family: SofiaProMedium; transition:all .1s; opacity: 0.4; font-size: 30px;  font-weight: 500; letter-spacing: 0em; }
 .menu_mobile a.activ,
 .menu_mobile a:hover{ opacity: 1; cursor: pointer; }
-.menu_mobile li{width: 100%;  padding: 0 12px; display: inline-block; margin:1em 0; text-align: center; }
+.menu_mobile li{width: 100%;  padding: 5em 1em; display: inline-block; margin:1em 0; text-align: center; }
 .menu_mobile a img{ height: .9em; margin-top: 0.2em; }
 
 /* homePage */
@@ -120,12 +117,15 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .homePage .layout_intro{   padding: 10em;  }
 .homePage .zone_text_pink{ padding-top: 6em; padding-bottom: 6em; text-align: center;}
 .homePage .zone_text_pink p{ font-size: 4.8em; text-align: center; }
-.homePage .zone_social_huge div{ color: white; position: relative;  padding: 10%; width: 50%; height: 600px;}
-.homePage .zone_social_huge .fb{  background: #3C5A99; float: left;; }
-.homePage .zone_social_huge .insta{background: #678FAF; float: right; }
-.homePage .zone_social_huge .accroche{ text-align: right; font-size: 7.2em; }
+.homePage .zone_social_huge .social_huge{ overflow: hidden; color: white; position: relative;  width: 50%; float: left; }
+.homePage .zone_social_huge .social_huge.fb{ background-color: #637bad }
+.homePage .zone_social_huge .social_huge.insta{ background-color: #85a5bf }
+.homePage .zone_social_huge .social_huge .mask{ z-index: 2; position: relative; width: 100%; height: auto; }
+.homePage .zone_social_huge .buble_container{ opacity: 0; z-index: 1; top:28%; left: 0; width: 35em; height: 35em;}
+.homePage .zone_social_huge .social_huge:hover .buble_container{ opacity: 1; cursor: pointer; }
+.homePage .zone_social_huge .accroche{ z-index: 3; top: 10%;right: 10%; text-align: right; font-size: 6em; position: absolute; }
 .homePage .zone_social_huge .huge{ font-family: SofiaProMedium; font-size: 2em; clear: both; }
-.homePage .zone_social_huge .signature{ font-size: 3.6em; position: absolute; right: 10%; bottom: 10%;  }
+.homePage .zone_social_huge .signature{  z-index: 3;   font-size: 3.6em; position: absolute; right: 10%; bottom: 10%;  }
 .homePage .zone_newsletter{ padding: 0 5em}
 .homePage .zone_newsletter  .zone_txt{     float: left; position: relative; padding: 7em 0; width: 50%; height: 200px; }
 .homePage .zone_newsletter .input_border{ position: absolute; right:7.5em; top: 50%; transform: translateY(-50%); border: 2px solid #000; float: right; width: auto; border-radius: 5em; padding: 0.5em 1.5em }
@@ -145,16 +145,13 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .homePage .topscreen .buble_trio_hd{ top: 10vw; width: 60vh; height:60vh;  max-width: 80em; max-height: 80em; left: 100vw; transform: translate3d(-50%, -50%, 0);}
 .homePage .topscreen .bg_topscreen{ z-index: 1;  position: absolute; width:100vw; height: 100vh; top: 0; left: 0; }
 .homePage .topscreen .bg_topscreen img{  position: absolute; top : 50%; left: 50%; transform: translate3d(-50%, -50%, 0); width: 100vw; height: 100vw;}
-
 .homePage .topscreen .zone_logo{ z-index: 2; position: absolute; top: 45%; left:50%;  width: 40vh; height:40vh ; max-width: 40em; max-height: 40em; transform: translate3d(-50%, -50%, 0); }
 .homePage .topscreen .logo{ position: absolute; width: 90%; top: 100%; left: 50%;transform: translate3d(-50%, 0, 0);}
 .homePage .topscreen .buble_trio_logo{ position: absolute;width: 40vh; height: 40vh;  max-width: 40em; max-height: 40em;  }
 .homePage .topscreen .home_topscreen_fleche{position: absolute; bottom: 3em; left:50%; width: 2em;}
-
-
 .homePage .header_container{ position: relative;}
-
 .homePage .header_container.sticky{ position: fixed;}
+
 /* page operation */
 
 .page_operations { margin-top: 10em; margin-bottom: 10em;}
@@ -207,7 +204,7 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 
 /* page case-study */
 
-.page_case_study{ margin: 3em 0 20em 0}
+.page_case_study{ margin: 10em 0 20em 0}
 .page_case_study .separator{ margin: 0 auto; width: 17em; border-bottom:2px solid #FF384C;     display: block; margin-bottom: 5em;}
 .page_case_study .intro {  padding: 0 15em}
 .page_case_study .case_study .title{ font-size: 3.6em}
@@ -230,20 +227,12 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .page_case_study .zone_color_pink .buble_container{ top: -8em;  z-index: 1; position: absolute; width: 60em; height: 55em;   }
 
 
-
 /* page vision */
 
 .page_vision .article_icone{ width: 50%; float: left; padding: 5em 10em;  text-align: center; }
 .page_vision .article_icone .title{  font-size: 3.6em;  }
 .page_vision .article_icone p{  font-size: 2.0em; }
 .page_vision .article_icone img{ max-width: 11em; max-height: 11em; margin: 3em auto; }
-.page_vision .zone_temoignage { padding: 0 10em; max-width: 1440px}
-.page_vision .zone_temoignage .zone_temoignage_man{ width: 26%; left: 10em;  position: absolute; bottom: 0;  }
-.page_vision .zone_temoignage .zone_temoignage_txt{ position: relative; float: right; margin: 11em 5em;  width: 58%; }
-.page_vision .zone_temoignage .title{   font-family: SofiaProRegularItalic; font-size: 4.8em }
-.page_vision .zone_temoignage p{ font-family: SofiaProLight_Italic; font-size: 3em ; line-height: 1.3em }
-.page_vision .zone_temoignage .quote_in{ width: 6.5em; position: absolute; top: 0; left: -11em }
-.page_vision .zone_temoignage .quote_out{ width: 6.5em; position: absolute; bottom: 0; right: -11em }
 .page_vision .vision_zone_blue{ padding-top: 3em; padding-bottom: 24em; }
 .page_vision .equipe_container{ height: 0; width: 100%; overflow: hidden; transition: all .3s ease-in-out }
 .page_vision .equipe_container.active{ height: 50em; }
@@ -260,19 +249,33 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .page_vision .equipe_container .pastille:hover .info{ opacity: 1;  cursor: pointer;}
 .page_vision .equipe_container .pastille .info{ z-index: 2; opacity: 0; transition: all .3s; font-size: 0.8em;position: absolute; left:-20em; width:60em; top: 110%; background: #fff; border-radius: 5em; padding: 4em 2em}
 .page_vision .equipe_container .pastille .info .title{ font-family: SofiaProRegular; font-size: 2.3em; line-height: 1em}
-.page_vision .zone_story .zone_color{ z-index: 1; position: relative; margin-left: 7em;  width: 72%; background: #FF384C; padding: 11em 30% 11em 5em; color: #fff }
-.page_vision .zone_story .zone_color .title{ font-size: 4.5em }
-.page_vision .zone_story .zone_color .separator{ width: 5em; border-bottom: 0.7em solid white; margin: 1em 0 4em 0; display: block; }
-.page_vision .zone_story .zone_color p{ font-size: 2.4em }
-.page_vision .zone_story .img_container{ position: absolute; z-index: 2; right: 7em; top: 8em; width: 40%; }
-.page_vision .zone_story .img_container img{ width: 100%; height: auto; }
-.page_vision .zone_story .bt_rounded{ margin: 1em 0}
+.page_vision .zone_time_story .zone_color{ z-index: 1; position: relative; margin-left: 7em;  width: 72%; background: #FF384C; padding: 11em 30% 11em 5em; color: #fff }
+.page_vision .zone_time_story .zone_color .title{ font-size: 4.5em }
+.page_vision .zone_time_story .zone_color .separator{ width: 5em; border-bottom: 0.7em solid white; margin: 1em 0 4em 0; display: block; }
+.page_vision .zone_time_story .zone_color p{ font-size: 2.4em }
+.page_vision .zone_time_story .img_container{ position: absolute; z-index: 2; right: 7em; top: 8em; width: 40%; }
+.page_vision .zone_time_story .img_container img{ width: 100%; height: auto; }
+.page_vision .zone_time_story .bt_rounded{ margin: 1em 0}
+.page_vision .zone_time_story #swiper_timeline{ width: 130em; }
+.page_vision .zone_time_story #swiper_timeline .swiper-slide{  width: 130em;  }
+.page_vision .zone_temoignage { padding: 0 10em; max-width: 130em; min-height: 60em }
+.page_vision .zone_temoignage .zone_temoignage_man{ width: 26%; left: 10em;  position: absolute; bottom: 0;  }
+.page_vision .zone_temoignage .zone_temoignage_txt{ position: absolute;  width: 56%; left: 46em; top: 8em;}
+.page_vision .zone_temoignage .title{   font-family: SofiaProRegularItalic; font-size: 4.8em }
+.page_vision .zone_temoignage p{ font-family: SofiaProLight_Italic; font-size: 3em ; line-height: 1.3em }
+.page_vision .zone_temoignage .quote_in{ width: 6.5em; position: absolute; top: 0; left: -11em }
+.page_vision .zone_temoignage .quote_out{ width: 6.5em; position: absolute; bottom: 0; right: -5em }
+.page_vision .zone_temoignage #team_leader_swiper{ width: 130em; min-height: 60em }
+.page_vision .zone_temoignage #team_leader_swiper .swiper-slide{  width: 130em; min-height: 60em }
+.page_vision #team_swiper{ width: 130em; min-height: 60em }
+.page_vision #team_swiper .swiper-slide{  width: 130em; min-height: 60em }
+.page_vision #team_swiper_prev{ top: 10%;}
+.page_vision #team_swiper_next{ top: 10%;}
+
 
 /* page nous_rejoindre */
 
 .page_nous_rejoindre{ margin-top: 0; }
-.page_nous_rejoindre .zone_recherche{ z-index: 2; background: white; padding: 3em; position: absolute; top: 50%; left:50%; transform: translate3d(-50%, -50%, 0);}
-
 .page_nous_rejoindre .topscreen .buble_trio_container{ z-index: 1;  left: -22em; bottom: -24em; }
 .page_nous_rejoindre .topscreen .buble_pink_container{  right: 2em;  bottom: -20em; width: 40em; height: 40em}
 .page_nous_rejoindre .topscreen .buble_yellow_container{ left: 115em; top: 40%; width: 14em; height: 14em; }
@@ -293,10 +296,20 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .page_nous_rejoindre .zone_decompte .decompte{ font-family: SofiaProUltraLight; font-size: 8.5em; width: 100%; margin-bottom: 0em; clear: both; display: block; }
 .page_nous_rejoindre .zone_decompte .bt_white_pink{ float: right; clear: both;  color:#FF384C; }
 .page_nous_rejoindre .layout_intro .title{ color:#FF384C; background: #fff; z-index: 2 }
-
-
 .page_nous_rejoindre .layout_gris{ background-image: url('../img/bg_mid_pink.png'); background-size: 100% 100% }
-
+.page_nous_rejoindre .zone_recherche{  width: 85em;   display: table; z-index: 2; background: white; padding: 3em; height: 25em; position: absolute; top: 50%; left:50%; transform: translate3d(-50%, -50%, 0);}
+.page_nous_rejoindre .zone_recherche .selectZone{ display: inline-block;; transition: all .1s ease-out; height: 8em;  overflow: hidden;  z-index: 10; position: absolute; width: 60em;  left:50%; margin-left: -30em; 	border: 0.2px solid #979797; 	background-color: #FCFCFC;  }
+.page_nous_rejoindre .zone_recherche .selectZone ul{ width: 100%; }
+.page_nous_rejoindre .zone_recherche .selectZone li{ width: 100%;  }
+.page_nous_rejoindre .zone_recherche .selectZone li a{ width: 100%; font-size: 4.8em; font-family: SofiaProLight; text-align: center; padding: 0.2em }
+.page_nous_rejoindre .zone_recherche .selectZone li a:hover{	background-color: #EFEFEF; }
+.page_nous_rejoindre .zone_recherche .selectZone .swiper-container {   position: relative;  width: 100%; height: 16em;  }
+.page_nous_rejoindre .zone_recherche .selectZone .swiper-wrapper {  height: auto;  display: inline-block;  }
+.page_nous_rejoindre .zone_recherche .selectZone .swiper-slide { height: auto; display: inline-block;  }
+.page_nous_rejoindre .zone_recherche .selectZone.open { position: relative; height: 30em;  }
+.page_nous_rejoindre .zone_recherche .selectZone.open .swiper-container {  height: 30em;;  }
+.page_nous_rejoindre #zone_annonce{ display: none; }
+.page_nous_rejoindre #zone_annonce.open{  display: block;;  }
 
 
 /* page idemag article */
@@ -348,21 +361,32 @@ input{ font-size: 12px; border:1px dotted red;  width: auto;  }
 
 .page_ideamag {  font-family: SofiaProUltraLight; font-weight: 300}
 .page_ideamag .mag_cell{  display: inline-block; float: left;}
-.page_ideamag .zone_magazine_2cols{}
+.page_ideamag .zone_magazine_2cols{ padding: 0; max-width: 1300px;  margin: 0 auto}
 .page_ideamag .zone_magazine_2cols .mag_cell{  position: relative; width: 50%; float: left; border:.3em solid white; }
-
-
-
+.page_ideamag .grid-sizer,
+.page_ideamag .masonry_item { width: 50%!important; }
+.page_ideamag .mag_cell img{ width: 100%; height: auto; }
 .page_ideamag .mag_cell_social{ background:black;  float: right; color: white; text-align: center; padding: 2em; }
 .page_ideamag .mag_cell_social .title{ font-size: 2.6em; 	color: #FCFCFC; opacity: 0.5}
 .page_ideamag .mag_cell_social a{ float: left; width: 8em; height: 8em; margin: 1em ;}
-.page_ideamag .txt_container{ min-height: 10em; width: 80%; position: absolute; left: 0; bottom: 0; background: white; padding: 2em; z-index: 2}
-.page_ideamag .txt_container .title{ text-transform: uppercase; font-family: SofiaProRegular; width: 80%;font-size: 2.8em; line-height: 1em; padding: 0;}
-.page_ideamag .txt_container .description{ font-family: SofiaProLight; width: 80%; font-size: 2em; line-height: 1em; padding: 0; }
-.page_ideamag .txt_container .date{ width: 10%; position: absolute; right: 0;  height: auto; top: 50%; transform:translateY(-50%)}
-.page_ideamag .txt_container .date li{ font-size: 2.2em; 	opacity: 0.5; line-height: 1em; width: 100; padding: 0.1em 0.3em; margin: 0;     min-height: 1em; text-align: center;}
-.page_ideamag .txt_container .img_container{ width: 100%; height: auto; position: absolute; z-index: 1;}
-.page_ideamag .txt_container .img_container img{ width: 100%; height: auto; }
+.page_ideamag .mag_cell .txt_container{ overflow: hidden; min-height: 10em; width: 80%; position: absolute; left: 0; bottom: 0; background: white; padding: 2em; z-index: 2}
+.page_ideamag .mag_cell .txt_container .title{ text-transform: uppercase; font-family: SofiaProRegular; width: 80%;font-size: 2.8em; line-height: 1em; padding: 0;}
+.page_ideamag .mag_cell .txt_container .description{ font-family: SofiaProLight; width: 80%; font-size: 2em; line-height: 1em; padding: 0; }
+.page_ideamag .mag_cell .txt_container .date{ z-index: 2; width: 10%; position: absolute; right: 0;  height: auto; top: 50%; transform:translateY(-50%)}
+.page_ideamag .mag_cell .txt_container .date li{ font-size: 2.2em; 	opacity: 0.5; line-height: 1em; width: 100; padding: 0.1em 0.3em; margin: 0;     min-height: 1em; text-align: center;}
+.page_ideamag .mag_cell .txt_container .img_container{ width: 100%; height: auto; position: absolute; z-index: 1;}
+.page_ideamag .mag_cell .txt_container .img_container img{ width: 100%; height: auto; }
+
+.page_ideamag .mag_cell .txt_container .buble_container { opacity: 0; width: 15em; height: 15em; transform:scale(.8);  right: -6em; top: -4em; z-index: 1; }
+.page_ideamag .mag_cell:hover .txt_container .buble_container{ opacity: 1;  right: -5em; top: -5em;  transform:scale(1);  }
+
+.page_ideamag .mag_cell .txt_container .buble_container img{ opacity: 0; }
+.page_ideamag .mag_cell:hover .txt_container  .buble_container .buble_pink{ transition:all 1s 0s ease-out;  }
+.page_ideamag .mag_cell:hover .txt_container .buble_container .buble_yellow{  transition:all .3s .3s ease-out; }
+.page_ideamag .mag_cell:hover .txt_container .buble_container .buble_blue{ transition:all 1s .6s ease-out; }
+.page_ideamag .mag_cell:hover .txt_container .buble_container img{ opacity: 1; }
+
+
 .page_ideamag .mag_cell_tags{ background:black;  color: #FCFCFC; padding: 2em;  }
 .page_ideamag .mag_cell_tags .title{  opacity: 0.5; font-size: 2.6em;text-align: center; }
 .page_ideamag .mag_cell_tags .tags{ display: inline-block; }
@@ -372,6 +396,10 @@ input{ font-size: 12px; border:1px dotted red;  width: auto;  }
 .page_ideamag .mag_cell_tags .tags a:hover{ opacity: 0.5; }
 .page_ideamag .zone_magazine_3cols .mag_cell{ width: 33.33%; height: 40em; overflow: hidden; position: relative;}
 .page_ideamag .zone_magazine_3cols .txt_container{ width: 100%; }
+
+
+
+
 
 
 
@@ -472,6 +500,8 @@ a.bt_bump:hover .hover{  cursor: pointer; animation:  anim_bt_pop .15s cubic-bez
   .zone_newsletter .input_border{ position: relative; margin: 5vw 10vw; width: 80vw; right: 0; top: auto; transform: translateY(0); }
 
   /*zone_social_huge */
+
+
   .zone_social_huge div{  height: 50vw; padding: 5vw }
 
   .zone_social_huge .accroche { font-size: 6vw; font-family: SofiaProLight; line-height: 8vw;}
@@ -525,7 +555,8 @@ a.bt_bump:hover .hover{  cursor: pointer; animation:  anim_bt_pop .15s cubic-bez
 
   .page_ideamag .zone_magazine_2cols .mag_cell{  width: 100% }
   .page_ideamag .zone_magazine_3cols .mag_cell{  width: 100%; height: auto;; }
-
+  .page_ideamag .grid-sizer,
+  .page_ideamag .masonry_item { width: 100%!important; }
 }
 
 
@@ -570,11 +601,11 @@ a.bt_bump:hover .hover{  cursor: pointer; animation:  anim_bt_pop .15s cubic-bez
 /* debugmode */
 
 .debugmode   div,
-.debugmode    section{ border:1px dotted orange;  }
+.debugmode    section{ border:1px dotted orange; transition: all .3s }
 .debugmode    h1,
 .debugmode    h2,
 .debugmode    h3,
 .debugmode    p,
 .debugmode    ul,
 .debugmode    li,
-.debugmode    a{ border:1px dotted cyan;  }
+.debugmode    a{ border:1px dotted cyan; transition: all .3s }

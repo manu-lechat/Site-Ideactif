@@ -1,6 +1,6 @@
 
 
-      <footer class="footer debugmode">
+      <footer class="footer">
         <section class="layout_container">
 
         <div class="encart">
@@ -59,8 +59,8 @@
       </section>
       </footer>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/swiper.min.js"></script>
       <script src="js/rangeslider.min.js"></script>
       <script src="js/rangeslider_init.js"></script>
       <script src="js/prefixfree.min.js"></script>

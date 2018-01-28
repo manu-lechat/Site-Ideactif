@@ -41,6 +41,12 @@ $('input[type="range"').rangeslider({
     // Callback function
     onSlideEnd: function(position, value) {
 
+      var mySwiper = document.querySelector('#swiper_timeline').swiper
+
+      mySwiper.slideNext();
       console.log(Math.round(value));
+
+
+
     }
 });

@@ -5,10 +5,10 @@ include("header.php");
 document.querySelector("#menu_desktop .a2").classList.add('active');
 </script>
 
-<main class="page_case_study layout_FullWidth debugmode">
+<main class="page_case_study layout_FullWidth">
 
 
-  <section class="intro layout_container">
+  <section class="layout_intro layout_container">
     <span class="separator"></span>
     <h1 class="title">Case Study - Esprit musique</h1>
     <div class="img_container"> <img src="img/tmp/visuel_casestudy.png" alt=""></div>

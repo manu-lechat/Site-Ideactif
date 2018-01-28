@@ -35,7 +35,7 @@
 
 
 
-  <main class="homePage debugmode">
+  <main class="homePage">
 
     <!-- homepage topscreen -->
     <section class="layout_container_100vh_100vw topscreen">
@@ -127,13 +127,26 @@
 
     <!-- social huge -->
     <section class="layout_container zone_social_huge">
-      <div class="fb">
+      <div class="fb social_huge">
         <p class="accroche"><span class="huge">15k</span><br> J’aime</p>
         <p class="signature">/ideactif</p>
+        <img src="img/social_huge_fb.svg" class="mask" alt="">
+         <div class="buble_container buble_trio_container">
+             <img src="img/buble_blue.svg" alt="" class="buble_blue">
+             <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
+             <img src="img/buble_pink.svg" alt="" class="buble_pink">
+         </div>
       </div>
-      <div class="insta">
+      <div class="insta social_huge">
         <p class="accroche"><span class="huge">10k</span><br> followers</p>
         <p class="signature">@ideactif</p>
+
+        <img src="img/social_huge_insta.svg" class="mask" alt="">
+         <div class="buble_container buble_trio_container">
+             <img src="img/buble_blue.svg" alt="" class="buble_blue">
+             <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
+             <img src="img/buble_pink.svg" alt="" class="buble_pink">
+         </div>
       </div>
     </section>
 

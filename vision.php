@@ -51,7 +51,7 @@ document.querySelector("#menu_desktop .a1").classList.add('active');
       </article>
     </section>
 
-    <!-- range slider -->
+    <!-- timeline slider -->
     <section  class="layout_container zone_rangeslider">
         <div class="rangeslider-wrap">
           <input type="range" min="1992" max="2017" step=".1"   value="2017"   labels="1992, 2020">
@@ -59,96 +59,163 @@ document.querySelector("#menu_desktop .a1").classList.add('active');
     </section>
 
 
-    <!-- ideactif story -->
-    <section class="layout_container zone_story">
-      <div class="img_container">
-        <img src="img/tmp/story.jpg" alt="">
-      </div>
-      <div class="zone_color">
-        <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
-        <span class="separator"></span>
-        <p>
-          Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
-        </p>
-        <a href="" class="bt_rounded bt_white_pink">Lire plus</a>
+    <!-- ideactif time story -->
+    <section class="layout_container zone_time_story">
+            <!-- Slider main container -->
+      <div class="swiper-container" id="swiper_timeline">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slide item -->
+              <div class="swiper-slide story_item">
+                <div class="img_container">
+                  <img src="img/tmp/story.jpg" alt="">
+                </div>
+                <div class="zone_color">
+                  <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
+                  <span class="separator"></span>
+                  <p>
+                    Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
+                  </p>
+                  <a href="" class="bt_rounded bt_white_pink">Lire plus</a>
+                </div>
+              </div>
+              <!-- Slide item -->
+              <div class="swiper-slide story_item">
+                <div class="img_container">
+                  <img src="img/tmp/story.jpg" alt="">
+                </div>
+                <div class="zone_color">
+                  <h2 class="title">dfghfjgkhlm sgghfjk dfgh</h2> <span class="separator"></span>
+                  <p>
+                    fgjhkjlm
+                  </p>
+                  <a href="" class="bt_rounded bt_white_pink">Lire plus</a>
+                </div>
+              </div>
+              <!-- Slide item -->
+              <div class="swiper-slide story_item">
+                <div class="img_container">
+                  <img src="img/tmp/story.jpg" alt="">
+                </div>
+                <div class="zone_color">
+                  <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
+                  <span class="separator"></span>
+                  <p>
+                    Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
+                  </p>
+                  <a href="" class="bt_rounded bt_white_pink">Lire plus</a>
+                </div>
+              </div>
+              <!-- Slide item -->
+              <div class="swiper-slide story_item">
+                <div class="img_container">
+                  <img src="img/tmp/story.jpg" alt="">
+                </div>
+                <div class="zone_color">
+                  <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
+                  <span class="separator"></span>
+                  <p>
+                    Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
+                  </p>
+                  <a href="" class="bt_rounded bt_white_pink">Lire plus</a>
+                </div>
+              </div>
+              <!-- Slide item -->
+              <div class="swiper-slide story_item">
+                <div class="img_container">
+                  <img src="img/tmp/story.jpg" alt="">
+                </div>
+                <div class="zone_color">
+                  <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
+                  <span class="separator"></span>
+                  <p>
+                    Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
+                  </p>
+                  <a href="" class="bt_rounded bt_white_pink">Lire plus</a>
+                </div>
+              </div>
+              <!-- Slide item -->
+              <div class="swiper-slide story_item">
+                <div class="img_container">
+                  <img src="img/tmp/story.jpg" alt="">
+                </div>
+                <div class="zone_color">
+                  <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
+                  <span class="separator"></span>
+                  <p>
+                    Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
+                  </p>
+                  <a href="" class="bt_rounded bt_white_pink">Lire plus</a>
+                </div>
+              </div>
+              <!-- Slide item -->
+              <div class="swiper-slide story_item">
+                <div class="img_container">
+                  <img src="img/tmp/story.jpg" alt="">
+                </div>
+                <div class="zone_color">
+                  <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
+                  <span class="separator"></span>
+                  <p>
+                    Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
+                  </p>
+                  <a href="" class="bt_rounded bt_white_pink">Lire plus</a>
+                </div>
+              </div>
+              <!-- Slide item -->
+              <div class="swiper-slide story_item">
+                <div class="img_container">
+                  <img src="img/tmp/story.jpg" alt="">
+                </div>
+                <div class="zone_color">
+                  <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
+                  <span class="separator"></span>
+                  <p>
+                    Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
+                  </p>
+                  <a href="" class="bt_rounded bt_white_pink">Lire plus</a>
+                </div>
+              </div>
+              <!-- Slide item -->
+              <div class="swiper-slide story_item">
+                <div class="img_container">
+                  <img src="img/tmp/story.jpg" alt="">
+                </div>
+                <div class="zone_color">
+                  <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
+                  <span class="separator"></span>
+                  <p>
+                    Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
+                  </p>
+                  <a href="" class="bt_rounded bt_white_pink">Lire plus</a>
+                </div>
+              </div>
+              <!-- Slide item -->
+              <div class="swiper-slide story_item">
+                <div class="img_container">
+                  <img src="img/tmp/story.jpg" alt="">
+                </div>
+                <div class="zone_color">
+                  <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
+                  <span class="separator"></span>
+                  <p>
+                    Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
+                  </p>
+                  <a href="" class="bt_rounded bt_white_pink">Lire plus</a>
+                </div>
+              </div>
+          </div>
       </div>
     </section>
 
     <section class="layout_gris layout_FullWidth">
       <section class="zone_temoignage layout_container">
-        <img src="img/vision_man.png" alt="" class='zone_temoignage_man'>
-        <article class="zone_temoignage_txt">
-          <img src="img/quote_in.png" class="quote_in">
-          <img src="img/quote_out.png" class="quote_out">
-          <h3 class="title"> Lorem Ipsum sin dolor</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum facilisis nibh ut facilisis. Maecenas odio elit, posuere rutrum mauris nec, iaculis eleifend lectus. Nulla convallis, ex id tempus vestibulum, dui nunc maximus.
-          </p>
-        </article>
+      <?php include('vision_teams_leader_slider.php'); ?>
       </section>
     </section>
 
     <section class="layout_blue layout_FullWidth vision_zone_blue">
-      <section class="layout_container">
-        <a href="#" id="bt_vision_equipe" class="bt_rounded bt_white_blue center">Découvrir toute l’équipe</a>
-      </section>
-
-      <div class="equipe_container active" id="equipe_container">
-
-        <div class="pastille">
-          <div class="portrait">
-              <img src="img/vision_man.png" alt="">
-          </div>
-          <div class="info">
-            <h3 class='title'>titre</h3>
-            <p>lor sit amet, consectetur adipiscing elit. Mauris finibus augue enim, quis dictum ante aliquam ac. Suspendisse nec malesuada quam. In nec semper turpis. Vestibulum lacinia metus quis vulputate consectetur. Integer in tellus tincidunt, scelerisque urna eu, eleifend felis. Proin non suscipit enim. Maecenas sit amet turpis augue.</p>
-          </div>
-        </div>
-
-        <div class="pastille">
-          <div class="portrait">
-              <img src="img/vision_man.png" alt="">
-          </div>
-          <div class="info">
-            <h3 class='title'>titre</h3>
-            <p>lor sit amet, consectetur adipiscing elit. Mauris finibus augue enim, quis dictum ante aliquam ac. Suspendisse nec malesuada quam. In nec semper turpis. Vestibulum lacinia metus quis vulputate consectetur. Integer in tellus tincidunt, scelerisque urna eu, eleifend felis. Proin non suscipit enim. Maecenas sit amet turpis augue.</p>
-          </div>
-        </div>
-
-        <div class="pastille">
-          <div class="portrait">
-              <img src="img/vision_man.png" alt="">
-          </div>
-          <div class="info">
-            <h3 class='title'>titre</h3>
-            <p>lor sit amet, consectetur adipiscing elit. Mauris finibus augue enim, quis dictum ante aliquam ac. Suspendisse nec malesuada quam. In nec semper turpis. Vestibulum lacinia metus quis vulputate consectetur. Integer in tellus tincidunt, scelerisque urna eu, eleifend felis. Proin non suscipit enim. Maecenas sit amet turpis augue.</p>
-          </div>
-        </div>
-
-        <div class="pastille">
-          <div class="portrait">
-              <img src="img/vision_man.png" alt="">
-          </div>
-          <div class="info">
-            <h3 class='title'>titre</h3>
-            <p>lor sit amet, consectetur adipiscing elit. Mauris finibus augue enim, quis dictum ante aliquam ac. Suspendisse nec malesuada quam. In nec semper turpis. Vestibulum lacinia metus quis vulputate consectetur. Integer in tellus tincidunt, scelerisque urna eu, eleifend felis. Proin non suscipit enim. Maecenas sit amet turpis augue.</p>
-          </div>
-        </div>
-
-        <div class="pastille">
-          <div class="portrait">
-              <img src="img/vision_man.png" alt="">
-          </div>
-          <div class="info">
-            <h3 class='title'>titre</h3>
-            <p>lor sit amet, consectetur adipiscing elit. Mauris finibus augue enim, quis dictum ante aliquam ac. Suspendisse nec malesuada quam. In nec semper turpis. Vestibulum lacinia metus quis vulputate consectetur. Integer in tellus tincidunt, scelerisque urna eu, eleifend felis. Proin non suscipit enim. Maecenas sit amet turpis augue.</p>
-          </div>
-        </div>
-
-
-
-      </div>
-
+      <?php include('vision_teams_slider.php'); ?>
     </section>
 
 </main>

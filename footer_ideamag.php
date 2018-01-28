@@ -34,8 +34,8 @@
 </footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src='js/main.js'></script>
 

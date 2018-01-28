@@ -15,14 +15,14 @@
     <!-- header -->
     <header class="header_mag_container">
       <section class="layout_container header">
-        <a href="index.php" class="logo"><img src="img/logoWhite.svg"  alt="Ideactif"></a>
+        <a href="ideamag.php" class="logo"><img src="img/logoWhite.svg"  alt="Ideactif"></a>
         <ul class="menu_desktop" id="menu_desktop">
           <li><a href="#" class="a1">ART</a></li>
           <li><a href="#"  class="a2" >TECHNOLOGIE</a></li>
           <li><a href="#"  class="a3">CRÉATION</a></li>
           <li><a href="#"  class="a4">DESIGN</a></li>
           <li><a href="#"  class="a5">MUSIQUE</a></li>
-          <li><a href="#"><img src="img/iconWhite_search.svg" alt=""></a></li>
+          <li><a href="#" ><img src="img/iconWhite_search.svg" alt=""></a></li>
         </ul>
         <a class="icon_burger" id="bt_menu_mobile">
           <div class='line1'></div>
