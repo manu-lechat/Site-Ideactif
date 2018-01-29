@@ -59,11 +59,11 @@
       </section>
       </footer>
 
-      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <script src="js/swiper.min.js"></script>
-      <script src="js/rangeslider.min.js"></script>
-      <script src="js/rangeslider_init.js"></script>
+      <script src="js/nouislider.min.js"></script>
       <script src="js/prefixfree.min.js"></script>
+      <script src="js/wNumb.js"></script>
       <script src='js/main.js'></script>
 
 

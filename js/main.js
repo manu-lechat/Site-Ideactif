@@ -72,12 +72,53 @@ window.onload = function() {
 
 function init_page_vision(){
 
-  setTimeout(function(){
-    var swiper_timeline = new Swiper('#swiper_timeline', {
-        slidesPerView: 1
-      });
-  }, 350);
+  var swiper_timeline = new Swiper('#swiper_timeline', {
+      slidesPerView: 'auto'
+    });
+  swiper_timeline.slideTo(8);
 
+  swiper_timeline.on('slideChange', function () {
+    console.log('slide changed');
+
+    var slider = document.getElementById('slider');
+    var sliderRangeTo = swiper_timeline.activeIndex + 1992;
+    console.log(sliderRangeTo);
+    slider.noUiSlider.set(sliderRangeTo);
+
+  });
+
+
+  /* init slider */
+  var slider = document.getElementById('slider');
+  var slideTo = 0;
+  noUiSlider.create(slider, {
+  	start: [ 2000 ],
+  	connect: true,
+    step: .1,
+    format: wNumb({
+    			decimals: 0
+    		}),
+	   tooltips: true,
+  	range: {
+  		'min': 1992,
+  		'max': 2020
+  	}
+  });
+
+  slider.noUiSlider.on('end', function(){
+    slideTo = Math.round(slider.noUiSlider.get()-1992);
+    var mySwiper = document.querySelector('#swiper_timeline').swiper
+    mySwiper.slideTo(slideTo);
+	   console.log(slideTo);
+});
+
+
+
+
+
+
+
+/*
   setTimeout(function(){
     var team_leader_swiper = new Swiper('#team_leader_swiper', {
         slidesPerView: 1,
@@ -99,7 +140,7 @@ function init_page_vision(){
       team_leader_swiper.controller.control = team_swiper;
 
   }, 500);
-
+*/
 }
 
 function init_page_ideamag(){
@@ -107,16 +148,16 @@ function init_page_ideamag(){
   setTimeout(function(){
 
     var elem = document.querySelector('.masonry');
+
     var msnry = new Masonry( elem, {
       // options
       itemSelector: '.masonry_item',
       columnWidth: '.grid-sizer',
     });
+    elem.classList.add('active');
 
 
-
-
-  }, 350);
+  }, 150);
 
 
 }
@@ -169,20 +210,19 @@ function init_nous_rejoindre(){
 
 function init_ui() {
 
-
-
-
-
-
     // show mobile menu
     document.querySelector('#bt_menu_mobile').addEventListener('click', function(event) {
         document.querySelector("#menu_mobile_container").classList.add('active');
+        document.querySelector("#bt_menu_mobile").classList.add('hide');
+        document.body.classList.add('modalOpen');
         event.preventDefault();
     });
 
     //hide mobile menu
     document.querySelector('#bt_close_menu_mobile').addEventListener('click', function(event) {
         document.querySelector("#menu_mobile_container").classList.remove('active');
+        document.querySelector("#bt_menu_mobile").classList.remove('hide');
+        document.body.classList.remove('modalOpen');
         event.preventDefault();
     });
 

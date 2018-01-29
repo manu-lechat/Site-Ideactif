@@ -23,7 +23,7 @@
       <ul class="menu_mobile">
         <li><a href="vision.php" class="active">NOTRE VISION</a></li>
         <li><a href="operations.php">NOS OPÉRATIONS</a></li>
-        <li><a href="maideamag.php">NOTRE MAG</a></li>
+        <li><a href="ideamag.php">NOTRE MAG</a></li>
         <li><a href="nous_rejoindre.php">NOUS REJOINDRE</a></li>
         <li><a href="contact.php">CONTACTEZ-NOUS</a></li>
         <li></li>
@@ -32,10 +32,7 @@
 
 
 
-
-
-
-  <main class="homePage">
+  <main class="homePage debugmode">
 
     <!-- homepage topscreen -->
     <section class="layout_container_100vh_100vw topscreen">
@@ -85,9 +82,22 @@
 
     <!-- intro -->
     <section class="layout_intro layout_container" id="homePage_intro">
-      <h2 class="title">Nous générons des émotions</h2>
-      <p class="center"> Les sollicitations perpétuelles, immédiates et distantes des médias traditionnels manquent d’impact. Il faut échanger avec son public. Il est temps pour les marques et leurs publics de : se rencontrer, dialoguer, vivre, partager.</p>
-      <a href="" class="bt_rounded bt_yellow_white">Voir plus</a>
+      <div class="zone_logo">
+        <div class="buble_container buble_trio_logo">
+            <img src="img/buble_blue.svg" alt="" class="buble_blue">
+            <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
+            <img src="img/buble_pink.svg" alt="" class="buble_pink">
+        </div>
+        <img src="img/home_topscreen_logo.svg" alt="" class="logo">
+      </div>
+      <div class="zone_txt">
+        <h2 class="title">Nous générons des émotions</h2>
+        <p class="center"> Les sollicitations perpétuelles, immédiates et distantes des médias traditionnels manquent d’impact. Il faut échanger avec son public. Il est temps pour les marques et leurs publics de : se rencontrer, dialoguer, vivre, partager.</p>
+        <a href="vision.php" class="bt_rounded bt_yellow_white">Voir plus</a>
+      </div>
+      <div class="bg_topscreen">
+        <img src="img/bg_home_topscreen.svg" alt="" class="">
+      </div>
     </section>
 
     <!-- mosaique operations -->
@@ -95,7 +105,7 @@
 
     <section class="layout_container zone_text_pink">
       <p><span class="txt_pink bold">25M</span> de personnes touchées en <span class="txt_pink bold">25 ans !</span></p>
-      <a href="" class="bt_rounded bt_pink_white">Voir plus</a>
+      <a href="operations.php" class="bt_rounded bt_pink_white">Voir plus</a>
     </section>
 
     <!-- story -->
@@ -105,6 +115,7 @@
       </div>
       <div class="zone_color">
         <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
+        <h3 class="subtitle">23 janvier 2017</h3>
         <span class="separator"></span>
         <p>
           Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
@@ -127,7 +138,10 @@
 
     <!-- social huge -->
     <section class="layout_container zone_social_huge">
-      <div class="fb social_huge">
+
+
+      <a href="https://www.facebook.com/Ideactif" class="fb social_huge" target="_blank">
+
         <p class="accroche"><span class="huge">15k</span><br> J’aime</p>
         <p class="signature">/ideactif</p>
         <img src="img/social_huge_fb.svg" class="mask" alt="">
@@ -136,8 +150,8 @@
              <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
              <img src="img/buble_pink.svg" alt="" class="buble_pink">
          </div>
-      </div>
-      <div class="insta social_huge">
+      </a>
+      <a href="https://www.instagram.com/agence_ideactif/" class="insta social_huge" target="_blank">
         <p class="accroche"><span class="huge">10k</span><br> followers</p>
         <p class="signature">@ideactif</p>
 
@@ -147,7 +161,7 @@
              <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
              <img src="img/buble_pink.svg" alt="" class="buble_pink">
          </div>
-      </div>
+      </a>
     </section>
 
   </main>

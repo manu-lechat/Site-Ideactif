@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="viewport" content="width=device-width">
     <title></title>
+    <link rel="stylesheet" href="css/nouislider.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/rangeslider.css">
-    <link rel="stylesheet" href="css/rangeslider_custom.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -42,9 +41,8 @@
       <ul class="menu_mobile">
         <li><a href="vision.php" class="active">NOTRE VISION</a></li>
         <li><a href="operations.php">NOS OPÉRATIONS</a></li>
-        <li><a href="maideamag.php">NOTRE MAG</a></li>
+        <li><a href="ideamag.php">NOTRE MAG</a></li>
         <li><a href="nous_rejoindre.php">NOUS REJOINDRE</a></li>
         <li><a href="contact.php">CONTACTEZ-NOUS</a></li>
-        <li></li>
       </ul>
     </section>

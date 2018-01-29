@@ -34,7 +34,7 @@
 </footer>
 
 
-    <script src="js/jquery-3.2.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src='js/main.js'></script>

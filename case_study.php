@@ -5,7 +5,7 @@ include("header.php");
 document.querySelector("#menu_desktop .a2").classList.add('active');
 </script>
 
-<main class="page_case_study layout_FullWidth">
+<main class="page_case_study layout_FullWidth debugmode">
 
 
   <section class="layout_intro layout_container">
@@ -23,18 +23,8 @@ document.querySelector("#menu_desktop .a2").classList.add('active');
             <img src="img/buble_pink.svg" alt="" class="buble_pink">
           </div>
           <p>
-            <span class="fs_36 bold">150 000</span><br>
-            <span>visites par mois</span>
-          </p>
-        </div>
-
-        <div class="zone_color_blue zone_color">
-          <div class="buble_container">
-            <img src="img/buble_blue.svg" alt="" class="buble_blue">
-          </div>
-          <p>
-            <span class="fs_36 bold">15 000</span><br>
-            <span>partages sur les Réseaux Sociaux</span>
+            <span class="title">150 000</span>
+            <span>visites <br>par mois</span>
           </p>
         </div>
 
@@ -43,10 +33,21 @@ document.querySelector("#menu_desktop .a2").classList.add('active');
             <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
           </div>
           <p>
-            <span class="fs_36 bold">520</span><br>
-            <span>articles publiés</span>
+            <span class="title">520</span>
+            <span>articles <br>publiés</span>
           </p>
         </div>
+
+        <div class="zone_color_blue zone_color">
+          <div class="buble_container">
+            <img src="img/buble_blue.svg" alt="" class="buble_blue">
+          </div>
+          <p>
+            <span class="title">15 000</span>
+            <span>partages sur <br>les Réseaux <br>Sociaux</span>
+          </p>
+        </div>
+
 
 
         <div class="txt_container">
@@ -85,11 +86,30 @@ document.querySelector("#menu_desktop .a2").classList.add('active');
 
         <a href="" class="bt_rounded">Dites-nous vos besoins</a>
 
+  </section>
 
-
-
-
-
+  <!-- mosaique images -->
+  <section class="layout_FullWidth">
+      <div class="mosaique_case_study">
+        <div class="mosaique_item">
+          <img src="img/tmp/ope1.jpg" class="bg_img">
+        </div>
+        <div class="mosaique_item">
+          <img src="img/tmp/ope2.jpg" class="bg_img">
+        </div>
+        <div class="mosaique_item">
+          <img src="img/tmp/ope3.jpg" class="bg_img">
+        </div>
+        <div class="mosaique_item">
+          <img src="img/tmp/ope4.jpg" class="bg_img">
+        </div>
+        <div class="mosaique_item">
+          <img src="img/tmp/ope5.jpg" class="bg_img">
+        </div>
+        <div class="mosaique_item">
+          <img src="img/tmp/ope6.jpg" class="bg_img">
+        </div>
+      </div>
   </section>
 
 

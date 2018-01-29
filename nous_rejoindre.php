@@ -16,7 +16,7 @@ document.querySelector("#menu_desktop .a4").classList.add('active');
               <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <ul class="listing">
-                      <li><a href="#" id="open_selectZone">...</a> </li>
+                      <li><a href="#" id="open_selectZone">-- Choisissez --</a> </li>
                       <li><a href="#" class="show_annonce">  Chef de projet</a> </li>
                       <li><a href="#" class="show_annonce">Responsable Marketing</a> </li>
                       <li><a href="#" class="show_annonce">  Lead Developer</a> </li>
