@@ -4,6 +4,10 @@ window.onload = function() {
     init_ui();
 
     // init page nous-rejoindre
+    if(document.querySelector('.homePage')){
+      init_homePage();
+    }
+    // init page nous-rejoindre
     if(document.querySelector('.page_nous_rejoindre')){
       init_nous_rejoindre();
     }
@@ -22,16 +26,18 @@ window.onload = function() {
 
 
 
+};
+
+function init_homePage(){
 
 
+    // scroll story
     var xScrollPosition;
     var yScrollPosition;
     var isScrolling = false;
     var menuPosition = "innerHeight" in window ?
         window.innerHeight :
         document.documentElement.offsetHeight;
-
-    /* listener sur le scroll */
 
     window.addEventListener("scroll", throttleScroll, false);
 
@@ -64,31 +70,24 @@ window.onload = function() {
 
 
     }
-
-
-
-
-};
+}
 
 function init_page_vision(){
 
+  /* init story timeline slider */
   var swiper_timeline = new Swiper('#swiper_timeline', {
-      slidesPerView: 'auto'
+      slidesPerView: 'auto',
+      speed:1000
     });
   swiper_timeline.slideTo(8);
-
   swiper_timeline.on('slideChange', function () {
-    console.log('slide changed');
-
     var slider = document.getElementById('slider');
     var sliderRangeTo = swiper_timeline.activeIndex + 1992;
     console.log(sliderRangeTo);
     slider.noUiSlider.set(sliderRangeTo);
-
   });
 
-
-  /* init slider */
+  /* init range cursor slider by noUiSlider.js */
   var slider = document.getElementById('slider');
   var slideTo = 0;
   noUiSlider.create(slider, {
@@ -104,43 +103,59 @@ function init_page_vision(){
   		'max': 2020
   	}
   });
-
   slider.noUiSlider.on('end', function(){
     slideTo = Math.round(slider.noUiSlider.get()-1992);
     var mySwiper = document.querySelector('#swiper_timeline').swiper
     mySwiper.slideTo(slideTo);
 	   console.log(slideTo);
-});
+  });
 
-
-
-
-
-
-
-/*
+  /* init team sliders */
   setTimeout(function(){
-    var team_leader_swiper = new Swiper('#team_leader_swiper', {
-        slidesPerView: 1,
-        spaceBetween: 1000,
-        speed:400,
-        loop:true
-      });
-    var team_swiper = new Swiper('#team_swiper', {
-        slidesPerView: 1,
-        spaceBetween: 4000,
-        speed:800,
-        loop:true,
-        navigation: {
-          nextEl: '#team_swiper_next',
-          prevEl: '#team_swiper_prev',
-        },
-      });
-      team_swiper.controller.control = team_leader_swiper;
-      team_leader_swiper.controller.control = team_swiper;
+  var team_leader_swiper = new Swiper('#team_leader_swiper', {
+      slidesPerView: 1,
+      spaceBetween: 100,
+      speed:400,
+      loop:true
+    });
+  var team_swiper = new Swiper('#team_swiper', {
+      slidesPerView: 1,
+      spaceBetween: 200,
+      speed:800,
+      threshold:20,
+      loop:true,
+      navigation: {
+        nextEl: '#team_swiper_next',
+        prevEl: '#team_swiper_prev',
+      },
+    });
+    team_swiper.controller.control = team_leader_swiper;
+    team_leader_swiper.controller.control = team_swiper;
 
   }, 500);
-*/
+
+
+    //hide mobile menu
+    if(document.querySelector('.bt_vision_equipe')){
+
+        var bt_vision_equipe = document.querySelectorAll(".bt_vision_equipe");
+        for( i=0; i < bt_vision_equipe.length; i++ ) {
+          bt_vision_equipe[i].addEventListener('click', function(event) {
+            if(  document.querySelector("#vision_zone_blue").classList.contains('active')){
+              document.querySelector("#vision_zone_blue").classList.remove('active');
+              for( i=0; i < bt_vision_equipe.length; i++ ) {
+                bt_vision_equipe[i].innerHTML = 'Découvrir toute l’équipe';
+              }
+            }else{
+              document.querySelector("#vision_zone_blue").classList.add('active');       
+              for( i=0; i < bt_vision_equipe.length; i++ ) {
+                bt_vision_equipe[i].innerHTML = 'fermer';
+              }
+            }
+            event.preventDefault();
+          });
+        }
+    }
 }
 
 function init_page_ideamag(){
@@ -148,16 +163,13 @@ function init_page_ideamag(){
   setTimeout(function(){
 
     var elem = document.querySelector('.masonry');
-
     var msnry = new Masonry( elem, {
       // options
       itemSelector: '.masonry_item',
       columnWidth: '.grid-sizer',
     });
     elem.classList.add('active');
-
-
-  }, 150);
+  }, 500);
 
 
 }
@@ -226,19 +238,6 @@ function init_ui() {
         event.preventDefault();
     });
 
-    //hide mobile menu
-    if(document.querySelector('#bt_vision_equipe')){
-      document.querySelector('#bt_vision_equipe').addEventListener('click', function(event) {
-        if(  document.querySelector("#equipe_container").classList.contains('active')){
-          document.querySelector("#equipe_container").classList.remove('active');
-          document.querySelector('#bt_vision_equipe').innerHTML = 'Découvrir toute l’équipe';
-        }else{
-          document.querySelector("#equipe_container").classList.add('active');
-          document.querySelector('#bt_vision_equipe').innerHTML = 'fermer';
-        }
-          event.preventDefault();
-      });
-    }
 
     // bt_contact : scroll to bottom
     var bt_footer = document.querySelectorAll('.bt_footer');
@@ -273,31 +272,4 @@ function init_ui() {
       html.scrollTop = 0;
     }
 
-
-
-
 }
-
-
-/*     *  jquery area *      */
-
-
-$(function() {
-/*
-  $( document ).ready(function() {
-    if(  $('.masonry').length != 0){
-      $('.masonry').masonry({
-        // options
-        itemSelector: '.masonry_item',
-        columnWidth: '.grid-sizer',
-      });
-    }
-
-
-
-  });
-
-*/
-
-
-});

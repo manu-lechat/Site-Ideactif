@@ -6,7 +6,7 @@ document.querySelector("#menu_desktop .a1").classList.add('active');
 
 <!-- page vision -->
 
-<main class="page_vision debugmode">
+<main class="page_vision ">
 
   <section class="layout_container layout_intro">
     <article>
@@ -73,13 +73,15 @@ document.querySelector("#menu_desktop .a1").classList.add('active');
     </section>
 
     <section class="layout_gris layout_FullWidth">
-      <section class="zone_temoignage layout_container">
-      <?php // include('vision_teams_leader_slider.php'); ?>
+      <section class="layout_container">
+      <?php  include('vision_teams_leader_slider.php'); ?>
       </section>
     </section>
 
-    <section class="layout_blue layout_FullWidth vision_zone_blue">
-      <?php // include('vision_teams_slider.php'); ?>
+    <section class="layout_blue layout_FullWidth vision_zone_blue" id="vision_zone_blue">
+      <section class="layout_container">
+      <?php  include('vision_teams_slider.php'); ?>
+      </section>
     </section>
 
 </main>
