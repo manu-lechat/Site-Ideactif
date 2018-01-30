@@ -512,7 +512,7 @@ responsive iPad
   .fs_28 { font-size: 34px; }
   .fs_24 { font-size: 22px; }
   /* boutons */
-  .bt_rounded{ font-size: 5em }
+  .bt_rounded{ font-size: 20px }
   /* layout */
   .layout_container{ padding:0 6em }
   main{ margin: 8em 0 0em 0 }
@@ -587,14 +587,19 @@ responsive iPad
   .homePage .zone_newsletter .input_border{ position: relative; font-size: 12px; font-size: 6px; width: 90%; margin-left: 5%; right: 0; display: inline-table; float: left; }
 
   /* vision */
-  .intro{ text-align: center; font-size: 6px;  padding: 0 15px;}
-  .intro .title { font-size: 4em; }
-  .article_icone{ width: 100%;  padding: 0 15vw; }
-  .vision_story {  margin: 30vw 0 0 0; }
-  .vision_story .zone_color{  width: 100%; margin: 0 0 0 0;  padding: 30vw 10vw 10vw 7vw }
-  .vision_story .zone_color .title{   font-size: 18px; }
-  .vision_story .zone_color p{    font-size: 16px; }
-  .vision_story .img_container{ top: 0; left: 50%;   transform: translate3d(-50%, -50%, 0)  }
+  .page_vision .intro{ text-align: center; font-size: 6px;  padding: 0 15px;}
+  .page_vision .intro .title { font-size: 4em; }
+  .page_vision .article_icone{ width: 100%;  padding: 0 15vw; }
+  .page_vision .zone_rangeslider{ padding: 10em }
+  .page_vision .zone_time_story  {  margin: 30vw 0 0 0; }
+  .page_vision .zone_time_story  .zone_color{  width: 100%; margin: 0 0 0 0;  padding: 50vw 10vw 10vw 7vw }
+  .page_vision .zone_time_story  .zone_color .title{  font-size: 28px; }
+  .page_vision .zone_time_story .zone_color p{  font-size: 22px }
+  .page_vision .zone_time_story .img_container{ position: absolute; padding: 0;  z-index: 2; right: auto; top: 0em; left: 50%;  transform:translate3d(-50%, -50%, 0); height: 35vw; width: 0%;  overflow: hidden; }
+  .page_vision .zone_time_story #swiper_timeline .swiper-slide-active .img_container {  transition: all .4s .4s; width: 50vw;}
+  .page_vision .zone_time_story .img_container img{ width: 100%; }
+  .page_vision .zone_time_story #swiper_timeline { overflow: visible; }
+
   .zone_temoignage{ background: #1913C1; color: #fff; font-family: SofiaProLight_Italic; }
   .zone_temoignage .zone_temoignage_txt{ width: 100%; margin:0; padding: 7vw }
   .zone_temoignage .quote_in{ display: none; }
@@ -603,6 +608,10 @@ responsive iPad
   .zone_temoignage p{  font-size: 16px }
   .zone_temoignage .zone_temoignage_man{ display: none; }
   .vision_zone_blue {  padding: 7vw;  }
+.page_vision .article_icone{ width: 100%; font-size: 8px; padding: 6em 12em 2em 12em; }
+.page_vision .zone_time_story #swiper_timeline .swiper-slide-active .zone_color{ padding-top: 20em; }
+
+
 
   /* operations */
   .mozaique_operations .operation_item:nth-child(4n+1),
@@ -746,6 +755,11 @@ responsive iPhone
   .page_case_study .zone_color .buble_container{  width:100%; height: 100%}
   .page_case_study .txt_container{ width: 100%}
 
+  /* page vision */
+  .page_vision .article_icone{ padding: 6em }
+  .page_vision .zone_time_story #swiper_timeline .swiper-slide-active .title{ font-size: 28px; }
+  .page_vision .zone_time_story #swiper_timeline .swiper-slide-active p { font-size: 22px }
+  .page_vision .zone_time_story #swiper_timeline .swiper-slide-active .zone_color{ padding-top: 30vw }
 
   /* ideamag */
   .page_ideamag { margin-bottom: 5em!important; }
