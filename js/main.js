@@ -24,8 +24,6 @@ window.onload = function() {
 
 
 
-
-
 };
 
 function init_homePage(){
@@ -147,7 +145,7 @@ function init_page_vision(){
                 bt_vision_equipe[i].innerHTML = 'Découvrir toute l’équipe';
               }
             }else{
-              document.querySelector("#vision_zone_blue").classList.add('active');       
+              document.querySelector("#vision_zone_blue").classList.add('active');
               for( i=0; i < bt_vision_equipe.length; i++ ) {
                 bt_vision_equipe[i].innerHTML = 'fermer';
               }

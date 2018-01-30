@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width">
     <title></title>
     <link rel="stylesheet" href="css/main.css">
-
-
-
   </head>
   <body>
 
@@ -32,13 +29,13 @@
       </section>
     </header>
 
-    <section class="menu_mag_mobile_container" id="menu_mag_mobile_container">
+    <section class="menu_mobile_container menu_mobile_container menu_mobile_mag_container" id="menu_mobile_container">
       <a href="" class="bt_close" id="bt_close_menu_mobile">
         <div class='line1'></div>
         <div class='line2'></div>
       </a>
       <a href="" class="bt_search">
-        <img src="img/icon_search.svg" alt="">
+        <img src="img/iconWhite_search.svg" alt="">
       </a>
       <ul class="menu_mobile">
         <li><a href="#" class="a1">ART</a></li>

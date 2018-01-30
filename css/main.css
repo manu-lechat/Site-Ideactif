@@ -86,6 +86,11 @@ body.modalOpen { overflow: hidden;  }
 .header .icon_burger .line1{ top: 0;  }
 .header .icon_burger .line2{ top: 11px; }
 .header .icon_burger .line3{ top: 22px; }
+/* header ideamag */
+
+.header_mag_container .icon_burger div{ background: white}
+
+
 /* menu mobile */
 .menu_mobile_container{ display: none;}
 /* homePage */
@@ -251,7 +256,7 @@ body.modalOpen { overflow: hidden;  }
 .page_vision .teams_leader_swiper  .swiper-slide .zone_temoignage_man{  transition:all .3s .3s;  opacity:0; width: 26%; left: 10em;  position: absolute; bottom: 0;  }
 .page_vision .teams_leader_swiper #team_swiper_prev{ top: 10%;}
 .page_vision .teams_leader_swiper #team_swiper_next{ top: 10%;}
-.page_vision #team_leader_swiper .swiper-slide-active .zone_temoignage_man{ opacity: 1 } 
+.page_vision #team_leader_swiper .swiper-slide-active .zone_temoignage_man{ opacity: 1 }
 /* zone blue */
 .page_vision .vision_zone_blue{ transition : all .3s; padding-top: 3em; padding-bottom: 3em; height: 21em; display: inline-block; overflow: hidden; }
 .page_vision .vision_zone_blue.active{ height: 100em;  }
@@ -384,8 +389,9 @@ input{ font-size: 12px; border:1px dotted red;  width: auto;  }
 .page_ideamag .mag_cell .txt_container .description{ font-family: SofiaProLight; width: 80%; font-size: 2em; line-height: 1em; padding: 0; }
 .page_ideamag .mag_cell .txt_container .date{ z-index: 2; width: 10%; position: absolute; right: 0;  height: auto; top: 50%; transform:translateY(-50%)}
 .page_ideamag .mag_cell .txt_container .date li{ font-size: 2.2em; 	opacity: 0.5; line-height: 1em; width: 100; padding: 0.1em 0.3em; margin: 0;     min-height: 1em; text-align: center;}
-.page_ideamag .mag_cell .txt_container .img_container{ width: 100%; height: auto; position: absolute; z-index: 1;}
-.page_ideamag .mag_cell .txt_container .img_container img{ width: 100%; height: auto; }
+.page_ideamag .mag_cell  .img_container{ width: 100%; background: black; height: auto; position: relative;; z-index: 1; overflow: hidden;}
+.page_ideamag .mag_cell  .img_container img{  max-width: none; transform:scale(1) width: 100%; height: auto; transition:all .23s ease-out; }
+.page_ideamag .mag_cell:hover  .img_container img{ transform:scale(1.05); opacity: 0.6}
 .page_ideamag .mag_cell .txt_container .buble_container { opacity: 0; width: 15em; height: 15em; transform:scale(.8);  right: -6em; top: -4em; z-index: 1; }
 .page_ideamag .mag_cell:hover .txt_container .buble_container{ opacity: 1;  right: -5em; top: -5em;  transform:scale(1);  }
 .page_ideamag .mag_cell .txt_container .buble_container img{ opacity: 0; }
@@ -393,16 +399,22 @@ input{ font-size: 12px; border:1px dotted red;  width: auto;  }
 .page_ideamag .mag_cell:hover .txt_container .buble_container .buble_yellow{  transition:all .3s .3s ease-out; }
 .page_ideamag .mag_cell:hover .txt_container .buble_container .buble_blue{ transition:all 1s .6s ease-out; }
 .page_ideamag .mag_cell:hover .txt_container .buble_container img{ opacity: 1; }
-.page_ideamag .mag_cell_tags{ background:black;  color: #FCFCFC; padding: 2em;  }
+
+.page_ideamag .mag_cell_tags{ background:black;  color: #FCFCFC; padding: 3em  2em;  }
 .page_ideamag .mag_cell_tags .title{  opacity: 0.5; font-size: 2.6em;text-align: center; }
 .page_ideamag .mag_cell_tags .tags{ display: inline-block; }
 .page_ideamag .mag_cell_tags .tags ul{ padding: 2em; text-align: center; }
 .page_ideamag .mag_cell_tags .tags li{ display: inline-block;  }
-.page_ideamag .mag_cell_tags .tags a{ color: #FCFCFC; font-size: 2.6em;   }
+.page_ideamag .mag_cell_tags .tags a{ color: #FCFCFC; font-size: 2.6em; padding: 0.2em 0.5em  }
 .page_ideamag .mag_cell_tags .tags a:hover{ opacity: 0.5; }
-.page_ideamag .zone_magazine_3cols .mag_cell{ width: 33.33%; height: 40em; overflow: hidden; position: relative;}
+
+
+.page_ideamag .zone_magazine_3cols{ padding: 0; max-width: 1300px;  margin: 0 auto}
+.page_ideamag .zone_magazine_3cols .mag_cell{ width: 33.33%; height: 40em; overflow: hidden; position: relative; border:.3em solid white; }
+
 .page_ideamag .zone_magazine_3cols .txt_container{ width: 100%; }
-.footer_ideamag { font-family: SofiaProUltraLight; 	font-weight: 300; background: black; color: white; text-align: center; padding: 1em}
+
+.footer_ideamag { min-height: 30me; border:5px solid red font-family: SofiaProUltraLight; 	font-weight: 300; background: black; color: white; text-align: center; padding: 1em}
 .footer_ideamag .bt_gotop{ margin-bottom: 1em; }
 .footer_ideamag .link{ 	color: #FCFCFC; font-size: 2.8em }
 .footer_ideamag .signature{ 	opacity: 0.5; }
@@ -421,7 +433,7 @@ input{ font-size: 12px; border:1px dotted red;  width: auto;  }
 .page_idemag_article .article_container p{ 	font-size: 2.6em; }
 .page_idemag_article .article_container p.bold{ 	font-family: SofiaProRegular; }
 .page_idemag_article .article_container .separator{ clear: both; width: 5em; 	border-bottom: .7em solid #0A0A0A; margin:5em 0; display: block;}
-.page_idemag_article .zone_tags{ width: 100%; margin: 3em 0 5em 0; padding: .5em 0; font-size: 0.6em; border-top: .3em solid black; border-bottom: .3em solid black;  }
+.page_idemag_article .zone_tags{ display: inline-block; width: 100%; margin: 3em 0 5em 0; padding: .5em 0; font-size: 0.6em; border-top: .3em solid black; border-bottom: .3em solid black;  }
 .page_idemag_article .zone_tags a{ background: #fff; border: 1px solid #000!important; color: #000; float: left; font-family: SofiaProRegular; font-size: 2.8em; padding: .6em 1.4em 0.4em 1.4em; text-align: center;  border-radius: 2em; display: table;  margin: 1em 1em 1em 0;  transition: all .17s ease-out;  }
 .page_idemag_article .zone_tags a:hover{ background: #000; color: #fff }
 .page_idemag_article .article_container  img{ margin-bottom: 3em; }
@@ -511,9 +523,13 @@ responsive iPad
   .header .icon_burger{ display: block; transition:all .3s .3s }
   .header .icon_burger.hide{  opacity: 0; transition:all .3s .3s }
 
+
    /* menu mobile**/
   .menu_mobile_container.active{ transform:translateX(0); opacity: 0.95 }
   .menu_mobile_container{ transform:translateX(105vw); display: block; height: 100vh; min-height: 100%; opacity: 1; transition:all .63s cubic-bezier(.03,.68,.27,.97) 0s; background: #fff; width: 100%; min-width: 100vw; position: fixed;  z-index: 10; top: 0; left: 0 }
+
+  .menu_mobile_container.menu_mobile_mag_container{ background: black}
+  .menu_mobile_container.menu_mobile_mag_container .menu_mobile a{ color: #fff; }
 
   .menu_mobile_container .bt_close{ position: absolute; left: 5vw; top: 5vw; width: 5vw; height: 5vw;  }
   .menu_mobile_container .bt_close  div{ width: 5vw; transform-origin: 50% 50%; height:.5vw; display: block; position: absolute; left: 0; background: #9b9b9b ; border-radius: 4px   }
@@ -640,12 +656,19 @@ responsive iPad
   .page_nous_rejoindre .zone_contact{  font-size: 1.2em; }
 
   /* ideamag */
-  .page_ideamag .zone_magazine_2cols .mag_cell{  width: 100% }
-  .page_ideamag .zone_magazine_3cols .mag_cell{  width: 100%; height: auto;; }
-  .page_ideamag .grid-sizer,
-  .page_ideamag .masonry_item { width: 100%!important; }
+  .page_ideamag{ margin-bottom: 10em; }
+  .page_ideamag .zone_magazine_2cols .mag_cell{ font-size:6px;    }
+  .page_ideamag .zone_magazine_3cols .mag_cell{ display: block;font-size:6px; width: 100%; height: auto;; border-left: 0; border-right: 0 }
+  .page_ideamag .zone_magazine_3cols .mag_cell .img_container{ height: 50vw }
 
-
+  /* ideamag article */
+  .page_idemag_article .article_illus_container{ top: 2em;  }
+  .page_idemag_article .aside{ display: none}
+  .page_idemag_article .article_container { margin-bottom: 10em; padding-bottom: 10em; font-size: 8px; margin-top: 50vw!important; padding: 5em; margin-left: 2%!important; width: 96%; }
+  .page_idemag_article .article_container p{ padding-bottom: 1.3em; }
+  /* footer ideamag */
+  .footer_ideamag { min-height: 10em; }
+  .footer_ideamag .layout_container{ font-size: 6px; }
 
   /* footer */
   .footer .layout_container{ padding: 0 }
@@ -689,6 +712,10 @@ responsive iPhone
   /* boutons */
   .bt_rounded{ font-size: 14px; padding: .8em 1.4em 0.6em 1.4em; }
 
+  /* header mobile */
+
+  .header .logo{ width: 30em; }
+  .header { padding-top: 2em; padding-bottom: 2em; }
   /* homepage */
   .homePage .layout_intro{ font-size: 5px; }
   .homePage .layout_intro .buble_trio_logo {  width: 60px; height: 70px; margin-left: -30px;}
@@ -696,7 +723,6 @@ responsive iPhone
   .homePage .layout_intro .zone_logo{ height: auto; }
   .homePage .layout_intro .zone_txt .title{ font-size: 25px }
   .homePage .layout_intro .zone_txt p{ font-size: 18px }
-
   .homePage .zone_newsletter .zone_txt{ width: 100%; font-size: 5px; height: auto; }
   .homePage .zone_newsletter .input_border {  font-size: 6px; width: 80%; margin-left: 10%}
   .layout_container.zone_social_huge{ width: 100%; padding: 0; font-size: 3px; }
@@ -713,7 +739,6 @@ responsive iPhone
   .page_nous_rejoindre .topscreen .buble_yellow_container{ display: none}
 
   /* page case study */
-
   .page_case_study .zone_color{ position: relative; width:55em; height: 46em}
   .page_case_study .zone_color_pink .buble_container{transform: scale(1.2)}
   .page_case_study .zone_color_yellow .buble_container{ transform: scale(1.1)}
@@ -721,6 +746,22 @@ responsive iPhone
   .page_case_study .zone_color .buble_container{  width:100%; height: 100%}
   .page_case_study .txt_container{ width: 100%}
 
+
+  /* ideamag */
+  .page_ideamag { margin-bottom: 5em!important; }
+  .page_ideamag .zone_magazine_2cols .mag_cell{  width: 100%; border: none }
+  .page_ideamag .zone_magazine_3cols .mag_cell{  width: 100%; height: auto;border: none  }
+  .page_ideamag .grid-sizer,
+  .page_ideamag .masonry_item { width: 100%!important; }
+  .page_ideamag .mag_cell .img_container{ max-height: 70vw; }
+  .page_ideamag .zone_magazine_3cols .mag_cell .img_container{ max-height: 70vw; height: auto;}
+  .page_ideamag .mag_cell .txt_container {  width: 60%; }
+  .page_ideamag .mag_cell_social{ display: none!important; }
+  .page_ideamag .mag_cell_tags{ display: none!important; }
+
+  /* ideamag article */
+  .page_idemag_article .article_illus_container{       padding: 0;  left: 0; display: inline-block; top:2em; height: 70vw; transform: none;}
+  .page_idemag_article .article_container { padding:2em; margin-top: 47em!important; font-size: 5px; }
 
   /* footer */
   .footer .menu a{ font-size: 14px; height: 1.6em}

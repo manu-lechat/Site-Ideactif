@@ -1,5 +1,5 @@
 
-<footer class="footer_ideamag debugmode">
+<footer class="footer_ideamag">
 
   <section class="layout_container">
     <a href="#" class="bt_gotop bt_bump">

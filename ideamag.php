@@ -2,7 +2,7 @@
 <?php include ('header_ideamag.php'); ?>
 
     <!-- content -->
-    <main class="page_ideamag debugmode">
+    <main class="page_ideamag">
 
       <!-- cellules en 2 colonnes -->
       <section class="layout_container zone_magazine_2cols masonry">
@@ -183,37 +183,51 @@
       <!-- cellules en 3 colonnes -->
       <section class="layout_container zone_magazine_3cols">
 
-        <!-- cellules articles classiques -->
-        <div class="mag_cell">
+        <a href="ideamag_article.php" class="mag_cell">
           <div class="txt_container">
             <h3 class="title">Art</h3>
             <p class="description">Le mouvement futuriste et le webdesign</p>
             <ul class="date"><li>23 </li><li> 08 </li><li> 17 </li></ul>
+             <div class="buble_container buble_trio_container">
+                 <img src="img/buble_blue.svg" alt="" class="buble_blue">
+                 <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
+                 <img src="img/buble_pink.svg" alt="" class="buble_pink">
+             </div>
+          </div>
+          <div class="img_container">
+            <img src="img/tmp/mag5.jpg" alt="">
+          </div>
+        </a>
+        <a href="ideamag_article.php" class="mag_cell">
+          <div class="txt_container">
+            <h3 class="title">Art</h3>
+            <p class="description">Le mouvement futuriste et le webdesign</p>
+            <ul class="date"><li>23 </li><li> 08 </li><li> 17 </li></ul>
+             <div class="buble_container buble_trio_container">
+                 <img src="img/buble_blue.svg" alt="" class="buble_blue">
+                 <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
+                 <img src="img/buble_pink.svg" alt="" class="buble_pink">
+             </div>
           </div>
           <div class="img_container">
             <img src="img/tmp/mag6.jpg" alt="">
           </div>
-        </div>
-        <div class="mag_cell">
+        </a>
+        <a href="ideamag_article.php" class="mag_cell">
           <div class="txt_container">
             <h3 class="title">Art</h3>
             <p class="description">Le mouvement futuriste et le webdesign</p>
             <ul class="date"><li>23 </li><li> 08 </li><li> 17 </li></ul>
+             <div class="buble_container buble_trio_container">
+                 <img src="img/buble_blue.svg" alt="" class="buble_blue">
+                 <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
+                 <img src="img/buble_pink.svg" alt="" class="buble_pink">
+             </div>
           </div>
           <div class="img_container">
             <img src="img/tmp/mag7.jpg" alt="">
           </div>
-        </div>
-        <div class="mag_cell">
-          <div class="txt_container">
-            <h3 class="title">Art</h3>
-            <p class="description">Le mouvement futuriste et le webdesign</p>
-            <ul class="date"><li>23 </li><li> 08 </li><li> 17 </li></ul>
-          </div>
-          <div class="img_container">
-            <img src="img/tmp/mag1.jpg" alt="">
-          </div>
-        </div>
+        </a>
       </section>
 
       <section class="layout_container">
