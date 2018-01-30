@@ -19,8 +19,8 @@
           <li><a href="operations.php"  class="a2" >NOS OPÉRATIONS</a></li>
           <li><a href="ideamag.php"  class="a3">NOTRE MAG</a></li>
           <li><a href="nous_rejoindre.php"  class="a4">NOUS REJOINDRE</a></li>
-          <li><a href="#" class="a5 bt_footer">CONTACTEZ-NOUS</a></li>
-          <li><a href="recherche.php"><img src="img/icon_search.svg" alt=""></a></li>
+          <li><a href="#" class="bt_contact bt_footer">CONTACTEZ-NOUS</a></li>
+          <li><a href="#" class="bt_recherche"><img src="img/icon_search.svg" alt=""></a></li>
         </ul>
         <a class="icon_burger" id="bt_menu_mobile">
           <div class='line1'></div>
@@ -36,13 +36,15 @@
         <div class='line2'></div>
       </a>
       <a href="" class="bt_search">
-        <img src="img/icon_search.svg" alt="">
+        <img class="bt_recherche" src="img/icon_search.svg" alt="">
       </a>
       <ul class="menu_mobile">
         <li><a href="vision.php" class="active">NOTRE VISION</a></li>
         <li><a href="operations.php">NOS OPÉRATIONS</a></li>
         <li><a href="ideamag.php">NOTRE MAG</a></li>
         <li><a href="nous_rejoindre.php">NOUS REJOINDRE</a></li>
-        <li><a href="contact.php">CONTACTEZ-NOUS</a></li>
+        <li><a href="#" class="bt_contact">CONTACTEZ-NOUS</a></li>
       </ul>
     </section>
+
+<?php include ('modales.php'); ?>

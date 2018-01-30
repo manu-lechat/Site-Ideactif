@@ -18,31 +18,32 @@
         <div class='line2'></div>
       </a>
       <a href="" class="bt_search">
-        <img src="img/icon_search.svg" alt="">
+        <img src="img/icon_search.svg" class="bt_recherche" alt="">
       </a>
       <ul class="menu_mobile">
         <li><a href="vision.php" class="active">NOTRE VISION</a></li>
         <li><a href="operations.php">NOS OPÉRATIONS</a></li>
         <li><a href="ideamag.php">NOTRE MAG</a></li>
         <li><a href="nous_rejoindre.php">NOUS REJOINDRE</a></li>
-        <li><a href="contact.php">CONTACTEZ-NOUS</a></li>
+        <li><a href="#" class="bt_contact">CONTACTEZ-NOUS</a></li>
         <li></li>
       </ul>
     </section>
 
 
+    <?php include ('modales.php'); ?>
 
-  <main class="homePage debugmode">
+  <main class="homePage">
 
     <!-- homepage topscreen -->
     <section class="layout_container_100vh_100vw topscreen">
       <div class="zone_logo">
-        <img src="img/home_topscreen_logo.svg" alt="" class="logo">
         <div class="buble_container buble_trio_logo">
             <img src="img/buble_blue.svg" alt="" class="buble_blue">
             <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
             <img src="img/buble_pink.svg" alt="" class="buble_pink">
         </div>
+        <img src="img/home_topscreen_logo.svg" alt="" class="logo">
       </div>
       <div class="buble_container buble_trio_bg">
           <img src="img/buble_blue.svg" alt="" class="buble_blue">
@@ -69,8 +70,8 @@
           <li><a href="operations.php"  class="a2" >NOS OPÉRATIONS</a></li>
           <li><a href="ideamag.php"  class="a3">NOTRE MAG</a></li>
           <li><a href="nous_rejoindre.php"  class="a4">NOUS REJOINDRE</a></li>
-          <li><a href="#" class="a5 bt_footer">CONTACTEZ-NOUS</a></li>
-          <li><a href="recherche.php"><img src="img/icon_search.svg" alt=""></a></li>
+          <li><a href="#" class="bt_contact bt_footer">CONTACTEZ-NOUS</a></li>
+          <li><a href="#" class="bt_recherche"><img src="img/icon_search.svg" alt=""></a></li>
         </ul>
         <a class="icon_burger" id="bt_menu_mobile">
           <div class='line1'></div>
@@ -130,7 +131,7 @@
         <h3 class="fs_36 bold">NEWSLETTER</h3>
         <p class="fs_36">8000 abonnés et vous ?</p>
       </div>
-        <div class="input_border">
+      <div class="input_border">
         <input type="text" name="" value="Inscrivez vous à la newsletter">
         <a href="" class="send"></a>
       </div>

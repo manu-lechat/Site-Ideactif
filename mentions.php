@@ -1,10 +1,8 @@
 <?php include("header.php"); ?>
 
-<script>
-document.querySelector("#menu_desktop .a5").classList.add('active');
-</script>
 
-<main class="page_contact debugmode">
+
+<main class="page_contact">
 
 <section class="layout_container">
   <article class="mentions ">

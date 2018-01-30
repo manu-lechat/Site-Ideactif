@@ -24,7 +24,7 @@
           <ul class="menu">
             <li class="bold"><h3 class="title">L’entreprise</h3></li>
             <li class="light"><a href="mentions.php">Mentions légales</a></li>
-            <li class="light"><a href="partenaires.php">Partenaires</a></li>
+            <li class="light"><a href="#" class="bt_partenaires">Partenaires</a></li>
           </ul>
         </div>
         <div class="col col3 social">

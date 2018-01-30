@@ -2,7 +2,7 @@
 <?php include ('header_ideamag.php'); ?>
 
   <!-- main container -->
-  <main class="page_idemag_article debugmode">
+  <main class="page_idemag_article">
 
     <!-- aside social -->
     <aside class="aside social">

@@ -19,7 +19,7 @@
           <li><a href="#"  class="a3">CRÉATION</a></li>
           <li><a href="#"  class="a4">DESIGN</a></li>
           <li><a href="#"  class="a5">MUSIQUE</a></li>
-          <li><a href="#" ><img src="img/iconWhite_search.svg" alt=""></a></li>
+          <li><a href="#"  class="bt_recherche"><img src="img/iconWhite_search.svg" alt=""></a></li>
         </ul>
         <a class="icon_burger" id="bt_menu_mobile">
           <div class='line1'></div>
@@ -35,7 +35,7 @@
         <div class='line2'></div>
       </a>
       <a href="" class="bt_search">
-        <img src="img/iconWhite_search.svg" alt="">
+        <img  class="bt_recherche" src="img/iconWhite_search.svg" alt="">
       </a>
       <ul class="menu_mobile">
         <li><a href="#" class="a1">ART</a></li>
@@ -46,3 +46,5 @@
         <li></li>
       </ul>
     </section>
+
+    <?php include ('modales.php'); ?>

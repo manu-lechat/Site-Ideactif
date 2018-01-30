@@ -1,8 +1,10 @@
 /* init */
 window.onload = function() {
 
-    init_ui();
-
+    // init global nav
+    if(document.querySelector('.header')){
+      init_ui();
+    }
     // init page nous-rejoindre
     if(document.querySelector('.homePage')){
       init_homePage();
@@ -11,17 +13,14 @@ window.onload = function() {
     if(document.querySelector('.page_nous_rejoindre')){
       init_nous_rejoindre();
     }
-
     // init page vision
     if(document.querySelector('.page_vision')){
       init_page_vision();
     }
-
     // init page vision
     if(document.querySelector('.page_ideamag')){
       init_page_ideamag();
     }
-
 
 
 };
@@ -237,14 +236,73 @@ function init_ui() {
     });
 
 
-    // bt_contact : scroll to bottom
-    var bt_footer = document.querySelectorAll('.bt_footer');
-    for( i=0; i < bt_footer.length; i++ ) {
-      bt_footer[i].addEventListener('click', function(event) {
-          scollToFooter();
-          event.preventDefault();
+    // lien rechercher : modale
+    var bt_recherche = document.querySelectorAll('.bt_recherche');
+    for( i=0; i < bt_recherche.length; i++ ) {
+      bt_recherche[i].addEventListener('click', function(event) {
+        document.querySelector("#modale_container").classList.add('active');
+        document.querySelector("#modale_bg").classList.add('active');
+        document.querySelector("#modale_bg").classList.add('white');
+        document.querySelector("#modale_recherche").classList.add('modale_active');
+        document.body.classList.add('modalOpen');
+        document.querySelector("#modale_container").focus();
+        event.preventDefault();
       });
     }
+
+    // lien partenaires : modale
+    var bt_partenaires = document.querySelectorAll('.bt_partenaires');
+    for( i=0; i < bt_partenaires.length; i++ ) {
+      bt_partenaires[i].addEventListener('click', function(event) {
+        document.querySelector("#modale_container").classList.add('active');
+        document.querySelector("#modale_bg").classList.add('active');
+        document.querySelector("#modale_partenaires").classList.add('modale_active');
+        document.body.classList.add('modalOpen');
+        document.querySelector("#modale_container").focus();
+        event.preventDefault();
+      });
+    }
+
+    // bt_contact : modale
+    var bt_contact = document.querySelectorAll('.bt_contact');
+    for( i=0; i < bt_contact.length; i++ ) {
+      bt_contact[i].addEventListener('click', function(event) {
+        document.querySelector("#modale_container").classList.add('active');
+        document.querySelector("#modale_bg").classList.add('active');
+        document.querySelector("#modale_contact").classList.add('modale_active');
+        document.body.classList.add('modalOpen');
+        document.querySelector("#modale_container").focus();
+        event.preventDefault();
+      });
+    }
+
+    // bt_close_modale
+    var bt_close_modale = document.querySelector('#bt_close_modale');
+    bt_close_modale.addEventListener('click', function(event) {
+      document.querySelector("#modale_container").classList.remove('active');
+      document.querySelector("#modale_bg").classList.remove('active');
+      document.querySelector("#modale_bg").classList.remove('white');
+      var active = document.querySelectorAll('.modale_active');
+      for( i=0; i < active.length; i++ ) {
+        active[i].classList.remove('modale_active');
+      }
+      document.body.classList.remove('modalOpen');
+      event.preventDefault();
+    });
+
+    // bt_close_modale
+    var modale_bg = document.querySelector('#modale_bg');
+    modale_bg.addEventListener('click', function(event) {
+      document.querySelector("#modale_container").classList.remove('active');
+      document.querySelector("#modale_bg").classList.remove('active');
+      var active = document.querySelectorAll('.modale_active');
+      for( i=0; i < active.length; i++ ) {
+        active[i].classList.remove('modale_active');
+      }
+      document.body.classList.remove('modalOpen');
+      event.preventDefault();
+    });
+
 
 
     function scollToFooter(){
