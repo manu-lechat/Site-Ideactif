@@ -3,7 +3,7 @@
       <footer class="footer">
         <section class="layout_container">
 
-        <div class="encart">
+        <div class="encart appear_on_scroll">
           <p class="fs_28 txt">Pour nous poser une question, ou simplement nous saluer !</p>
           <a href="mailto:contact@ideatif.fr" class="bt_rounded bt_black_white">Contactez-nous</a>
           <a href="tel:0156334780" class="bt_rounded bt_grey_black">01 56 33 47 80</a>
@@ -26,25 +26,30 @@
             <li class="light"><a href="mentions.php">Mentions légales</a></li>
             <li class="light"><a href="#" class="bt_partenaires">Partenaires</a></li>
           </ul>
+          <br><br><br>
+          <br><br><br>
+          <span class="fs_16">
+          copyright © ideactif 2018
+          </span>
         </div>
         <div class="col col3 social">
-            <a href="https://www.facebook.com/Ideactif" target="_blank">
+            <a href="https://www.facebook.com/Ideactif" target="_blank" class="appear_on_scroll">
               <img src="img/icon_fb_hover.svg" class="hover">
               <img src="img/icon_fb.svg" alt="">
             </a>
-            <a href="https://twitter.com/Agence_ideactif" target="_blank">
+            <a href="https://twitter.com/Agence_ideactif" target="_blank" class="appear_on_scroll">
               <img src="img/icon_tt_hover.svg" class="hover">
               <img src="img/icon_tt.svg" alt="">
             </a>
-            <a href="https://www.instagram.com/agence_ideactif/" target="_blank">
+            <a href="https://www.instagram.com/agence_ideactif/" target="_blank" class="appear_on_scroll">
               <img src="img/icon_insta_hover.svg" class="hover">
               <img src="img/icon_insta.svg" alt="">
             </a>
-            <a href="https://www.pinterest.fr/" target="_blank">
+            <a href="https://www.pinterest.fr/" target="_blank" class="appear_on_scroll">
               <img src="img/icon_pt_hover.svg" class="hover">
               <img src="img/icon_pt.svg" alt="">
             </a>
-            <a href="https://www.youtube.com/user/IDEACTIFLive" target="_blank">
+            <a href="https://www.youtube.com/user/IDEACTIFLive" target="_blank" class="appear_on_scroll">
               <img src="img/icon_yt_hover.svg" class="hover">
               <img src="img/icon_yt.svg" alt="">
             </a>

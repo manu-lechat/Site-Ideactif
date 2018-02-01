@@ -9,7 +9,7 @@ document.querySelector("#menu_desktop .a4").classList.add('active');
     <section class="layout_container_100vh topscreen">
 
       <!-- zone recherche -->
-      <div class="zone_recherche layout_intro">
+      <div class="zone_recherche layout_intro appear_on_scroll">
         <h1 class="title">Je recherche un poste de</h1>
         <div class="selectZone" id="selectZone">
           <div class="swiper-container">
@@ -31,7 +31,7 @@ document.querySelector("#menu_desktop .a4").classList.add('active');
       </div>
 
       <!-- bubbles -->
-      <div class="buble_container buble_trio_container">
+      <div class="buble_container buble_trio_container appear_on_scroll">
           <img src="img/buble_blue.svg" alt="" class="buble_blue">
           <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
           <img src="img/buble_pink.svg" alt="" class="buble_pink">
@@ -44,7 +44,7 @@ document.querySelector("#menu_desktop .a4").classList.add('active');
       </div>
     </section>
 
-    <section id="zone_annonce">
+    <section id="zone_annonce appear_on_scroll">
 
       <section class="layout_FullWidth zone_titre">
         <section class="layout_container">
@@ -56,7 +56,7 @@ document.querySelector("#menu_desktop .a4").classList.add('active');
         </section>
       </section>
 
-      <section class="layout_container">
+      <section class="layout_container appear_on_scroll">
         <article class="zone_annonce">
           <h3>Mission</h3>
           <p>
@@ -86,7 +86,7 @@ document.querySelector("#menu_desktop .a4").classList.add('active');
         </article>
       </section>
 
-      <section class="layout_gris layout_FullWidth">
+      <section class="layout_gris layout_FullWidth appear_on_scroll">
         <section class="layout_container">
           <div class="zone_contact">
             <h3 class="title">Contact</h3>

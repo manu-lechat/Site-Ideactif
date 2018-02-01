@@ -1,7 +1,7 @@
 
-    <section class="mozaique_operations layout_container">
+    <section class="mozaique_operations layout_container active_on_scroll">
 
-        <a href="case_study.php" class="operation_item">
+        <a href="case_study.php" class="operation_item appear_on_scroll">
           <img src="img/tmp/ope1.jpg" class="bg_img">
           <div class="hover_container">
             <div class="bg_hover">
@@ -11,9 +11,9 @@
                    <img src="img/buble_pink.svg" alt="" class="buble_pink">
                </div>
             </div>
-             <h3 class="title">MARIE-CLAIRE</h3><br>
-             <span class="hover_bigtxt">15000</span><br>
-             <span class="hover_txt">roses distribuées</span>
+             <h3 class="title">Hover content</h3><br>
+             <span class="hover_bigtxt">“Punshline efficace !”</span><br>
+             <span class="hover_txt">signature</span>
           </div>
           <span class="tag">société</span>
           <div class="txt_container">
@@ -22,7 +22,7 @@
           </div>
         </a>
 
-        <a href="case_study.php"  class="operation_item">
+        <a href="case_study.php"  class="operation_item appear_on_scroll">
           <img src="img/tmp/ope2.jpg" class="bg_img">
           <div class="hover_container">
             <div class="bg_hover">
@@ -32,9 +32,9 @@
                    <img src="img/buble_pink.svg" alt="" class="buble_pink">
                </div>
             </div>
-             <h3 class="title">MARIE-CLAIRE</h3><br>
-             <span class="hover_bigtxt">15000</span><br>
-             <span class="hover_txt">roses distribuées</span>
+             <h3 class="title">Hover content</h3><br>
+             <span class="hover_bigtxt">“Punshline efficace !”</span><br>
+             <span class="hover_txt">signature</span>
           </div>
           <span class="tag">société</span>
           <div class="txt_container">
@@ -43,7 +43,7 @@
           </div>
         </a>
 
-        <a href="case_study.php"  class="operation_item">
+        <a href="case_study.php"  class="operation_item appear_on_scroll">
           <img src="img/tmp/ope3.jpg" class="bg_img">
           <div class="hover_container">
             <div class="bg_hover">
@@ -65,7 +65,7 @@
           </div>
         </a>
 
-        <a href="case_study.php"  class="operation_item">
+        <a href="case_study.php"  class="operation_item appear_on_scroll">
           <img src="img/tmp/ope4.jpg" class="bg_img">
           <div class="hover_container">
             <div class="bg_hover">
@@ -87,7 +87,7 @@
           </div>
         </a>
 
-        <a href="case_study.php"  class="operation_item">
+        <a href="case_study.php"  class="operation_item appear_on_scroll">
           <img src="img/tmp/ope5.jpg" class="bg_img">
           <div class="hover_container">
             <div class="bg_hover">
@@ -109,7 +109,7 @@
           </div>
         </a>
 
-        <a  href="case_study.php" class="operation_item">
+        <a  href="case_study.php" class="operation_item appear_on_scroll">
           <img src="img/tmp/ope6.jpg" class="bg_img">
           <div class="hover_container">
             <div class="bg_hover">

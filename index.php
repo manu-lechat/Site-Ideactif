@@ -3,10 +3,16 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta name="viewport" content="width=device-width">
-    <title></title>
-    <link rel="stylesheet" href="css/rangeslider.css">
-    <link rel="stylesheet" href="css/rangeslider_custom.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>ideactif</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -33,10 +39,9 @@
 
     <?php include ('modales.php'); ?>
 
-  <main class="homePage">
 
     <!-- homepage topscreen -->
-    <section class="layout_container_100vh_100vw topscreen">
+    <section id="homeStart" class="layout_container_100vh_100vw homeStart">
       <div class="zone_logo">
         <div class="buble_container buble_trio_logo">
             <img src="img/buble_blue.svg" alt="" class="buble_blue">
@@ -58,8 +63,14 @@
       <div class="bg_topscreen">
         <img src="img/bg_home_topscreen.svg" alt="" class="">
       </div>
+      <div class="fleche_container">
       <img src="img/home_topscreen_fleche.svg" alt="" class="home_topscreen_fleche">
+      </div>
     </section>
+
+
+  <main class="homePage">
+
 
     <!-- header -->
     <header class="header_container" id="homePage_header">
@@ -82,7 +93,7 @@
     </header>
 
     <!-- intro -->
-    <section class="layout_intro layout_container" id="homePage_intro">
+    <section class="layout_intro layout_container appear_on_scroll" id="homePage_intro">
       <div class="zone_logo">
         <div class="buble_container buble_trio_logo">
             <img src="img/buble_blue.svg" alt="" class="buble_blue">
@@ -104,13 +115,13 @@
     <!-- mosaique operations -->
     <?php include('mosaique_operations.php'); ?>
 
-    <section class="layout_container zone_text_pink">
+    <section class="layout_container zone_text_pink appear_on_scroll " >
       <p><span class="txt_pink bold">25M</span> de personnes touchées en <span class="txt_pink bold">25 ans !</span></p>
       <a href="operations.php" class="bt_rounded bt_pink_white">Voir plus</a>
     </section>
 
     <!-- story -->
-    <section class="layout_container zone_story">
+    <section class="layout_container zone_story appear_on_scroll">
       <div class="img_container">
         <img src="img/tmp/story.jpg" alt="">
       </div>
@@ -126,7 +137,7 @@
     </section>
 
     <!-- newsletter -->
-    <section class="layout_container zone_newsletter">
+    <section class="layout_container zone_newsletter appear_on_scroll">
       <div class="zone_txt">
         <h3 class="fs_36 bold">NEWSLETTER</h3>
         <p class="fs_36">8000 abonnés et vous ?</p>
@@ -138,7 +149,7 @@
     </section>
 
     <!-- social huge -->
-    <section class="layout_container zone_social_huge">
+    <section class="layout_container zone_social_huge appear_on_scroll">
 
 
       <a href="https://www.facebook.com/Ideactif" class="fb social_huge" target="_blank">

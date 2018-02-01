@@ -8,7 +8,7 @@ document.querySelector("#menu_desktop .a1").classList.add('active');
 
 <main class="page_vision ">
 
-  <section class="layout_container layout_intro">
+  <section class="layout_container layout_intro appear_on_scroll">
     <article>
       <h1 class='title'>Nous générons des émotions</h1>
       <p>
@@ -29,22 +29,22 @@ document.querySelector("#menu_desktop .a1").classList.add('active');
     </section>
 
     <section class="layout_container layout_condensed">
-      <article class="article_icone">
+      <article class="article_icone appear_on_scroll">
         <img src="img/vision_icon2.png" alt="" class="">
         <h2 class='title'>LOREP IPSUM</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum facilisis nibh ut facilisis. Maecenas odio elit, posuere rutrum mauris nec, iaculis eleifend lectus.</p>
       </article>
-      <article class="article_icone">
+      <article class="article_icone appear_on_scroll">
         <img src="img/picto_confiance.png" alt="" class="">
         <h2 class='title'>LOREP IPSUM</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum facilisis nibh ut facilisis. Maecenas odio elit, posuere rutrum mauris nec, iaculis eleifend lectus.</p>
       </article>
-      <article class="article_icone">
+      <article class="article_icone appear_on_scroll">
         <img src="img/picto_feu.png" alt="" class="">
         <h2 class='title'>LOREP IPSUM</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum facilisis nibh ut facilisis. Maecenas odio elit, posuere rutrum mauris nec, iaculis eleifend lectus.</p>
       </article>
-      <article class="article_icone">
+      <article class="article_icone appear_on_scroll">
         <img src="img/picto_pipe.png" alt="" class="">
         <h2 class='title'>LOREP IPSUM</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum faci clisis nibh ut facilisis. Maecenas odio elit, posuere rutrum mauris nec, iaculis eleifend lectus.</p>
@@ -52,7 +52,7 @@ document.querySelector("#menu_desktop .a1").classList.add('active');
     </section>
 
     <!-- timeline slider -->
-    <section  class="layout_container zone_rangeslider">
+    <section  class="layout_container zone_rangeslider appear_on_scroll">
         <div class="nouislider" id='nouislider'>
           <div id="slider" class="slider">
             <div class="pointer"></div>
@@ -68,17 +68,17 @@ document.querySelector("#menu_desktop .a1").classList.add('active');
 
 
     <!-- ideactif time story -->
-    <section class="layout_container zone_time_story">
+    <section class="layout_container zone_time_story appear_on_scroll">
       <?php include('vision_story_slider.php'); ?>
     </section>
 
-    <section class="layout_gris layout_FullWidth">
+    <section class="layout_gris layout_FullWidth appear_on_scroll">
       <section class="layout_container">
       <?php  include('vision_teams_leader_slider.php'); ?>
       </section>
     </section>
 
-    <section class="layout_blue layout_FullWidth vision_zone_blue" id="vision_zone_blue">
+    <section class="layout_blue layout_FullWidth vision_zone_blue appear_on_scroll" id="vision_zone_blue">
       <section class="layout_container">
       <?php  include('vision_teams_slider.php'); ?>
       </section>

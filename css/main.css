@@ -6,8 +6,8 @@
 @font-face {  font-family: SofiaProUltraLight; src: url("../fonts/SofiaProUltraLight.otf"); }
 @font-face {  font-family: SofiaProLight_Italic; src: url("../fonts/SofiaProLight_Italic.otf"); }
 @font-face {  font-family: SofiaProRegularItalic; src: url("../fonts/SofiaProRegularItalic.otf"); }
-body, html {  box-sizing: border-box; scroll-behavior: smooth;; font-family: SofiaProRegular; overflow-x:hidden;   color: #0A0A0A; background: #fff; text-rendering: optimizeLegibility; margin:0; padding:0; }
-
+body, html {  box-sizing: border-box; font-family: SofiaProRegular; overflow-x:hidden;   color: #0A0A0A; background: #fff; text-rendering: optimizeLegibility; margin:0; padding:0; }
+/* scroll-behavior: smooth;;  */
 body.modalOpen { overflow: hidden; display: inline-block;  height: 99vh; }
 
 * {  margin:0;  padding:0;  box-sizing: border-box;  }
@@ -70,12 +70,24 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .layout_container_100vh{ max-width: 1440px; padding: 0 7em;  height: 100vh;}
 .layout_container_100vh_100vw{ width: 100vw; padding: 0 7em;  height: 100vh; overflow: hidden;}
 
+/* appear_on_scroll */
+
+.appear_on_scroll{ opacity: 0; transform:translateY(2em) }
+.appear_on_scroll.appear{ opacity: 1; transform:translateY(0); transition : all 2s .3s   }
+.appear_on_scroll.appear:nth-child(3n+1){  transition : opacity .6s ease-out .1s   }
+.appear_on_scroll.appear:nth-child(3n+2){  transition : opacity .8s ease-out .3s  }
+.appear_on_scroll.appear:nth-child(3n+3){  transition : opacity .9s ease-out .2s  }
+
 /* intro */
 .layout_intro .title{ font-size: 6.5em;  text-align: center;  margin: 0 auto  }
 .layout_intro p{ font-size: 3.2em; text-align: justify; }
 /* header */
-.header_container{  width: 100%; position: fixed; z-index: 2; top: 0; background: white;}
+.header_container{  width: 100%; position: fixed; z-index: 2; top: 0; background: white; 	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.15);}
 .header{ padding: 1em 5em;   }
+
+.header.condensed{ padding: 0em 5em;  }
+.header.condensed .logo{ margin: 1em 0 0.8em 0;  }
+
 .header .logo{ position: relative; margin: 3em 0 3em 0; width: 24em }
 .header .menu_desktop{ position: absolute; top: 50%; right: 5em; transform:translateY(-50%);}
 .header .menu_desktop a{   display: inline-block; font-family: SofiaProMedium; transition:all .1s; opacity: 0.4; font-size: 2em;  font-weight: 500; letter-spacing: 0em; }
@@ -97,24 +109,53 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 /* menu mobile */
 .menu_mobile_container{ display: none;}
 /* homePage */
-.homePage{ margin-top: 0}
-.homePage .layout_intro{   padding: 10em;  }
+
+.homeStart { position: fixed; z-index: 1; transition: opacity 1s .5s ease-out }
+.homeStart.hidden { position: fixed; z-index: 1; opacity: 0; }
+.homeStart .buble_trio_bg{ top: 100vh; width:80vh; height:80vh; max-width: 80em; max-height: 80em;  left:0; transform: translate3d(-50%, -50%, 0);}
+.homeStart .buble_trio_hd{ top: 10vw; width: 60vh; height:60vh;  max-width: 80em; max-height: 80em; left: 100vw; transform: translate3d(-50%, -50%, 0);}
+.homeStart .bg_topscreen{ z-index: 1;  position: absolute; width:120vw; height: 120vw; top: 50%; left: 50%;  transform: translate3d(-50%, -50%, 0); }
+.homeStart .bg_topscreen img{  position: absolute; top : 50%; left: 50%; transform: translate3d(-50%, -50%, 0); width: 100vw; height: 100vw;}
+.homeStart .buble_trio_logo{ opacity: 0; animation: fadeIn 2s linear  0s 1 normal forwards; }
+.homeStart .buble_trio_bg{ opacity: 0; animation: fadeIn 2s linear  1s 1 normal forwards; }
+.homeStart .buble_trio_hd{ opacity: 0; animation: fadeIn 1s linear  1.2s 1 normal forwards; }
+.homeStart .zone_logo{ z-index: 2; position: absolute; top: 45%; left:50%;  width: 20vh; height:20vh ;  transform: translate3d(-50%, -50%, 0); }
+.homeStart .logo{ position: absolute; width: 90%; top: 100%; left: 50%;transform: translate3d(-50%, 0, 0);}
+.homeStart .buble_trio_logo{ position: absolute;width: 16vh; height: 16vh;  left: 50%;transform: translate3d(-50%, 2vh, 0); }
+
+.homeStart .fleche_container{  animation: anim_fleche 1.3s  ease-in-out  0s infinite normal forwards; position: absolute; bottom: 10em; left:50%; width: 2em; height: 4em;  }
+.homeStart .home_topscreen_fleche{ opacity: 0; animation: fadeIn .3s linear  2s 1 normal forwards;  width: 100%;}
+
+.homeStart .buble_trio_logo  .buble_blue {  animation: anim_buble 35s ease-in-out 5s infinite normal forwards;  }
+.homeStart .buble_trio_logo .buble_yellow {  animation: anim_bubleBis 20s ease-in-out 7s infinite normal forwards; left: -10%;  top: 3%; }
+.homeStart .buble_trio_logo .buble_pink {  animation: anim_buble 17s ease-in-out 9s infinite normal forwards; left: -15%;  top: 8%; }
+
+.homePage{ position: relative; margin-top: 100vh;  z-index: 10; background: white}
+.homePage.sticky{ margin-top: 0; }
+.homePage .header_container{ position: relative;  }
+.homePage .header_container.sticky{ position: fixed;}
+.homePage .layout_intro .zone_logo{ display: none; }
+.homePage .layout_intro .logo{ display: none; }
+.homePage .layout_intro .bg_topscreen{ display: none; }
+.homePage #homePage_intro{   padding: 10em;   }
 .homePage .zone_text_pink{ padding-top: 6em; padding-bottom: 6em; text-align: center;}
 .homePage .zone_text_pink p{ font-size: 4.8em; text-align: center; }
 .homePage .zone_social_huge .social_huge{ overflow: hidden; color: white; position: relative;  width: 50%; float: left; }
 .homePage .zone_social_huge .social_huge.fb{ background-color: #637bad }
 .homePage .zone_social_huge .social_huge.insta{ background-color: #85a5bf }
 .homePage .zone_social_huge .social_huge .mask{ z-index: 2; position: relative; width: 100%; height: auto; }
-.homePage .zone_social_huge .buble_container{ opacity: 0; z-index: 1; top:28%; left: 0; width: 35em; height: 35em;}
-.homePage .zone_social_huge .social_huge:hover .buble_container{ opacity: 1; cursor: pointer; }
+.homePage .zone_social_huge .buble_container{ transition:all .5s; transform: scale(0.8); opacity: 0; z-index: 1; top:31%; left: 2%; width: 31em; height: 31em;}
+.homePage .zone_social_huge .social_huge:hover .buble_container{ opacity: 1;  transform: scale(1.03);  cursor: pointer; }
 .homePage .zone_social_huge .accroche{ font-family: SofiaProLight; line-height: 1.2em; z-index: 3; top: 10%;right: 10%; text-align: right; font-size: 6em; position: absolute; }
 .homePage .zone_social_huge .huge{ font-family: SofiaProMedium; font-size: 2em; clear: both; }
 .homePage .zone_social_huge .signature{  z-index: 3;   font-size: 3.6em; position: absolute; right: 10%; bottom: 10%;  }
 .homePage .zone_newsletter{ padding: 0 5em}
 .homePage .zone_newsletter  .zone_txt{     float: left; position: relative; padding: 7em 0; width: 50%; height: 200px; }
 .homePage .zone_newsletter .input_border{ position: absolute; right:7.5em; top: 50%; transform: translateY(-50%); border: 2px solid #000; float: right; width: auto; border-radius: 5em; padding: 0.5em 1.5em }
-.homePage .zone_newsletter input{ font-size: 1.5em; border:1px dotted red;  min-width: 30em; padding: 0.5em; opacity: 0.5}
+.homePage .zone_newsletter input{ font-size: 1.5em;  min-width: 30em; padding: 0.5em; opacity: 0.5}
 .homePage .zone_newsletter .send{ width: 6em; border-radius: 5em; border-top-left-radius: 0; border-bottom-left-radius: 0;background-repeat: no-repeat; position: absolute; right: 0; top:0; height: 100%; background-color: #000; background-image: url('../img/icon_send.png'); background-size: auto 50%; background-position: center;}
+.homePage .zone_newsletter .send:hover{ background-color: #FF384C; }
+
 .homePage .zone_story .zone_color{ z-index: 1; position: relative; margin-left: 7em;  width: 72%; background: #FF384C; padding: 11em 30% 11em 5em; color: #fff }
 .homePage .zone_story .zone_color .title{ font-size: 4.5em }
 .homePage .zone_story .zone_color .subtitle{ font-size: 1.8em; font-family: SofiaProLight; }
@@ -125,23 +166,6 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .homePage .zone_story .bt_rounded{ margin: 1em 0}
 .homePage .zone_story .zone_color{ background: #F5F5F5; color:#0A0A0A }
 .homePage .zone_story .zone_color .separator{ border-bottom: 0.7em solid #0A0A0A; }
-.homePage .topscreen .buble_trio_bg{ top: 100vh; width:80vh; height:80vh; max-width: 80em; max-height: 80em;  left:0; transform: translate3d(-50%, -50%, 0);}
-.homePage .topscreen .buble_trio_hd{ top: 10vw; width: 60vh; height:60vh;  max-width: 80em; max-height: 80em; left: 100vw; transform: translate3d(-50%, -50%, 0);}
-.homePage .topscreen .bg_topscreen{ z-index: 1;  position: absolute; width:120vw; height: 120vw; top: 50%; left: 50%;  transform: translate3d(-50%, -50%, 0); }
-.homePage .topscreen .bg_topscreen img{  position: absolute; top : 50%; left: 50%; transform: translate3d(-50%, -50%, 0); width: 100vw; height: 100vw;}
-.homePage .topscreen .buble_trio_logo{ opacity: 0; animation: fadeIn 2s linear  0s 1 normal forwards; }
-.homePage .topscreen .buble_trio_bg{ opacity: 0; animation: fadeIn 2s linear  1s 1 normal forwards; }
-.homePage .topscreen .buble_trio_hd{ opacity: 0; animation: fadeIn 1s linear  1.2s 1 normal forwards; }
-.homePage .topscreen .home_topscreen_fleche{ opacity: 0; animation: fadeIn .3s linear  2s 1 normal forwards; }
-.homePage .topscreen .zone_logo{ z-index: 2; position: absolute; top: 45%; left:50%;  width: 20vh; height:20vh ;  transform: translate3d(-50%, -50%, 0); }
-.homePage .topscreen .logo{ position: absolute; width: 90%; top: 100%; left: 50%;transform: translate3d(-50%, 0, 0);}
-.homePage .topscreen .buble_trio_logo{ position: absolute;width: 16vh; height: 16vh;  left: 50%;transform: translate3d(-50%, 2vh, 0); }
-.homePage .topscreen .home_topscreen_fleche{position: absolute; bottom: 10em; left:50%; width: 2em;}
-.homePage .header_container{ position: relative;}
-.homePage .header_container.sticky{ position: fixed;}
-.homePage .layout_intro .zone_logo{ display: none; }
-.homePage .layout_intro .logo{ display: none; }
-.homePage .layout_intro .bg_topscreen{ display: none; }
 
 /* page operation */
 .page_operations { margin-top: 10em; margin-bottom: 10em;}
@@ -152,8 +176,8 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .page_operations .menu_tag .tag_container a:hover{  background-color: #FF384C; 	border: 2px solid #FF384C;	color: #fff  }
 .page_operations .bullets_container{ text-align: center;  }
 .page_operations .bullets_container img{ width: 15%; margin: 3vw auto}
-.mozaique_operations{ background: #000;  padding:0 }
-.mozaique_operations .operation_item{ position: relative; display: block; height: 50em; overflow: hidden; border:4px solid white; color: white; float: left;}
+.mozaique_operations{  padding:0 }
+.mozaique_operations .operation_item{ background: #000;  position: relative; display: block; height: 50em; overflow: hidden; border:4px solid white; color: white; float: left;}
 .mozaique_operations .operation_item .bg_img{ opacity: 0.3; position: absolute; top: 50%; left:50%; min-height:100%; transform: translate3d(-50%, -50%, 0) }
 .mozaique_operations .operation_item:nth-child(4n+1){  width:40%; float: left; text-align: right; }
 .mozaique_operations .operation_item:nth-child(4n+2) {   width:60%;  float: right; text-align: left; }
@@ -354,7 +378,7 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .page_contact .bg_identity{  position: absolute; width:25em; left: -10em; bottom: -10em }
 .page_contact .buble_container{ left: -30em; bottom: -35em; }
 /* form */
-input{ font-size: 12px; border:1px dotted red;  width: auto;  }
+input{ font-size: 12px; border: none; box-shadow: none; outline: none; width: auto;  }
 /* footer */
 .footer{ background: #f5f5f5; width: 100%}
 .footer .encart{ border: 0.2px solid #979797; padding:3em 5em; background-color: #FCFCFC; width: 75em; position: absolute; left: 50%;  transform: translate3d(-50%, -50%, 0); padding: 3em text-align:center;  }
@@ -603,7 +627,7 @@ responsive iPad
   .zone_social_huge .huge{ font-family: SofiaProLight; font-size: 10vw; clear: both; line-height: 5vw;}
   .zone_social_huge .signature{ font-size: 4vw; position: absolute; right: 10%; bottom: 10%;  }
   .homePage .header_container{ position: fixed; }
-  .homePage .topscreen{ display: none; }
+  .homeStart{ display: none; }
   .homePage .layout_intro{ padding-top: 6em; min-height: 100vh; position: relative;}
   .homePage .layout_intro .zone_logo{ display: block; z-index: 2; position: relative; top: 20em; width: 100%; height:50em; clear: both;  display: block; }
   .homePage .layout_intro .logo{ position: relative; width: 48em; left: 50%; transform:translateX(-50%) }
@@ -846,6 +870,12 @@ responsive iPhone
   0% { opacity: 0; transform:  scale(0.5)  }
   90% { opacity: 1; transform:  scale(1.1)  }
   100% { opacity: 1; transform:  scale(1)  }
+}
+
+@keyframes anim_fleche{
+  0% { opacity: 1; transform:  translateY(-2em) }
+  50% { opacity: 1; transform:  translateY(-1em) }
+  100% {  opacity:1; transform:  translateY(-2em) }
 }
 
 @keyframes anim_buble{

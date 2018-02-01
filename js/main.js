@@ -22,8 +22,75 @@ window.onload = function() {
       init_page_ideamag();
     }
 
-
+    init_ContentScrollFx();
 };
+
+
+
+/* scrolling functions */
+
+function init_ContentScrollFx() {
+
+    console.log('init_ContentScrollFx()');
+    var apear_items = document.querySelectorAll(".appear_on_scroll");
+    var isScrolling = false;
+
+    var menuPosition = "innerHeight" in window ?
+        window.innerHeight :
+        document.documentElement.offsetHeight;
+
+    window.addEventListener("scroll", throttleScroll, false);  
+
+    function throttleScroll(e) {
+        console.log("scrolling");
+        if (isScrolling == false) {
+            window.requestAnimationFrame(function() {
+                scrolling(e);
+                updateHeader(e);
+                isScrolling = false;
+            });
+        }
+        isScrolling = true;
+    }
+
+    function scrolling(e) {
+        for (var n = 0; n < apear_items.length; n++) {
+            var apear_item = apear_items[n];
+            if (isPartiallyVisible(apear_item)) {
+                apear_item.classList.add("appear");
+            } else {
+                apear_item.classList.remove("appear");
+            }
+        }
+    }
+
+    function updateHeader(e) {
+
+              if(!document.getElementById('homePage_header')){
+
+                // hide logo
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.querySelector('.header').classList.add('condensed');
+                } else {
+                  document.querySelector('.header').classList.remove('condensed');
+                }
+              }
+
+
+    }
+
+    function isPartiallyVisible(el) {
+
+        var elementBoundary = el.getBoundingClientRect();
+        var top = elementBoundary.top;
+        var bottom = elementBoundary.bottom;
+        var height = elementBoundary.height;
+        return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+    }
+
+    throttleScroll();
+}
+
 
 function init_homePage(){
 
@@ -58,10 +125,14 @@ function init_homePage(){
           /* menu fx */
           if (yScrollPosition >= menuPosition) {
              document.getElementById('homePage_header').classList.add('sticky');
-             document.getElementById('homePage_intro').style.marginTop= '14em';
+             document.querySelector('.header').classList.add('condensed');
+             document.getElementById('homePage_intro').style.paddingTop= '24em';
+             document.getElementById('homeStart').classList.add('hidden');
           } else if (yScrollPosition < menuPosition) {
              document.getElementById('homePage_header').classList.remove('sticky');
+             document.querySelector('.header').classList.remove('condensed');
              document.getElementById('homePage_intro').style.marginTop= "0";
+             document.getElementById('homeStart').classList.remove('hidden');
           }
         }
 
