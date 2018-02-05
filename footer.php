@@ -5,7 +5,7 @@
 
         <div class="encart appear_on_scroll">
           <p class="fs_28 txt">Pour nous poser une question, ou simplement nous saluer !</p>
-          <a href="mailto:contact@ideatif.fr" class="bt_rounded bt_black_white">Contactez-nous</a>
+          <a href="#" class="bt_rounded bt_black_white bt_contact">Contactez-nous</a>
           <a href="tel:0156334780" class="bt_rounded bt_grey_black">01 56 33 47 80</a>
         </div>
 

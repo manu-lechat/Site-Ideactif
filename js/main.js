@@ -145,6 +145,14 @@ function init_page_vision(){
   /* init story timeline slider */
   var swiper_timeline = new Swiper('#swiper_timeline', {
       slidesPerView: 'auto',
+      grabcursor:true,
+      centeredSlides:true,
+      spaceBetween: 800,
+      effect:'coverflow',
+      coverflowEffect: {
+        rotate: 0,
+        slideShadows: false,
+      },
       speed:1000
     });
   swiper_timeline.slideTo(8);
@@ -181,15 +189,19 @@ function init_page_vision(){
   /* init team sliders */
   setTimeout(function(){
   var team_leader_swiper = new Swiper('#team_leader_swiper', {
-      slidesPerView: 1,
+      slidesPerView: 'auto',
       spaceBetween: 100,
       speed:400,
+      centeredSlides:true,
+      grabcursor:true,
       loop:true
     });
   var team_swiper = new Swiper('#team_swiper', {
-      slidesPerView: 1,
-      spaceBetween: 200,
+      slidesPerView: 'auto',
+      spaceBetween: 600,
+      centeredSlides:true,
       speed:800,
+      grabcursor:true,
       threshold:20,
       loop:true,
       navigation: {

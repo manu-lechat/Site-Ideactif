@@ -68,7 +68,7 @@ document.querySelector("#menu_desktop .a1").classList.add('active');
 
 
     <!-- ideactif time story -->
-    <section class="layout_container zone_time_story appear_on_scroll">
+    <section class=" layout_FullWidth zone_time_story appear_on_scroll">
       <?php include('vision_story_slider.php'); ?>
     </section>
 
