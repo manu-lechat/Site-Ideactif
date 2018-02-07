@@ -59,8 +59,8 @@ document.querySelector("#menu_desktop .a1").classList.add('active');
           </div>
           <div class="puce_gauche"></div>
           <div class="puce_droite"></div>
-          <div class="label1">1992</div>
-          <div class="label2">2020</div>
+          <div class="label1">2000</div>
+          <div class="label2">2008</div>
         </div>
 
 

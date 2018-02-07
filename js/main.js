@@ -155,35 +155,57 @@ function init_page_vision(){
       },
       speed:1000
     });
-  swiper_timeline.slideTo(8);
-  swiper_timeline.on('slideChange', function () {
-    var slider = document.getElementById('slider');
-    var sliderRangeTo = swiper_timeline.activeIndex + 1992;
-    console.log(sliderRangeTo);
-    slider.noUiSlider.set(sliderRangeTo);
-  });
+  //swiper_timeline.slideTo(8);
+  
+  // swiper_timeline.on('slideChange', function () {
+  //   var slider = document.getElementById('slider');
+  //   var sliderRangeTo = swiper_timeline.activeIndex + 1992;
+  //   console.log(sliderRangeTo);
+  //   slider.noUiSlider.set(sliderRangeTo);
+  // });
 
   /* init range cursor slider by noUiSlider.js */
   var slider = document.getElementById('slider');
+  
+  /* get slide list */
+  var slides = $('#swiper_timeline .story_item');
+
+  /* generate dates list */
+  var dates = $.map(slides, function(slide) {
+    return parseInt($(slide).attr('data-value'), 10);
+  });
+
+  /* generate dates range */
+  var dates_range = dates.reduce(function(acc, date, index, dates) {
+    var length = dates.length;
+
+    if (index === 0) {
+      acc["min"] = date;
+    } else if (index === length - 1) {
+      acc["max"] = date;
+    } else {
+      acc[`${index/(length - 1)*100}%`] = date
+    }
+    
+    return acc
+  }, {});
+
+
   var slideTo = 0;
   noUiSlider.create(slider, {
-  	start: [ 2000 ],
-  	connect: true,
-    step: .1,
+  	start: dates_range["min"],
+    connect: true,
     format: wNumb({
-    			decimals: 0
-    		}),
-	   tooltips: true,
-  	range: {
-  		'min': 1992,
-  		'max': 2020
-  	}
+      decimals: 0
+    }),
+    tooltips: true,
+  	range: dates_range
   });
-  slider.noUiSlider.on('end', function(){
-    slideTo = Math.round(slider.noUiSlider.get()-1992);
+
+  slider.noUiSlider.on('update', function(range){
+    var date = parseInt(range[0], 10);
     var mySwiper = document.querySelector('#swiper_timeline').swiper
-    mySwiper.slideTo(slideTo);
-	   console.log(slideTo);
+    mySwiper.slideTo(dates.indexOf(date));
   });
 
   /* init team sliders */
