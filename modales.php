@@ -4,13 +4,10 @@
     <!-- modale recherche -->
     <section class="modale modale_recherche" id="modale_recherche">
       <form class="" action="index.html" method="post">
-
-
         <div class="input_border">
           <input id="rechercher" type="text" value="rechercher un contenu..." class="input_rechercher" />
-          <a href="" class="send"></a>
+          <a href="recherche.php" class="send"></a>
         </div>
-
       </form>
     </section>
 

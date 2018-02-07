@@ -22,8 +22,14 @@ document.querySelector("#menu_desktop .a2").classList.add('active');
 
       <?php include('mosaique_operations.php'); ?>
 
-  <section class="layout_container bullets_container">
-    <img src="img/bullets.svg" alt="">
+  <section class="layout_container">
+
+    <div class="bullets_loader">
+      <img src="img/3bullets_loader_blue.svg" class="blue" alt="">
+      <img src="img/3bullets_loader_yellow.svg" class="yellow" alt="">
+      <img src="img/3bullets_loader_red.svg" class="red" alt="">
+      </div>
+
   </section>
 
 
