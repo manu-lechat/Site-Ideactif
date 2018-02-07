@@ -18,6 +18,11 @@
             Batiment C<br>
             92110 Clichy - FRANCE
           </address>
+          <br><br><br>
+          <br><br><br>
+          <span class="fs_16">
+          copyright © ideactif 2018
+          </span>
           <span class="adress_separator"></span>
         </div>
         <div class="col col2">
@@ -26,11 +31,6 @@
             <li class="light"><a href="mentions.php">Mentions légales</a></li>
             <li class="light"><a href="#" class="bt_partenaires">Partenaires</a></li>
           </ul>
-          <br><br><br>
-          <br><br><br>
-          <span class="fs_16">
-          copyright © ideactif 2018
-          </span>
         </div>
         <div class="col col3 social">
             <a href="https://www.facebook.com/Ideactif" target="_blank" class="appear_on_scroll">

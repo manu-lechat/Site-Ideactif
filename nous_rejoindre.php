@@ -44,7 +44,7 @@ document.querySelector("#menu_desktop .a4").classList.add('active');
       </div>
     </section>
 
-    <section id="zone_annonce appear_on_scroll">
+    <section id="zone_annonce" class="appear_on_scroll">
 
       <section class="layout_FullWidth zone_titre">
         <section class="layout_container">

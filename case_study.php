@@ -5,7 +5,7 @@ include("header.php");
 document.querySelector("#menu_desktop .a2").classList.add('active');
 </script>
 
-<main class="page_case_study layout_FullWidth debugmode">
+<main class="page_case_study layout_FullWidth">
 
 
   <section class="layout_intro layout_container">
@@ -84,12 +84,12 @@ document.querySelector("#menu_desktop .a2").classList.add('active');
           </p>
         </div>
 
-        <a href="" class="bt_rounded">Dites-nous vos besoins</a>
+        <a href="" class="bt_rounded bt_contact">Dites-nous vos besoins</a>
 
   </section>
 
   <!-- mosaique images -->
-  <section class="layout_FullWidth">
+  <section class="layout_container">
       <div class="mosaique_case_study">
         <div class="mosaique_item">
           <img src="img/tmp/ope1.jpg" class="bg_img">

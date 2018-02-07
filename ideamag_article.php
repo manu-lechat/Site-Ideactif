@@ -76,25 +76,32 @@
           <a href="#">Interface</a>
         </div>
 
+        <!-- commentaires -->
+        <div class="zone_commentaires">
+          <br><br>Zone commentaires<br><br>
+        </div>
 
+        <!-- recommandation -->
         <h3 class=titre_2>Recommandé</h3>
-
-        <a class="mag_cell">
+        <a href="ideamag_article.php" class="mag_cell">
           <div class="txt_container">
             <h3 class="title">Art</h3>
             <p class="description">Le mouvement futuriste et le webdesign</p>
             <ul class="date"><li>23 </li><li> 08 </li><li> 17 </li></ul>
+             <div class="buble_container buble_trio_container">
+                 <img src="img/buble_blue.svg" alt="" class="buble_blue">
+                 <img src="img/buble_yellow.svg" alt="" class="buble_yellow">
+                 <img src="img/buble_pink.svg" alt="" class="buble_pink">
+             </div>
           </div>
           <div class="img_container">
-            <img src="img/tmp/ope6.jpg" alt="">
+            <img src="img/tmp/mag2.jpg" alt="">
           </div>
         </a>
 
       </section>
 
-
     </section>
-
 
   </main>
 
