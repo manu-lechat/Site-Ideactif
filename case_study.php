@@ -8,13 +8,14 @@ document.querySelector("#menu_desktop .a2").classList.add('active');
 <main class="page_case_study layout_FullWidth">
 
 
+
   <section class="layout_intro layout_container">
-    <span class="separator"></span>
-    <h1 class="title">Case Study - Esprit musique</h1>
-    <div class="img_container"> <img src="img/tmp/visuel_casestudy.png" alt=""></div>
-  </section>
-
-
+  		<span class="separator"></span>
+  		<h1 class="">Barilla</h1>
+      	<div class="img_container">
+      				<img src="http://www.ideactest.com/wp-content/uploads/2018/02/Casa-barilla-Ideactif-bandeau-photo_theme-1.jpg" alt="">
+  	    	</div>
+  	</section>
 
   <section class="layout_container">
 

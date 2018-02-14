@@ -42,6 +42,14 @@
 
     <!-- homepage topscreen -->
     <section id="homeStart" class="layout_container_100vh_100vw homeStart">
+
+      <div class="zone_cookies">
+        <p class="txt">Nous utilisons des cookies.</p>
+        <a href="#" class="txt cookies_infos">En savoir plus</a>
+        <a href="#" class="cookies_ok">J’accepte</a>
+      </div>
+
+
       <div class="zone_logo">
         <div class="buble_container buble_trio_logo">
             <img src="img/buble_blue.svg" alt="" class="buble_blue">
@@ -93,6 +101,7 @@
     </header>
 
     <!-- intro -->
+
     <section class="layout_intro layout_container appear_on_scroll" id="homePage_intro">
       <div class="zone_logo">
         <div class="buble_container buble_trio_logo">
@@ -103,9 +112,9 @@
         <img src="img/home_topscreen_logo.svg" alt="" class="logo">
       </div>
       <div class="zone_txt">
-        <h2 class="title">Nous générons des émotions</h2>
-        <p class="center"> Les sollicitations perpétuelles, immédiates et distantes des médias traditionnels manquent d’impact. Il faut échanger avec son public. Il est temps pour les marques et leurs publics de : se rencontrer, dialoguer, vivre, partager.</p>
-        <a href="vision.php" class="bt_rounded bt_yellow_white">Voir plus</a>
+        <h1>Nous générons des émotions</h1>
+        <p>Les sollicitations perpétuelles, immédiates et distantes des médias traditionnels manquent d’impact. Il faut échanger avec son public.</p>
+        <p><a class="bt_rounded bt_yellow_white" href="http://www.ideactest.com/notre-vision/">Voir plus</a></p>
       </div>
       <div class="bg_topscreen">
         <img src="img/bg_home_topscreen.svg" alt="" class="">
@@ -121,20 +130,19 @@
     </section>
 
     <!-- story -->
-    <section class="layout_container zone_story appear_on_scroll">
-      <div class="img_container">
-        <img src="img/tmp/story.jpg" alt="">
-      </div>
-      <div class="zone_color">
-        <h2 class="title">Tour de France Cycliste : Arnaud Peyroles <br>d’Ideactif</h2>
-        <h3 class="subtitle">23 janvier 2017</h3>
-        <span class="separator"></span>
-        <p>
-          Depuis 2001, l’agence Idéactif est indissociable du Tour de France Cycliste dont elle conseille plusieurs marques partenaires. Son P.-D.G, Arnaud Peyroles, revient sur cette longue collaboration avec le 3e événem…
-        </p>
-        <a href="" class="bt_rounded bt_blue_white">Lire plus</a>
-      </div>
-    </section>
+    <section class="layout_container zone_story appear_on_scroll appear">
+    			<div class="img_container">
+    			<img src="http://www.ideactest.com/wp-content/themes/idactif/img/tmp/story.jpg" alt="">
+    		</div>
+    		<div class="zone_color">
+    			<h2 class="title">Hello world!</h2>
+          <h3 class="subtitle">23 janvier 2017</h3>
+    			<span class="separator"></span>
+    			<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+          <a href="" class="bt_rounded bt_blue_white">Lire plus</a>
+    		</div>
+    	</section>
+
 
     <!-- newsletter -->
     <section class="layout_container zone_newsletter appear_on_scroll">
