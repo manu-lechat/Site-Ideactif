@@ -207,29 +207,6 @@ function init_page_vision(){
 
   config_UiSlider();
 
-  /* init story timeline slider */
-  var swiper_timeline = new Swiper('#swiper_timeline', {
-      slidesPerView: 'auto',
-      grabcursor:true,
-      centeredSlides:true,
-      preventClicks:true,
-      spaceBetween: 800,
-      effect:'coverflow',
-      coverflowEffect: {
-        rotate: 0,
-        slideShadows: false,
-      },
-      speed:1000
-    });
-  swiper_timeline.slideTo(8);
-  swiper_timeline.on('slideChange', function () {
-    var slider = document.getElementById('slider');
-    var sliderRangeTo = swiper_timeline.activeIndex + 1992;
-    console.log(sliderRangeTo);
-    slider.noUiSlider.set(sliderRangeTo);
-  });
-
-
 
   /* init team sliders */
   setTimeout(function(){
@@ -301,14 +278,18 @@ function init_page_ideamag(){
 
 
 function init_nous_rejoindre(){
+  //close the select
+  function close_select() {
+    document.querySelector("#selectZone").classList.remove('open');
+    var mySwiper = document.querySelector('.page_nous_rejoindre #selectZone .swiper-container').swiper
+    mySwiper.destroy();
+  }
 
-  // show select menu
+  //show select menu
   document.querySelector('#open_selectZone').addEventListener('click', function(event) {
-    if( document.querySelector("#selectZone").classList.contains('open')){
-      document.querySelector("#selectZone").classList.remove('open');
-      var mySwiper = document.querySelector('.page_nous_rejoindre #selectZone .swiper-container').swiper
-      mySwiper.destroy();
-    }else{
+    if ( document.querySelector("#selectZone").classList.contains('open')) {
+      close_select();
+    } else {
       document.querySelector("#selectZone").classList.add('open');
       setTimeout(function(){
         var swiper = new Swiper('.page_nous_rejoindre #selectZone .swiper-container', {
@@ -326,22 +307,51 @@ function init_nous_rejoindre(){
     event.preventDefault();
   });
 
-  // affichage de la zone annonce
-  var bt_showAnnone = document.querySelectorAll(".show_annonce");
-  for( i=0; i < bt_showAnnone.length; i++ ) {
-    bt_showAnnone[i].addEventListener('click', function(event) {
-        // affichage de la zone annonce
+  //affichage de la zone annonce
+  var job_links = document.querySelectorAll(".show_annonce");
+
+  //click listener 
+  job_links.forEach(function(job_link) {
+    
+    job_link.addEventListener('click', function(event) {
+      event.preventDefault();
+      //close the select
+      close_select();
+
+      //get link
+      var link = job_link.href;
+
+      //ajax request to get the job
+      $.get(link, function(data) {
+
+        var html_content = $(data);
+
+        var job_content = $(html_content[79]).children();
+
+        $("#zone_annonce").html(job_content);
+        
+        //close the select
         document.querySelector("#zone_annonce").classList.add('open');
-        // scrool à l'annonce
-        var scrollTo = Math.round(document.querySelector(".layout_container_100vh").clientHeight - document.querySelector(".header_container").scrollHeight);
-        document.body.scrollTop = scrollTo;
-        document.documentElement.scrollTop = scrollTo;
-        event.preventDefault();
-    });
-  }
+      })
+
+    })
+  })
 
 
-
+  // for ( i=0; i < bt_showAnnone.length; i++ ) {
+  //   bt_showAnnone[i].addEventListener('click', function(event) {
+  //       //Close the select
+  //       close_select();
+  //       // affichage de la zone annonce
+  //       document.querySelector("#zone_annonce").classList.add('open');
+  //       // scrool à l'annonce
+  //       //var scrollTo = Math.round(document.querySelector(".layout_container_100vh").clientHeight - document.querySelector(".header_container").scrollHeight);
+  //       //document.body.scrollTop = scrollTo;
+  //       //document.documentElement.scrollTop = scrollTo;
+  //       scrollTo("#zone_annonce");
+  //       event.preventDefault();
+  //   });
+  // }
 }
 
 

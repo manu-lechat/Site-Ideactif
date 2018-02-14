@@ -17,11 +17,11 @@ document.querySelector("#menu_desktop .a4").classList.add('active');
                   <div class="swiper-slide">
                     <ul class="listing">
                       <li><a href="#" id="open_selectZone">-- Choisissez --</a> </li>
-                      <li><a href="#" class="show_annonce">  Chef de projet</a> </li>
-                      <li><a href="#" class="show_annonce">Responsable Marketing</a> </li>
-                      <li><a href="#" class="show_annonce">  Lead Developer</a> </li>
-                      <li><a href="#" class="show_annonce">  Business Owner</a> </li>
-                      <li><a href="#" class="show_annonce">  Community Manager</a> </li>
+                      <li><a href="http://localhost/~benoit/idactif/nous-rejoindre/fiche1/" class="show_annonce">  Chef de projet</a> </li>
+                      <li><a href="http://localhost/~benoit/idactif/nous-rejoindre/fiche-2/" class="show_annonce">Responsable Marketing</a> </li>
+                      <li><a href="http://localhost/~benoit/idactif/nous-rejoindre/fiche-2/" class="show_annonce">  Lead Developer</a> </li>
+                      <li><a href="http://localhost/~benoit/idactif/nous-rejoindre/fiche-2/" class="show_annonce">  Business Owner</a> </li>
+                      <li><a href="http://localhost/~benoit/idactif/nous-rejoindre/fiche-2/" class="show_annonce">  Community Manager</a> </li>
                     </ul>
                   </div>
               </div>
