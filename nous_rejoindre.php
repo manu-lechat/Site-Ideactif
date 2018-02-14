@@ -16,13 +16,12 @@ document.querySelector("#menu_desktop .a4").classList.add('active');
               <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <ul class="listing">
-                      <li><a href="#" id="open_selectZone">-- Choisissez --</a> </li>
-                      <li><a href="#" class="show_annonce">  Chef de projet</a> </li>
-                      <li><a href="#" class="show_annonce">Responsable Marketing</a> </li>
-                      <li><a href="#" class="show_annonce">  Lead Developer</a> </li>
-                      <li><a href="#" class="show_annonce">  Business Owner</a> </li>
-                      <li><a href="#" class="show_annonce">  Community Manager</a> </li>
-                    </ul>
+      								<li><a href="#" id="open_selectZone">-- Choisissez --</a> </li>
+											<li><a href="#108" class="show_annonce">Stage assistant(e) chef de projet Société – Lifestyle</a> </li>
+											<li><a href="#99" class="show_annonce">STAGIAIRE ASSISTANT(E) DE COMMUNICATION / COMMUNITY MANAGER</a> </li>
+											<li><a href="#103" class="show_annonce">DIRECTEUR/DIRECTRICE DE CLIENTÈLE</a> </li>
+											<li><a href="#77" class="show_annonce">Recrutement Tour de France 2018</a> </li>
+										</ul>
                   </div>
               </div>
               <div class="swiper-scrollbar" id="nousRejoindreScrollbar"></div>
