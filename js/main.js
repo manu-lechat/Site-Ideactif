@@ -315,8 +315,6 @@ function init_nous_rejoindre(){
     
     job_link.addEventListener('click', function(event) {
       event.preventDefault();
-      //close the select
-      close_select();
 
       //get link
       var link = job_link.href;
@@ -324,14 +322,19 @@ function init_nous_rejoindre(){
       //ajax request to get the job
       $.get(link, function(data) {
 
+        //close the select
+        close_select();
+
         var html_content = $(data);
 
         var job_content = $(html_content[79]).children();
 
         $("#zone_annonce").html(job_content);
         
-        //close the select
         document.querySelector("#zone_annonce").classList.add('open');
+
+        $('html, body').animate( { scrollTop: $("#zone_annonce").offset().top }, 500 );
+
       })
 
     })
