@@ -118,6 +118,13 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 
 /* homePage */
 .homeStart { position: fixed; z-index: 1; transition: opacity 1s .5s ease-out }
+
+.homeStart .zone_cookies { z-index: 11; position: absolute; bottom: 30px; left: 30px; max-width: 80%; padding: 15px; 	height: 64px;	width: 354px;	border-radius: 5px;	background-color: #FFFFFF;	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.15);}
+
+.homeStart .zone_cookies .txt{ 	color: #0A0A0A;		font-size: 16px;		line-height: 19px;  }
+.homeStart .zone_cookies .cookies_infos{ 	color: #21A2EA;  }
+.homeStart .zone_cookies .cookies_ok{ position: absolute; font-size: 16px; color: white; padding: 8px 15px; text-align: center; right: 15px; top: 50%;	 transform: translate3d(0,  -50%, 0);	border-radius: 4px;	background-color: #FFC258; }
+
 .homeStart.hidden { position: fixed; z-index: 1; opacity: 0; }
 .homeStart .buble_trio_bg{ top: 100vh; width:80vh; height:80vh; max-width: 80em; max-height: 80em;  left:0; transform: translate3d(-50%, -50%, 0);}
 .homeStart .buble_trio_hd{ top: 10vw; width: 60vh; height:60vh;  max-width: 80em; max-height: 80em; left: 100vw; transform: translate3d(-50%, -50%, 0);}

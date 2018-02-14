@@ -42,6 +42,14 @@
 
     <!-- homepage topscreen -->
     <section id="homeStart" class="layout_container_100vh_100vw homeStart">
+
+      <div class="zone_cookies">
+        <p class="txt">Nous utilisons des cookies.</p>
+        <a href="#" class="txt cookies_infos">En savoir plus</a>
+        <a href="#" class="cookies_ok">J’accepte</a>
+      </div>
+
+
       <div class="zone_logo">
         <div class="buble_container buble_trio_logo">
             <img src="img/buble_blue.svg" alt="" class="buble_blue">
@@ -134,7 +142,7 @@
           <a href="" class="bt_rounded bt_blue_white">Lire plus</a>
     		</div>
     	</section>
-    
+
 
     <!-- newsletter -->
     <section class="layout_container zone_newsletter appear_on_scroll">
