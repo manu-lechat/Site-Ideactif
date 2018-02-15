@@ -155,11 +155,11 @@ function config_UiSlider(){
       },
       speed:1000
     });
-  
+
 
   /* init range cursor slider by noUiSlider.js */
   var slider = document.getElementById('slider');
-  
+
   /* get slide list */
   var slides = $('#swiper_timeline .story_item');
 
@@ -179,7 +179,7 @@ function config_UiSlider(){
     } else {
       acc[`${index/(length - 1)*100}%`] = date
     }
-    
+
     return acc
   }, {});
 
@@ -236,12 +236,19 @@ function init_page_vision(){
   var team_leader_swiper = new Swiper('#team_leader_swiper', {
       slidesPerView: 'auto',
       spaceBetween: 100,
+      autoplay: {
+        delay: 5000,
+      },
       speed:400,
       centeredSlides:true,
       grabcursor:true,
-      loop:true
+      loop:true,
+      navigation: {
+        nextEl: '#team_leader_swiper_next',
+        prevEl: '#team_leader_swiper_prev',
+      }
     });
-  var team_swiper = new Swiper('#team_swiper', {
+  /*var team_swiper = new Swiper('#team_swiper', {
       slidesPerView: 'auto',
       spaceBetween: 600,
       centeredSlides:true,
@@ -255,7 +262,7 @@ function init_page_vision(){
       },
     });
     team_swiper.controller.control = team_leader_swiper;
-    team_leader_swiper.controller.control = team_swiper;
+    team_leader_swiper.controller.control = team_swiper;*/
 
   }, 500);
 
