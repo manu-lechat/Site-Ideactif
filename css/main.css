@@ -6,8 +6,8 @@
 @font-face {  font-family: SofiaProUltraLight; src: url("../fonts/SofiaProUltraLight.otf"); }
 @font-face {  font-family: SofiaProLight_Italic; src: url("../fonts/SofiaProLight_Italic.otf"); }
 @font-face {  font-family: SofiaProRegularItalic; src: url("../fonts/SofiaProRegularItalic.otf"); }
-body, html {  box-sizing: border-box; font-family: SofiaProRegular; overflow-x:hidden;   color: #0A0A0A; background: #fff; text-rendering: optimizeLegibility; margin:0; padding:0; }
-/* scroll-behavior: smooth;;  */
+body, html {  box-sizing: border-box; font-family: SofiaProRegular; overflow-x:hidden; scroll-behavior: smooth;    color: #0A0A0A; background: #fff; text-rendering: optimizeLegibility; margin:0; padding:0; }
+
 body.modalOpen { overflow: hidden; display: inline-block;  height: 99vh; }
 
 * {  margin:0;  padding:0;  box-sizing: border-box;  }
@@ -284,7 +284,7 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .page_vision .zone_time_story .img_container{ position: absolute; padding: 0;  z-index: 2; right: 37em; top: 8em;  height: auto; width: 0%;  overflow: hidden; }
 .page_vision .zone_time_story .img_container img{ width: 40em; height: auto; max-width: none;}
 .page_vision .zone_time_story .bt_rounded{ margin: 1em 0; opacity: 0 }
-.page_vision .zone_time_story #swiper_timeline{ width: 100%; font-size: 10px; min-height: 100em; }
+.page_vision .zone_time_story #swiper_timeline{ width: 100%; font-size: 10px; min-height: 10em; padding-bottom: 6em;}
 .page_vision .zone_time_story #swiper_timeline .swiper-wrapper{  width: auto;;  }
 .page_vision .zone_time_story #swiper_timeline .swiper-slide{  width: 100%; max-width: 1440px }
 .page_vision .zone_time_story #swiper_timeline .swiper-slide-active .zone_color{ transform: translateZ(0px) rotateX(0deg);  top: 0; opacity: 1; background: #FF384C; transition: all .2s ease-out 0.35s ; padding: 11em 30% 5em 5em;    }
@@ -306,9 +306,10 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .page_vision .teams_leader_swiper .quote_out{ width: 6.5em; position: absolute; bottom: 0; right: -5em }
 .page_vision .teams_leader_swiper { width: 130em; min-height: 60em }
 .page_vision .teams_leader_swiper  .swiper-slide{  width: 130em; min-height: 60em }
-.page_vision .teams_leader_swiper  .swiper-slide .zone_temoignage_man{  transition:all .3s .3s;  opacity:0; width: 26%; left: 4em;  position: absolute; top: 17em;  }
-.page_vision .teams_leader_swiper #team_swiper_prev{ top: 10%;}
+.page_vision .teams_leader_swiper  .swiper-slide .zone_temoignage_man{  transition:all .3s .3s;  opacity:0; width: 26%; left: 8em;  position: absolute; top: 17em;  }
+.page_vision .teams_leader_swiper #team_swiper_prev{ top: 10%; }
 .page_vision .teams_leader_swiper #team_swiper_next{ top: 10%;}
+
 .page_vision #team_leader_swiper .swiper-slide-active .zone_temoignage_man{ opacity: 1;  }
 .page_vision #team_leader_swiper .swiper-slide-active  .zone_temoignage_txt{  opacity: 1;  }
 /* zone blue */
@@ -620,7 +621,7 @@ responsive iPad
   /* boutons */
   .bt_rounded{ font-size: 20px }
   /* layout */
-  .layout_container{ padding:0 6em }
+  .layout_container{ padding:0 6em;  max-width: 100%; display: inline-block; }
   main{ margin: 8em 0 0em 0 }
 
   /* header */
@@ -816,7 +817,7 @@ responsive iPhone
 @media (max-width: 500px) {
 
   /* layout */
-  .layout_container { padding: 0px; }
+  .layout_container { padding: 0px; width: 100%; max-width: 100%; display: inline-block; }
   main{ margin-bottom: 0!important;  }
 
    /* fonts */
@@ -878,16 +879,24 @@ responsive iPhone
 
   /* page vision */
   .page_vision .swiper-container{  width: 100vw; height: auto; }
+
+
   .page_vision .teams_leader_swiper .swiper-slide{ width: 100%; }
-  .page_vision #team_leader_swiper .swiper-slide .zone_temoignage_man{ position: relative; width: 50%; margin: 30px auto; left: auto; left: 50%; transform: translateX(-50%);}
+  .page_vision #team_leader_swiper .swiper-slide .zone_temoignage_man{ position: relative; width: 50%; margin: 30px auto; left: auto; top: 0; left: 50%; transform: translateX(-50%);}
   .page_vision .teams_leader_swiper .zone_temoignage_txt{ width: 100%; position: relative; width: 100%; left: 0; padding: 30px 25px; top: 0; margin-bottom: 25px; }
   .page_vision .teams_leader_swiper .quote_in{ width: 25px; top: -00px;  left: 15px; }
   .page_vision .teams_leader_swiper .quote_out{ width: 25px; bottom: -00px;  right: 15px; }
   .page_vision .teams_leader_swiper .subtitle{ line-height: 1.6em; }
   .page_vision .teams_leader_swiper .title{ font-size: 22px; line-height: 1.36em;  }
   .page_vision .teams_leader_swiper p{ font-size: 18px; }
+
+  .page_vision .teams_leader_swiper .swiper-button-next{ top: 10em; display: none }
+  .page_vision .teams_leader_swiper .swiper-button-prev{ top: 10em; display: none  }
+
   .vision_zone_blue{ padding: 0; }
   .page_vision .article_icone{ padding: 25px }
+  .page_vision .zone_time_story  .swiper-wrapper{  }
+  .page_vision .zone_time_story  .story_item{   min-height: 0}
   .page_vision .zone_time_story #swiper_timeline .swiper-slide .title{ font-size: 18px; }
   .page_vision .zone_time_story #swiper_timeline .swiper-slide p { font-size: 16px }
   .page_vision .zone_time_story #swiper_timeline .swiper-slide .zone_color{ padding: 100px 30px 30px 30px }
@@ -898,8 +907,10 @@ responsive iPhone
   .page_vision .team_swiper{ min-height: 100px;}
   .page_vision .team_swiper .swiper-slide{ height: 100px;}
   .page_vision .team_swiper .equipe_container{ width: 100vw }
-  .page_vision .team_swiper .swiper-button-next{ top: 10em }
-  .page_vision .team_swiper .swiper-button-prev{ top: 10em }
+  .page_vision .team_swiper .swiper-button-next{ top: 10em; display: none }
+  .page_vision .team_swiper .swiper-button-prev{ top: 10em; display: none  }
+  .page_vision .vision_zone_blue .equipe_container { width: 100%; padding: 0 5%; }
+  .page_vision .team_item { margin: 2em 4em; }
 
   /* ideamag */
   .page_ideamag { margin-bottom: 5em!important; }
