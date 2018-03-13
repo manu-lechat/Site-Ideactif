@@ -168,6 +168,32 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .homePage .zone_newsletter input{ font-size: 1.5em;  min-width: 30em; padding: 0.5em; opacity: 0.5}
 .homePage .zone_newsletter .send{ width: 6em; border-radius: 5em; border-top-left-radius: 0; border-bottom-left-radius: 0;background-repeat: no-repeat; position: absolute; right: 0; top:0; height: 100%; background-color: #000; background-image: url('../img/icon_send.png'); background-size: auto 50%; background-position: center;}
 .homePage .zone_newsletter .input_border:hover .send{ background-color: #FF384C; }
+
+
+
+/* containers */
+
+.homePage .zone_newsletter .input_border{ min-width: 50em; }
+.homePage .zone_newsletter form { padding: 0!important;  }
+.homePage .zone_newsletter form div{ padding: 0!important; }
+.homePage .zone_newsletter .sendgrid_mc_fields{ padding: 0!important;  width: 80%: }
+.homePage .zone_newsletter .sendgrid_mc_label_div{ width: auto; position: relative;  float: left; height: 3.5em; margin-left: 1em; padding: 0!important;  opacity: 0.5;}
+.homePage .zone_newsletter .sendgrid_mc_input_div{ width: 80%; left: 15%; position: absolute ; }
+.homePage .zone_newsletter .sendgrid_mc_button_div{  width: 6em;  padding: 0; border-radius: 5em; border-top-left-radius: 0; border-bottom-left-radius: 0;background-repeat: no-repeat; position: absolute; right: 0; top:0; height: 100%; background-color: #000; background-image: url('../img/icon_send.png'); background-size: auto 50%; background-position: center;}
+
+/* champs */
+
+.homePage .zone_newsletter .sendgrid_mc_input_div input{ display: inline-block; font-size: 13px; line-height: 1.8em; padding: 0.3em .5em!important; }
+
+/* label */
+.homePage .zone_newsletter .sendgrid_mc_label_div form label { display: inline-block; font-size: 13px; line-height: 1.8em; padding: 0 2em !important; }
+
+/* boutton */
+.homePage .zone_newsletter .sendgrid_mc_button_div input{  display: block; width: 100%; height: 100%; margin: 0!important;  font-size: 0; opacity: 0; padding: 0;}
+
+
+
+
 .homePage .zone_story { min-height: 70em;}
 .homePage .zone_story .zone_color{ z-index: 1; position: relative; min-height: 80em;  width: 72%; background: #FF384C; padding: 11em 26% 11em 5em; color: #fff }
 .homePage .zone_story .zone_color .title{ font-size: 4.5em }
