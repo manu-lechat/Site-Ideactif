@@ -95,7 +95,25 @@ function init_ContentScrollFx() {
 function init_homePage(){
 
 
+    // bt_gotop : scroll to top
+    var fleche_container = document.querySelector('.fleche_container');
+    fleche_container.addEventListener('click', function(event) {
+        scrollToMenu();
+        event.preventDefault();
+    });
+
+
+    function scrollToMenu(){
+      console.log('scrollToMenu()');
+      var body = document.body; // Safari
+      var html = document.documentElement; // Chrome, Firefox, IE and Opera
+      body.scrollTop = window.innerHeight;
+      html.scrollTop = window.innerHeight;
+    }
+
+
     // scroll story
+    var firstScroll = false;
     var xScrollPosition;
     var yScrollPosition;
     var isScrolling = false;
@@ -110,6 +128,7 @@ function init_homePage(){
             window.requestAnimationFrame(function() {
                 dealWithScrolling(e);
                 isScrolling = false;
+
             });
         }
         isScrolling = true;
@@ -121,6 +140,8 @@ function init_homePage(){
         yScrollPosition = window.scrollY;
 
         if(document.getElementById('homePage_header')){
+
+
 
           /* menu fx */
           if (yScrollPosition >= menuPosition) {
@@ -414,20 +435,17 @@ function init_ui() {
     // bt_close_modale
     var bt_close_modale = document.querySelector('#bt_close_modale');
     bt_close_modale.addEventListener('click', function(event) {
-      document.querySelector("#modale_container").classList.remove('active');
-      document.querySelector("#modale_bg").classList.remove('active');
-      document.querySelector("#modale_bg").classList.remove('white');
-      var active = document.querySelectorAll('.modale_active');
-      for( i=0; i < active.length; i++ ) {
-        active[i].classList.remove('modale_active');
-      }
-      document.body.classList.remove('modalOpen');
+      close_modale();
       event.preventDefault();
     });
 
-    // bt_close_modale
-    var modale_bg = document.querySelector('#modale_bg');
-    modale_bg.addEventListener('click', function(event) {
+    // modale_bg
+    document.getElementById("modale_bg").addEventListener('click', function(event) {
+      close_modale();
+      event.preventDefault();
+    });
+
+    function close_modale(){
       document.querySelector("#modale_container").classList.remove('active');
       document.querySelector("#modale_bg").classList.remove('active');
       var active = document.querySelectorAll('.modale_active');
@@ -435,10 +453,8 @@ function init_ui() {
         active[i].classList.remove('modale_active');
       }
       document.body.classList.remove('modalOpen');
-      event.preventDefault();
-    });
 
-
+    }
 
     function scollToFooter(){
       var body = document.body; // Safari

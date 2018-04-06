@@ -28,24 +28,35 @@ document.querySelector("#menu_desktop .a1").classList.add('active');
       </article>
     </section>
 
+
     <section class="layout_container layout_condensed">
       <article class="article_icone appear_on_scroll">
-        <img src="img/vision_icon2.png" alt="" class="">
+        <img src="img/vision_icon_social.png" alt="" class="">
         <h2 class='title'>LOREP IPSUM</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum facilisis nibh ut facilisis. Maecenas odio elit, posuere rutrum mauris nec, iaculis eleifend lectus.</p>
       </article>
       <article class="article_icone appear_on_scroll">
-        <img src="img/picto_confiance.png" alt="" class="">
+        <img src="img/vision_icon_accompagnment.png" alt="" class="">
         <h2 class='title'>LOREP IPSUM</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum facilisis nibh ut facilisis. Maecenas odio elit, posuere rutrum mauris nec, iaculis eleifend lectus.</p>
       </article>
       <article class="article_icone appear_on_scroll">
-        <img src="img/picto_feu.png" alt="" class="">
+        <img src="img/vision_icon_digital.png" alt="" class="">
         <h2 class='title'>LOREP IPSUM</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum facilisis nibh ut facilisis. Maecenas odio elit, posuere rutrum mauris nec, iaculis eleifend lectus.</p>
       </article>
       <article class="article_icone appear_on_scroll">
-        <img src="img/picto_pipe.png" alt="" class="">
+        <img src="img/vision_icon_echange.png" alt="" class="">
+        <h2 class='title'>LOREP IPSUM</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum facilisis nibh ut facilisis. Maecenas odio elit, posuere rutrum mauris nec, iaculis eleifend lectus.</p>
+      </article>
+      <article class="article_icone appear_on_scroll">
+        <img src="img/vision_icon_mediatisation.png" alt="" class="">
+        <h2 class='title'>LOREP IPSUM</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum faci clisis nibh ut facilisis. Maecenas odio elit, posuere rutrum mauris nec, iaculis eleifend lectus.</p>
+      </article>
+      <article class="article_icone appear_on_scroll">
+        <img src="img/vision_icon_partage.png" alt="" class="">
         <h2 class='title'>LOREP IPSUM</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum faci clisis nibh ut facilisis. Maecenas odio elit, posuere rutrum mauris nec, iaculis eleifend lectus.</p>
       </article>

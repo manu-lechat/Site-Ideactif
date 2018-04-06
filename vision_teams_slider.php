@@ -6,6 +6,7 @@
             <div class="team_item">
               <div class="portrait">
                   <img src="img/tmp/mag1.jpg" alt="">
+                  <img src="img/tmp/mag2.jpg" alt="" class="hover">
               </div>
               <div class="info">
                 <h3 class='title'>titre</h3>
@@ -16,6 +17,7 @@
             <div class="team_item">
               <div class="portrait">
                   <img src="img/tmp/mag2.jpg" alt="">
+                  <img src="img/tmp/mag3.jpg" alt="" class="hover">
               </div>
               <div class="info">
                 <h3 class='title'>titre</h3>
@@ -26,6 +28,7 @@
             <div class="team_item">
               <div class="portrait">
                   <img src="img/tmp/mag3.jpg" alt="">
+                  <img src="img/tmp/mag2.jpg" alt="" class="hover">
               </div>
               <div class="info">
                 <h3 class='title'>titre</h3>
@@ -36,6 +39,7 @@
             <div class="team_item">
               <div class="portrait">
                   <img src="img/tmp/mag4.jpg" alt="">
+                  <img src="img/tmp/mag3.jpg" alt="" class="hover">
               </div>
               <div class="info">
                 <h3 class='title'>titre</h3>
@@ -46,6 +50,7 @@
             <div class="team_item">
               <div class="portrait">
                   <img src="img/tmp/mag5.jpg" alt="">
+                  <img src="img/tmp/mag2.jpg" alt="" class="hover">
               </div>
               <div class="info">
                 <h3 class='title'>titre</h3>
@@ -55,6 +60,7 @@
             <div class="team_item">
               <div class="portrait">
                   <img src="img/tmp/mag5.jpg" alt="">
+                  <img src="img/tmp/mag2.jpg" alt="" class="hover">
               </div>
               <div class="info">
                 <h3 class='title'>titre</h3>
@@ -64,6 +70,7 @@
             <div class="team_item">
               <div class="portrait">
                   <img src="img/tmp/mag5.jpg" alt="">
+                  <img src="img/tmp/mag2.jpg" alt="" class="hover">
               </div>
               <div class="info">
                 <h3 class='title'>titre</h3>
@@ -73,6 +80,7 @@
             <div class="team_item">
               <div class="portrait">
                   <img src="img/tmp/mag5.jpg" alt="">
+                  <img src="img/tmp/mag2.jpg" alt="" class="hover">
               </div>
               <div class="info">
                 <h3 class='title'>titre</h3>
@@ -82,6 +90,7 @@
             <div class="team_item">
               <div class="portrait">
                   <img src="img/tmp/mag3.jpg" alt="">
+                  <img src="img/tmp/mag5.jpg" alt="" class="hover">
               </div>
               <div class="info">
                 <h3 class='title'>titre</h3>
@@ -90,5 +99,3 @@
             </div>
 
           </div>
-
-          

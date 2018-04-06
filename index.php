@@ -71,13 +71,13 @@
       <div class="bg_topscreen">
         <img src="img/bg_home_topscreen.svg" alt="" class="">
       </div>
-      <div class="fleche_container">
+      <a class="fleche_container">
       <img src="img/home_topscreen_fleche.svg" alt="" class="home_topscreen_fleche">
-      </div>
+      </a>
     </section>
 
 
-  <main class="homePage">
+  <main class="homePage" id="homePage">
 
 
     <!-- header -->
@@ -102,7 +102,7 @@
 
     <!-- intro -->
 
-    <section class="layout_intro layout_container appear_on_scroll" id="homePage_intro">
+    <section class="layout_intro layout_container" id="homePage_intro">
       <div class="zone_logo">
         <div class="buble_container buble_trio_logo">
             <img src="img/buble_blue.svg" alt="" class="buble_blue">
@@ -145,6 +145,29 @@
 
 
     <!-- newsletter -->
+
+    <section class="layout_container zone_newsletter appear_on_scroll appear">
+          <div class="zone_txt">
+            <h3 class="fs_36 bold">NEWSLETTER</h3>
+            <p class="fs_36">8000 abonnés et vous ?</p>
+          </div>
+          <div class="input_border"><h2 class="widget-title"> </h2>
+          <form id="sib_signup_form_1" method="post" class="sib_signup_form">
+    				<div class="sib_loader" style="display:none;"><img src="http://localhost/~benoit/idactif/wp-includes//images/spinner.gif" alt="loader"></div>
+    				<input type="hidden" name="sib_form_action" value="subscribe_form_submit">
+    				<input type="hidden" name="sib_form_id" value="1">
+    				<div class="sib_signup_box_inside_1">
+    					<div style="/*display:none*/" class="sib_msg_disp">
+    					</div>
+    					<input type="email" name="email" required="required" placeholder="Inscrivez vous à la newsletter">
+              <input type="submit" class="send" value="">
+            </div>
+    			</form>
+    			</div>
+        </section>
+
+
+<!--
     <section class="layout_container zone_newsletter appear_on_scroll">
       <div class="zone_txt">
         <h3 class="fs_36 bold">NEWSLETTER</h3>
@@ -155,6 +178,24 @@
         <a href="" class="send"></a>
       </div>
     </section>
+
+    <section class="layout_container zone_newsletter appear_on_scroll appear">
+      <div class="zone_txt">
+        <h3 class="fs_36 bold">NEWSLETTER</h3>
+        <p class="fs_36">8000 abonnés et vous ?</p>
+      </div>
+      <div class="input_border">
+        <form method="post" id="sendgrid_mc_email_form" class="mc_email_form" action="#sendgrid_mc_email_subscribe" style="padding-top: 10px;">
+          <div class="sendgrid_mc_fields" style="padding: 10px 0px 0px 0px;">
+            <div class="sendgrid_mc_label_div"> <label for="sendgrid_mc_email" class="sendgrid_mc_label sendgrid_mc_label_email">Email<sup>*</sup> :</label> </div>
+            <div class="sendgrid_mc_input_div">
+              <input class="sendgrid_mc_input sendgrid_mc_input_email" id="sendgrid_mc_email" name="sendgrid_mc_email" type="text" value="" required=""> </div>
+          </div>
+          <div class="sendgrid_mc_button_div"> <input style="margin: 10px 0px 0px 0px;" class="sendgrid_mc_button" type="submit" id="sendgrid_mc_email_submit" value="SUBSCRIBE"></div>
+        </form>
+      </div>
+
+    </section> -->
 
     <!-- social huge -->
     <section class="layout_container zone_social_huge appear_on_scroll">

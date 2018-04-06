@@ -40,7 +40,6 @@
       <div>
         <label for="Objet">Objet</label>
         <select name="Objet" id="Objet">
-         <option value="1">Demande de devis</option>
          <option value="2">Premier contact</option>
          <option value="3">Offre d'emploi</option>
         </select>
@@ -59,6 +58,8 @@
 
 
 
+  <!-- modale bg -->
+  <section class="modale_bg" id="modale_bg"></section>
 
   <!-- bouton close modale  -->
   <a href="" class="bt_close" id="bt_close_modale">
@@ -67,5 +68,3 @@
   </a>
 
 </section>
-<!-- modale bg -->
-<section class="modale_bg" id="modale_bg"></section>
