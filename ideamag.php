@@ -4,6 +4,8 @@
     <!-- content -->
     <main class="page_ideamag">
 
+      <a href="index.php" class="bt_rounded bt_retour_site">Retour au site</a>
+
       <!-- cellules en 2 colonnes -->
       <section class="layout_container zone_magazine_2cols masonry">
 

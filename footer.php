@@ -64,6 +64,8 @@
       </footer>
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      	<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+      <script src="js/jquery.fullpage.min.js"></script>
       <script src="js/swiper.min.js"></script>
       <script src="js/nouislider.min.js"></script>
       <script src="js/prefixfree.min.js"></script>

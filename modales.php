@@ -63,8 +63,9 @@
 
   <!-- bouton close modale  -->
   <a href="" class="bt_close" id="bt_close_modale">
-    <div class='line1'></div>
-    <div class='line2'></div>
+    <div class="bg"></div>
+    <div class='line1 line'></div>
+    <div class='line2 line'></div>
   </a>
 
 </section>

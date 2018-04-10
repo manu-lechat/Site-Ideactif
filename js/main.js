@@ -94,6 +94,26 @@ function init_ContentScrollFx() {
 
 function init_homePage(){
 
+    // init fullpage
+    // $('#fullpage').fullpage({
+    //   sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+    // });
+
+    $('#fullpage').fullpage({
+      scrollOverflow: true,
+      afterLoad: function(anchorLink, index){
+    	      		//using index
+      		if(index == 2){
+             document.getElementById('homePage_header').classList.add('sticky');
+             document.querySelector('.header').classList.add('condensed');
+      		}else{
+             document.getElementById('homePage_header').classList.remove('sticky');
+             document.querySelector('.header').classList.remove('condensed');
+          }
+
+    	}
+    });
+
 
     // bt_gotop : scroll to top
     var fleche_container = document.querySelector('.fleche_container');

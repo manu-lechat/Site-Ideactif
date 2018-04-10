@@ -28,7 +28,9 @@ document.querySelector("#menu_desktop .a2").classList.add('active');
       <img src="img/3bullets_loader_blue.svg" class="blue" alt="">
       <img src="img/3bullets_loader_yellow.svg" class="yellow" alt="">
       <img src="img/3bullets_loader_red.svg" class="red" alt="">
-      </div>
+    </div>
+
+    <a href="#" class="bt_up_center bt_gotop"></a>
 
   </section>
 

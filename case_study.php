@@ -10,6 +10,14 @@ document.querySelector("#menu_desktop .a2").classList.add('active');
 
 
   <section class="layout_intro layout_container">
+
+      <!-- bouton close modale  -->
+      <a href="javascript:history.back()" class="bt_close" id="bt_close_modale">
+        <div class="bg"></div>
+        <div class='line1 line'></div>
+        <div class='line2 line'></div>
+      </a>
+
   		<span class="separator"></span>
   		<h1 class="">Barilla</h1>
       	<div class="img_container">

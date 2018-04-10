@@ -60,6 +60,9 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .bt_grey_black:hover{ background: #fff; color: #000 ;  }
 .bt_yellow_white{ background-color: #FFC258;   border: 2px solid #FFC258!important;color: #fff;  }
 .bt_yellow_white:hover{ background: #fff; color: #FFC258 }
+
+.bt_up_center{ width: 60px; height: 60px; background: url('../img/bt_up.png'); background-repeat: no-repeat; background-size: 100% auto; margin: 40px auto}
+.bt_retour_site{ margin: 0 auto 60px auto; font-size: 14px!important; }
 /* layout */
 .layout_FullWidth{ width: 100%; }
 .layout_marginV{ margin-top: 20em; margin-bottom: 10em }
@@ -84,6 +87,18 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .layout_intro h1{ font-size: 5.5em;  text-align: center;  margin: 0 auto; line-height: 1.3em; padding-bottom: 0.4em; }
 .layout_intro p{ font-size: 3.2em; text-align: center; }
 
+
+.layout_intro .bt_close{ z-index: 101; position: relative; margin: 2em auto; font-size: 14px; width: 4em; height: 4em;    }
+.layout_intro .bt_close  .line{ width: 2em; transform-origin: 50% 50%; height:.2em; display: block; position: absolute; left: 0; background:#fff ; border-radius: 4px   }
+.layout_intro .bt_close  .line1{ top: 12px; left: -4px;   transform:rotate(45deg)  }
+.layout_intro .bt_close  .line2{ top: 12px; left: -4px; transform:rotate(-45deg)  }
+.layout_intro .bt_close  .bg{   animation:  anim_buble 35s linear  0s infinite normal forwards; background-color: none; width: 4em; height: 4em; position: absolute; top: -1em; left: -1em; transform: translate3d(-50%, -50%, 0);  background: url('../img/buble_blue.svg'); background-repeat: no-repeat; background-size: 100% 100%; }
+
+
+/* fullpage */
+
+.fullpage_slide{}
+
 /* header */
 .header_container{  width: 100%; position: fixed; z-index: 2; top: 0; background: white; 	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);}
 .header{ padding: 1em 5em;   }
@@ -103,6 +118,10 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .header .icon_burger .line2{ top: 11px; }
 .header .icon_burger .line3{ top: 22px; }
 
+#homePage_header{ display: none; opacity: 0; transform: all .3s }
+#homePage_header.sticky { display: block; opacity: 1; }
+
+
 /* header ideamag */
 .header_mag_container .icon_burger div{ background: white}
 
@@ -118,7 +137,7 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 
 /* homePage */
 
-.homeStart { position: fixed; z-index: 1; transition: opacity 1s .5s ease-out }
+.homeStart {  transition: opacity 1s .5s ease-out }
 .homeStart .zone_cookies { z-index: 11; position: absolute; bottom: 30px; left: 30px; max-width: 80%; padding: 15px; 	height: 64px;	width: 354px;	border-radius: 5px;	background-color: #FFFFFF;	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.15);}
 .homeStart .zone_cookies .txt{ 	color: #0A0A0A;		font-size: 16px;		line-height: 19px;  }
 .homeStart .zone_cookies .cookies_infos{ 	color: #21A2EA;  }
@@ -139,15 +158,19 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .homeStart .buble_trio_logo  .buble_blue {  animation: anim_buble 35s linear 5s infinite normal forwards;  }
 .homeStart .buble_trio_logo .buble_yellow {  animation: anim_bubleBis 32s linear 8s infinite normal forwards; left: -10%;  top: 3%; }
 .homeStart .buble_trio_logo .buble_pink {  animation: anim_buble 30s linear 10s infinite normal forwards; left: -15%;  top: 8%; }
-.homePage{ position: relative; margin-top: 100vh;  z-index: 10; background: white}
+.homePage{ position: relative;  background: white; margin: 0 }
+.fullpage-wrapper .appear_on_scroll{ opacity: 1!important }
+
+#fullpage .footer{ margin-top: 10em; }
+
 
 .homePage.sticky{ margin-top: 0; }
-.homePage .header_container{ position: relative;  }
-.homePage .header_container.sticky{ position: fixed;}
+.homePage .header_container{ opacity: 0; display: none; }
+.homePage .header_container.sticky{ opacity: 1; display: none; position: fixed;}
 .homePage .layout_intro .zone_logo{ display: none; }
 .homePage .layout_intro .logo{ display: none; }
 .homePage .layout_intro .bg_topscreen{ display: none; }
-.homePage #homePage_intro{   padding: 10em;   }
+.homePage #homePage_intro{   padding: 10em; padding-top: 24em;  }
 .homePage .zone_text_pink{ padding-top: 6em; padding-bottom: 6em; text-align: center;}
 .homePage .zone_text_pink p{ font-size: 4.8em; text-align: center; }
 .homePage .zone_social_huge .social_huge{ overflow: hidden; color: white; position: relative;  width: 50%; float: left;  height: 53em; }
@@ -284,7 +307,7 @@ color: #8a6d3b;
 .page_case_study .case_study p{ font-size: 2.4em}
 .page_case_study .intro .img_container{ width: 100% }
 .page_case_study .intro .img_container img{  width: 100% }
-.page_case_study .txt_container{  z-index: 1;  width:50%; margin: 15em  auto; text-align: center; }
+.page_case_study .txt_container{  z-index: 1;  width:50%; margin: 8em  auto; text-align: center; }
 .page_case_study .txt_container .title{ font-size: 3.6em}
 .page_case_study .txt_container p{ font-size: 2.4em}
 .page_case_study .zone_color{ font-family: SofiaProUltraLight; z-index: 2; color: #fff;  text-align: center; position: absolute; background-size: 100% auto; background-repeat: no-repeat; width: 40em; height: 45em}
@@ -609,10 +632,14 @@ a.bt_bump:hover .hover{  cursor: pointer; animation:  anim_bt_pop .15s cubic-bez
 .modale.modale_active{  display: block; animation:  anim_show_modale .15s cubic-bezier(.17,.67,.87,1)  0s 1 normal forwards;  }
 .modale .title{ font-size: 2.4em; }
 .modale .col_alf{ width: 50%; float: left;}
-.modale_container .bt_close{ z-index: 101; position: fixed; right: 5vw; top: 5vw; width: 4em; height: 4em;  }
-.modale_container .bt_close  div{ width: 4em; transform-origin: 50% 50%; height:.4em; display: block; position: absolute; left: 0; background:#9B9B9B ; border-radius: 4px   }
+
+
+.modale_container .bt_close{ z-index: 101; position: fixed; right: 5vw; top: 5vw; width: 4em; height: 4em;    }
+.modale_container .bt_close  .line{ width: 2em; transform-origin: 50% 50%; height:.2em; display: block; position: absolute; left: 0; background:#fff ; border-radius: 4px   }
 .modale_container .bt_close  .line1{ top: 12px; left: -4px;   transform:rotate(45deg)  }
 .modale_container .bt_close  .line2{ top: 12px; left: -4px; transform:rotate(-45deg)  }
+.modale_container .bt_close  .bg{   animation:  anim_buble 35s linear  0s infinite normal forwards; background-color: none; width: 4em; height: 4em; position: absolute; top: -1em; left: -1em; transform: translate3d(-50%, -50%, 0);  background: url('../img/buble_blue.svg'); background-repeat: no-repeat; background-size: 100% 100%; }
+
 
 
 .modale_recherche{ padding: 5em 0; }
@@ -824,6 +851,9 @@ responsive iPad
   .page_case_study .mosaique_case_study .mosaique_item:nth-child(4n+4) {  width:100%;  float: left; text-align: left; }
   .page_case_study .mosaique_case_study .mosaique_item img{ width: 100% }
   .page_case_study .mosaique_case_study .mosaique_item{ border-bottom: none; border-left: none; border-right: none }
+
+
+
   /* nous-rejoindre */
   .page_nous_rejoindre .layout_container_100vh{ height: 100vw }
   .page_nous_rejoindre .zone_recherche .selectZone li a{ font-size: 3em}
@@ -883,6 +913,9 @@ responsive iPhone
 */
 
 @media (max-width: 500px) {
+
+
+    #section0{ display: none;}
 
   /* layout */
   .layout_container { padding: 0px; width: 100%; max-width: 100%; display: inline-block; }
