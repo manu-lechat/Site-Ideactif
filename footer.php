@@ -27,8 +27,11 @@
         </div>
         <div class="col col2">
           <ul class="menu">
-            <li class="light"><a href="mentions.php">Mentions légales</a></li>
-            <li class="light"><a href="#" class="bt_partenaires">Partenaires</a></li>
+            <li class="light"><a href="mentions.php">Mentions légales</a><br><br></li>
+            <li class="bold">Nos partenaires</li>
+            <li class="light"><a href="https://www.theobora.fr/" target="_blank">theobora.fr</a></li>
+              <li class="light"><a href="https://www.ideactif-md.com/" target="_blank">ideactif-md.com</a></li>
+            <li class="light"><a href="http://www.levenement.org/" target="_blank">levenement.org</a></li>
           </ul>
         </div>
         <div class="col col3 social">

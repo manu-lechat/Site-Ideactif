@@ -17,7 +17,11 @@
 		<span class="hover_bigtxt">40000</span><br>
 		<span class="hover_txt">visiteurs</span>
 	</div>
-	<span class="tag">Activation des marques</span>
+	<div class="tag_container">
+  	<span class="tag">Culture</span>
+  	<span class="tag">tag2</span>
+  	<span class="tag">tag3</span>
+  </div>
 	<div class="txt_container">
 		<h3 class="title">Barilla</h3>
 		<p>“Pasta Arte”</p>
@@ -43,7 +47,12 @@
 		<span class="hover_bigtxt">5000</span><br>
 		<span class="hover_txt">abonnés aux playlists</span>
 	</div>
-	<span class="tag">Culture</span>
+
+	<div class="tag_container">
+  	<span class="tag">Culture</span>
+  	<span class="tag">tag2</span>
+  	<span class="tag">tag3</span>
+  </div>
 	<div class="txt_container">
 		<h3 class="title">Spotify</h3>
 		<p>“La technologie au service des festivals”</p>
@@ -69,7 +78,11 @@
 		<span class="hover_bigtxt">15</span><br>
 		<span class="hover_txt">Millons de fans touchés</span>
 	</div>
-	<span class="tag">Sport</span>
+	<div class="tag_container">
+  	<span class="tag">Culture</span>
+  	<span class="tag">tag2</span>
+  	<span class="tag">tag3</span>
+  </div>
 	<div class="txt_container">
 		<h3 class="title">Skoda</h3>
 		<p>"Gagner en notoriété, ce n’est pas un sprint, c’est un marathon."</p>
@@ -95,7 +108,11 @@
 		<span class="hover_bigtxt">6600</span><br>
 		<span class="hover_txt">visiteurs</span>
 	</div>
-	<span class="tag">Socièté</span>
+	<div class="tag_container">
+  	<span class="tag">Socièté</span>
+  	<span class="tag">Socièté</span>
+  	<span class="tag">Socièté</span>
+  </div>
 	<div class="txt_container">
 		<h3 class="title">BMW Motorrad</h3>
 		<p>“Make life a ride”</p>
@@ -121,7 +138,11 @@
 		<span class="hover_bigtxt">150000</span><br>
 		<span class="hover_txt">jeunes touchés</span>
 	</div>
-	<span class="tag">Musique</span>
+	<div class="tag_container">
+  	<span class="tag">Musique</span>
+  	<span class="tag">Musique</span>
+  	<span class="tag">Musique</span>
+  </div>
 	<div class="txt_container">
 		<h3 class="title">Esprit Musique</h3>
 		<p>“Mécénat 2.0” ou “Mécénat 360”</p>
@@ -146,7 +167,11 @@
         		<span class="hover_bigtxt">150000</span><br>
         		<span class="hover_txt">jeunes touchés</span>
         	</div>
-        	<span class="tag">Musique</span>
+          	<div class="tag_container">
+            	<span class="tag">Culture</span>
+            	<span class="tag">tag2</span>
+            	<span class="tag">tag3</span>
+            </div>
         	<div class="txt_container">
         		<h3 class="title">Esprit Musique</h3>
         		<p>“Mécénat 2.0” ou “Mécénat 360”</p>
@@ -167,7 +192,11 @@
              <span class="hover_bigtxt">“Punshline efficace !”</span><br>
              <span class="hover_txt">signature</span>
           </div>
-          <span class="tag">société</span>
+          	<div class="tag_container">
+            	<span class="tag">Culture</span>
+            	<span class="tag">tag2</span>
+            	<span class="tag">tag3</span>
+            </div>
           <div class="txt_container">
             <h3 class="title">blablacar</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in turpis sed sem sollicitudin posuere. Pellentesque feugiat condimentum malesuada. Aenean finibus gravida pulvinar. Donec ornare pretium ultricies.</p>
@@ -188,7 +217,11 @@
              <span class="hover_bigtxt">“Punshline efficace !”</span><br>
              <span class="hover_txt">signature</span>
           </div>
-          <span class="tag">société</span>
+          	<div class="tag_container">
+            	<span class="tag">Culture</span>
+            	<span class="tag">tag2</span>
+            	<span class="tag">tag3</span>
+            </div>
           <div class="txt_container">
             <h3 class="title">blablacar</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in turpis sed sem sollicitudin posuere. Pellentesque feugiat condimentum malesuada. Aenean finibus gravida pulvinar. Donec ornare pretium ultricies.</p>
@@ -210,7 +243,11 @@
              <span class="hover_txt">roses distribuées</span>
              <div class="bg_hover"></div>
           </div>
-          <span class="tag">société</span>
+          	<div class="tag_container">
+            	<span class="tag">Culture</span>
+            	<span class="tag">tag2</span>
+            	<span class="tag">tag3</span>
+            </div>
           <div class="txt_container">
             <h3 class="title">blablacar</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in turpis sed sem sollicitudin posuere. Pellentesque feugiat condimentum malesuada. Aenean finibus gravida pulvinar. Donec ornare pretium ultricies.</p>
@@ -232,7 +269,11 @@
              <span class="hover_txt">roses distribuées</span>
              <div class="bg_hover"></div>
           </div>
-          <span class="tag">société</span>
+          	<div class="tag_container">
+            	<span class="tag">Culture</span>
+            	<span class="tag">tag2</span>
+            	<span class="tag">tag3</span>
+            </div>
           <div class="txt_container">
             <h3 class="title">blablacar</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in turpis sed sem sollicitudin posuere. Pellentesque feugiat condimentum malesuada. Aenean finibus gravida pulvinar. Donec ornare pretium ultricies.</p>
@@ -254,7 +295,11 @@
              <span class="hover_txt">roses distribuées</span>
              <div class="bg_hover"></div>
           </div>
-          <span class="tag">société</span>
+          	<div class="tag_container">
+            	<span class="tag">Culture</span>
+            	<span class="tag">tag2</span>
+            	<span class="tag">tag3</span>
+            </div>
           <div class="txt_container">
             <h3 class="title">blablacar</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in turpis sed sem sollicitudin posuere. Pellentesque feugiat condimentum malesuada. Aenean finibus gravida pulvinar. Donec ornare pretium ultricies.</p>
@@ -276,7 +321,11 @@
              <span class="hover_txt">roses distribuées</span>
              <div class="bg_hover"></div>
           </div>
-          <span class="tag">société</span>
+          	<div class="tag_container">
+            	<span class="tag">Culture</span>
+            	<span class="tag">tag2</span>
+            	<span class="tag">tag3</span>
+            </div>
           <div class="txt_container">
             <h3 class="title">blablacar</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in turpis sed sem sollicitudin posuere. Pellentesque feugiat condimentum malesuada. Aenean finibus gravida pulvinar. Donec ornare pretium ultricies.</p>

@@ -19,7 +19,7 @@ p, address{   font-size: 2em; font-style:normal; display: block; font-family: So
 ul{ margin: 0; display: inline-block; }
 li{ margin: 0.2em 0;  list-style: none; min-height:1.6em  }
 a{  transition:all .17s ease-in-out;  text-decoration: none; color: #000;   display: block; }
-a:hover{ cursor: pointer;  }
+a:hover{ cursor: pointer; text-decoration: none; color: #000;  }
 main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 ::selection {  background:rgba(0,0,0,0.07) }
 /* typo */
@@ -30,7 +30,7 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .center {  text-align: center!important;  margin: 0 auto}
 .maj{ text-transform: uppercase;}
 .title{  line-height: 1.3em; padding-bottom: 0.4em;  }
-.title_huge{  font-size: 5.5em;  text-align: center;  margin: 0 auto }
+.title_huge{  font-size: 4.8em;  text-align: center;  margin: 0 auto }
 .fs_72{  font-size: 7.2em; }
 .fs_56{  font-size: 5.6em; }
 .fs_48{  font-size: 4.8em; }
@@ -62,7 +62,8 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .bt_yellow_white:hover{ background: #fff; color: #FFC258 }
 
 .bt_up_center{ width: 60px; height: 60px; background: url('../img/bt_up.png'); background-repeat: no-repeat; background-size: 100% auto; margin: 40px auto}
-.bt_retour_site{ margin: 0 auto 60px auto; font-size: 14px!important; }
+
+.bt_retour_site{ margin: 0 auto 60px auto; }
 /* layout */
 .layout_FullWidth{ width: 100%; }
 .layout_marginV{ margin-top: 20em; margin-bottom: 10em }
@@ -83,16 +84,16 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .appear_on_scroll.appear:nth-child(3n+3){  transition : opacity .9s ease-out .2s  }
 
 /* intro */
-.layout_intro .title{ font-size: 5.5em;  text-align: center;  margin: 0 auto  }
-.layout_intro h1{ font-size: 5.5em;  text-align: center;  margin: 0 auto; line-height: 1.3em; padding-bottom: 0.4em; }
+.layout_intro .title{ font-size: 4.8em;  text-align: center;  margin: 0 auto  }
+.layout_intro h1{ font-size: 4.8em;  text-align: center;  margin: 0 auto; line-height: 1.3em; padding-bottom: 0.4em; }
 .layout_intro p{ font-size: 3.2em; text-align: center; }
 
 
-.layout_intro .bt_close{ z-index: 101; position: relative; margin: 2em auto; font-size: 14px; width: 4em; height: 4em;    }
-.layout_intro .bt_close  .line{ width: 2em; transform-origin: 50% 50%; height:.2em; display: block; position: absolute; left: 0; background:#fff ; border-radius: 4px   }
-.layout_intro .bt_close  .line1{ top: 12px; left: -4px;   transform:rotate(45deg)  }
-.layout_intro .bt_close  .line2{ top: 12px; left: -4px; transform:rotate(-45deg)  }
-.layout_intro .bt_close  .bg{   animation:  anim_buble 35s linear  0s infinite normal forwards; background-color: none; width: 4em; height: 4em; position: absolute; top: -1em; left: -1em; transform: translate3d(-50%, -50%, 0);  background: url('../img/buble_blue.svg'); background-repeat: no-repeat; background-size: 100% 100%; }
+.layout_intro .bt_close{  z-index: 101; position: relative; margin: 2em auto; font-size: 14px; width: 4em; height: 4em;    }
+.layout_intro .bt_close  .line{ top: 50%; left: 25%; transform: translate3d(-50%, -50%, 0); width: 2em; transform-origin: 50% 50%; height:.2em; display: block; position: absolute;  background:#fff ; border-radius: 4px   }
+.layout_intro .bt_close  .line1{   transform:rotate(45deg)  }
+.layout_intro .bt_close  .line2{  transform:rotate(-45deg)  }
+.layout_intro .bt_close  .bg{   animation:  anim_buble 35s linear  0s infinite normal forwards; background-color: none; width: 4em; height: 4em; position: absolute; top:0; left: 0; transform: translate3d(-50%, -50%, 0);  background: url('../img/buble_blue.svg'); background-repeat: no-repeat; background-size: 100% 100%; }
 
 
 /* fullpage */
@@ -111,16 +112,18 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .header .menu_desktop a:hover{ opacity: 1; cursor: pointer; }
 .header .menu_desktop ul{ margin: 1em;  text-transform: uppercase; }
 .header .menu_desktop li{ padding: 0 0 0 2em; display: inline; }
-.header .menu_desktop a img{ height: .9em; margin-top: 0.2em; }
+.header .menu_desktop a img{ height: .9em; margin-top: -0.1em; }
 .header .icon_burger{ display: none; width: 40px; height: 40px; position: absolute; top: 50%; right: 3em; transform:translateY(-50%); }
 .header .icon_burger div{ width: 40px; height:4px; display: block; position: absolute; left: 0; background: #000 ; border-radius: 4px   }
 .header .icon_burger .line1{ top: 0;  }
 .header .icon_burger .line2{ top: 11px; }
 .header .icon_burger .line3{ top: 22px; }
 
-#homePage_header{ display: none; opacity: 0; transform: all .3s }
+#homePage_header{ display: block; opacity: 1; top: -200px; z-index: 3; transition: all .3s; padding: 0em 5em; }
 #homePage_header.sticky { display: block; opacity: 1; }
-
+#homePage_header.visible { top: 0; }
+#homePage_header.visible .header{ padding: 0em 5em;  }
+#homePage_header.visible .logo{ margin: 1em 0 0.8em 0;  }
 
 /* header ideamag */
 .header_mag_container .icon_burger div{ background: white}
@@ -137,32 +140,42 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 
 /* homePage */
 
-.homeStart {  transition: opacity 1s .5s ease-out }
-.homeStart .zone_cookies { z-index: 11; position: absolute; bottom: 30px; left: 30px; max-width: 80%; padding: 15px; 	height: 64px;	width: 354px;	border-radius: 5px;	background-color: #FFFFFF;	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.15);}
-.homeStart .zone_cookies .txt{ 	color: #0A0A0A;		font-size: 16px;		line-height: 19px;  }
-.homeStart .zone_cookies .cookies_infos{ 	color: #21A2EA;  }
-.homeStart .zone_cookies .cookies_ok{ position: absolute; font-size: 16px; color: white; padding: 8px 15px; text-align: center; right: 15px; top: 50%;	 transform: translate3d(0,  -50%, 0);	border-radius: 4px;	background-color: #FFC258; }
+.homeStart {  position: fixed; z-index: 1; opacity: 0; animation: fadeIn 1s linear  0.3s 1 normal forwards;  }
+.pageIn .homeStart.invisible .buble_trio_bg{ transform: translate3d(-50%, -50%, 0) scale(0.95); opacity: 0; transition: all .8s ease-out 0s;}
+.pageIn .homeStart.invisible .buble_trio_hd{ transform: translate3d(-50%, -50%, 0) scale(0.95); opacity: 0; transition: all .8s ease-out 0s; }
+.pageIn .homeStart.invisible .zone_logo{  transform: translate3d(-50%, -50%, 0) scale(0.9); opacity: 0;  }
+
 .homeStart.hidden { position: fixed; z-index: 1; opacity: 0; }
-.homeStart .buble_trio_bg{ top: 100vh; width:80vh; height:80vh; max-width: 80em; max-height: 80em;  left:0; transform: translate3d(-50%, -50%, 0);}
-.homeStart .buble_trio_hd{ top: 10vw; width: 60vh; height:60vh;  max-width: 80em; max-height: 80em; left: 100vw; transform: translate3d(-50%, -50%, 0);}
+.homeStart .buble_trio_bg{  transition: all .8s ease-out .3s; opacity: 0; top: 100vh; width:80vh; height:80vh; max-width: 80em; max-height: 80em;  left:0; transform: translate3d(-50%, -50%, 0);}
+.homeStart .buble_trio_hd{  transition: all .8s ease-out .3s;  opacity: 0;  top: 10vw; width: 60vh; height:60vh;  max-width: 80em; max-height: 80em; left: 100vw; transform: translate3d(-50%, -50%, 0);}
+.pageIn .homeStart .buble_trio_bg{ opacity: 1}
+.pageIn .homeStart .buble_trio_hd{ opacity: 1}
+.pageIn .homeStart .zone_logo{ opacity: 1}
+
+
 .homeStart .bg_topscreen{ z-index: 1;  position: absolute; width:120vw; height: 120vw; top: 50%; left: 50%;  transform: translate3d(-50%, -50%, 0); }
 .homeStart .bg_topscreen img{  position: absolute; top : 50%; left: 50%; transform: translate3d(-50%, -50%, 0); width: 100vw; height: 100vw;}
 .homeStart .buble_trio_logo{ opacity: 0; animation: fadeIn 2s linear  0s 1 normal forwards; }
-.homeStart .buble_trio_bg{ opacity: 0; animation: fadeIn 2s linear  1s 1 normal forwards; }
-.homeStart .buble_trio_hd{ opacity: 0; animation: fadeIn 1s linear  1.2s 1 normal forwards; }
-.homeStart .zone_logo{ z-index: 2; position: absolute; top: 45%; left:50%;  width: 20vh; height:20vh ;  transform: translate3d(-50%, -50%, 0); }
+
+.homeStart .zone_logo{ transition: all .3s ease-out 0s; z-index: 2; opacity: 0; position: absolute; top: 45%; left:50%;  width: 20vh; height:20vh ;  transform: translate3d(-50%, -50%, 0); }
 .homeStart .logo{ position: absolute; width: 90%; top: 19vh; left: 50%;transform: translate3d(-50%, 0, 0);}
 .homeStart .buble_trio_logo{ position: absolute;width: 16vh; height: 16vh;  left: 50%;transform: translate3d(-50%, 2vh, 0); }
-.homeStart .fleche_container{ padding: 10px;z-index: 3; animation: anim_fleche 1.3s  ease-in-out  0s infinite normal forwards; position: absolute; bottom: 3em; left:50%; width: 40px; height: 40px;  }
+.homeStart .fleche_container{ padding: 10px;z-index: 3; animation: anim_fleche 1.3s  ease-in-out  0s infinite normal forwards; position: absolute; bottom: 3em; left: calc(50% - 20px); width: 40px; height: 40px;  }
 .homeStart .home_topscreen_fleche{ opacity: 0; animation: fadeIn .3s linear  2s 1 normal forwards;  width: 100%;}
 .homeStart .buble_trio_logo  .buble_blue {  animation: anim_buble 35s linear 5s infinite normal forwards;  }
 .homeStart .buble_trio_logo .buble_yellow {  animation: anim_bubleBis 32s linear 8s infinite normal forwards; left: -10%;  top: 3%; }
 .homeStart .buble_trio_logo .buble_pink {  animation: anim_buble 30s linear 10s infinite normal forwards; left: -15%;  top: 8%; }
 .homePage{ position: relative;  background: white; margin: 0 }
+
 .fullpage-wrapper .appear_on_scroll{ opacity: 1!important }
 
 #fullpage .footer{ margin-top: 10em; }
-
+#fullpage {   z-index: 2; }
+#fullpage #section0 {  min-height: 100vh }
+#fullpage #section1 { min-height: 100vh; background: #fff }
+#fullpage .fleche_container{  padding: 10px;z-index: 3; animation: anim_fleche 1.3s  ease-in-out  0s infinite normal forwards; position: absolute; bottom: 3em; left: calc(50% - 20px); width: 40px; height: 40px;  }
+#fullpage .home_topscreen_fleche{ opacity: 0; animation: fadeIn .3s linear  2s 1 normal forwards;  width: 100%;}
+#fullpage #section0.invisible{ opacity: 0; }
 
 .homePage.sticky{ margin-top: 0; }
 .homePage .header_container{ opacity: 0; display: none; }
@@ -190,6 +203,14 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .homePage .zone_newsletter input{ font-size: 1.5em;  min-width: 30em; padding: 0.5em; opacity: 0.5}
 .homePage .zone_newsletter .send{ width: 6em; border-radius: 5em; border-top-left-radius: 0; border-bottom-left-radius: 0;background-repeat: no-repeat; position: absolute; right: 0; top:0; height: 100%; background-color: #000; background-image: url('../img/icon_send.png'); background-size: auto 50%; background-position: center;}
 .homePage .zone_newsletter .input_border:hover .send{ background-color: #FF384C; }
+
+/* zone cookies */
+
+.zone_cookies { opacity: 0; animation:  fadeIn 1s linear 2s 1 normal forwards; z-index: 50; position: fixed; top: 100vh; transform: translateY(-80px); left: 30px; max-width: 80%; padding: 15px; 	height: 64px;	width: 354px;	border-radius: 5px;	background-color: #FFFFFF;	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.15);}
+.zone_cookies .txt{  margin: 0;	color: #0A0A0A;		font-size: 16px;	    line-height: 1.2em; }
+.zone_cookies .cookies_infos{ 	color: #21A2EA;  }
+.zone_cookies .cookies_ok{ position: absolute; font-size: 16px; color: white; padding: 8px 15px; text-align: center; right: 15px; top: 50%;	 transform: translate3d(0,  -50%, 0);	border-radius: 4px;	background-color: #FFC258; }
+
 
 /* containers */
 
@@ -258,8 +279,8 @@ color: #8a6d3b;
 /* page operation */
 .page_operations { margin-top: 10em; margin-bottom: 10em;}
 .page_operations .menu_tag .title{	font-size: 4.8em; }
-.page_operations .menu_tag .tag_container{  padding: 3em 15% 8em 15%; text-align: center;}
-.page_operations .menu_tag .tag_container a{ font-family: SofiaProLight;  color:rgba(0,0,0,0.7); margin: 0.5em .6em;	 font-size: 2.8em;padding: 0.35em 1em 0.25em 1em; display: inline-block;; 	border: 2px solid rgba(0,0,0,0.7);	border-radius: 3em; }
+.page_operations .menu_tag .tag_container{  padding: 3em 0% 8em 0%; text-align: center;}
+.page_operations .menu_tag .tag_container a{ font-family: SofiaProLight;  color:rgba(0,0,0,0.7); margin: 0.5em .6em;	 font-size: 2.8em; padding: 0.25em 1em 0.15em 1em; display: inline-block;; 	border: 2px solid rgba(0,0,0,0.7);	border-radius: 3em; }
 .page_operations .menu_tag .tag_container a.active{  background-color: #FF384C; 	border: 2px solid #FF384C;	color: #fff  }
 .page_operations .menu_tag .tag_container a:hover{  background-color: #FF384C; 	border: 2px solid #FF384C;	color: #fff  }
 .page_operations .bullets_container{ text-align: center;  }
@@ -271,9 +292,11 @@ color: #8a6d3b;
 .mozaique_operations .operation_item:nth-child(4n+2) {   width:60%;  float: right; text-align: left; }
 .mozaique_operations .operation_item:nth-child(4n+3) {   width:60%;  float: left; text-align: right; }
 .mozaique_operations .operation_item:nth-child(4n+4) {  width:40%;  float: right; text-align: left; }
-.mozaique_operations .operation_item .tag{ z-index: 2;  transition: all .3s ease-out .1s; position: absolute; bottom:3vw; left: 3vw; background: #FF384C; color:#fff; font-size: 2em; border-radius: 3em; padding: 0.4em 1em 0.2em 1em}
-.mozaique_operations .operation_item:nth-child(4n+2)  .tag,
-.mozaique_operations .operation_item:nth-child(4n+3)  .tag{ left: auto; right: 3vw;}
+.mozaique_operations .operation_item .tag_container{ z-index: 2; position: absolute; bottom:3vw; left: 3vw; }
+.mozaique_operations .operation_item:nth-child(4n+2)  .tag_container,
+.mozaique_operations .operation_item:nth-child(4n+3)  .tag_container{ left: auto; right: 3vw;}
+.mozaique_operations .operation_item .tag_container .tag{ float: right; margin: 0 0.3em;  transition: all .3s ease-out .1s; background: #FF384C; color:#fff; font-size: 2em; border-radius: 3em; padding: 0.4em 1em 0.2em 1em }
+
 .mozaique_operations .operation_item .txt_container{ z-index: 1;  width: 100%; padding: 3vw; transition: all .3s ease-out}
 .mozaique_operations .operation_item .title{  font-size: 4.8em; text-transform: uppercase; 	text-shadow: 0 2px 4px 0 rgba(10,10,10,0.5); }
 .mozaique_operations .operation_item p{ font-size: 2.4em;  font-family: SofiaProUltraLight; 	text-shadow: 0 2px 4px 0 rgba(10,10,10,0.5); }
@@ -380,8 +403,8 @@ color: #8a6d3b;
 .page_vision .teams_leader_swiper .title{   font-family: SofiaProRegularItalic; font-size: 4.8em }
 .page_vision .teams_leader_swiper .subtitle{   font-family: SofiaProRegularItalic; font-size: 3.6em }
 .page_vision .teams_leader_swiper p{  font-family: SofiaProLight_Italic; font-size: 3em ; line-height: 1.3em }
-.page_vision .teams_leader_swiper .quote_in{ width: 5.5em; position: absolute; top: 0; left: -11em }
-.page_vision .teams_leader_swiper .quote_out{ width: 5.5em; position: absolute; bottom: 0; right: -5em }
+.page_vision .teams_leader_swiper .quote_in{ width: 4.8em; position: absolute; top: 0; left: -11em }
+.page_vision .teams_leader_swiper .quote_out{ width: 4.8em; position: absolute; bottom: 0; right: -5em }
 .page_vision .teams_leader_swiper { width: 130em; min-height: 60em }
 .page_vision .teams_leader_swiper  .swiper-slide{  width: 130em; min-height: 60em }
 .page_vision .teams_leader_swiper  .swiper-slide .zone_temoignage_man{  transition:all .3s .3s;  opacity:0; width: 26%; left: 8em;  position: absolute; top: 17em;  }
@@ -496,16 +519,18 @@ input{ font-size: 12px; border: none; box-shadow: none; outline: none; width: au
 .footer .encart .txt{ text-align: center;  }
 .footer .encart .bt_rounded{ float: left; width: 46%; margin: 0 2% }
 .footer .col{ margin-top: 20em; float: left;  height: 45em; }
-.footer .col1{ width: 50%; padding-left: 8em;}
-.footer .col2{ width: 30%; }
+.footer .col1{ width: 50%; padding-left: 8em;  margin-top: 26em; }
+.footer .col2{ width: 30%;  margin-top: 30em; }
 .footer .col3{ width: 8%;  }
 .footer .col4{ width: 8%;  }
 .footer .adress{ padding-top: 2em; }
 .footer .logo{     width: 67%; }
 .footer .bt_chat{ position: absolute; left: 2em; bottom: 1em;     width: 9em;  height: 9em;}
 .footer .menu .title{ font-size: 2.8em; padding-bottom: 1em;}
-.footer .menu a{ font-size: 2.8em; transition:all .07s ease-in-out;  }
+.footer .menu { font-size: 2.8em; transition:all .07s ease-in-out;  }
 .footer .menu a:hover{ color:#FF384C  }
+.footer .menu li { margin: 0.2em 0; min-height: 1.8em; }
+
 /* idemag */
 .page_ideamag {  font-family: SofiaProUltraLight; font-weight: 300}
 .page_ideamag .mag_cell{  display: inline-block; float: left;}
@@ -559,11 +584,13 @@ input{ font-size: 12px; border: none; box-shadow: none; outline: none; width: au
 
 /* ideamag article */
 
-.page_idemag_article { margin-top: 0; font-family: SofiaProUltraLight;}
+.page_idemag_article { width: 100%;  margin-top: 0; font-family: SofiaProUltraLight; }
 .page_idemag_article .aside { z-index: 2; background:black; width:6em; font-size: 0.6em; color: #aaa; padding: 1em .5em; text-align: center; position: fixed; left:0; top:50%; transform:translateY(-50%);  }
 .page_idemag_article .aside.social a{ font-size: 0.38em; height: 6em;margin: 0   }
-.page_idemag_article .article_illus_container{ z-index: 1; width: 100%; height: auto; overflow: hidden; position: fixed; left: 50%; transform: translateX(-50%); top: 4em;}
-.page_idemag_article .article_illus_container img{ width: 100%;   height: auto; }
+.page_idemag_article .article_illus_container{ padding: 0; max-width: none; display: block; z-index: 1; width: 100%; height: auto; overflow: hidden; position: fixed; left: 50%; transform: translateX(-50%); top: 4em;}
+.page_idemag_article .article_illus_container img{ width: 100%;  }
+
+
 .page_idemag_article .article_container{  z-index: 1; width: 80%;  margin: 50em 0 0 15%; background: white; padding: 2em 23em 2em 3em;   }
 .page_idemag_article .article_container .title{ font-family: SofiaProRegular; 	font-size: 6em; padding-bottom: 0.2em}
 .page_idemag_article .article_container .titre_2{ font-family: SofiaProRegular; 	font-size: 4em; padding-bottom: 0.2em}
@@ -658,7 +685,7 @@ form select{ font-size: 1.7em; height: 2.3em; background: #fff;	color: #4A4A4A; 
 form textarea{ font-size: 1.7em;min-height: 6em;	color: #4A4A4A; border: 1px solid #E2E2E2;  padding: .6em .8em;	border-radius: 2px; width: 100%; }
 
 /* page recherche */
-.page_recherche .title{ font-size: 5.5em;  text-align: center;  margin: 0 auto  }
+.page_recherche .title{ font-size: 4.8em;  text-align: center;  margin: 0 auto  }
 .page_recherche .encart_recherche{ margin:2em auto 5em auto; height: auto; width: 80%;	max-width: 100em;	background-color: #FFFFFF;	box-shadow: 0 0 6em 0 rgba(0,0,0,0.25);}
 .page_recherche .encart_recherche form{  margin: 0 auto; width: 100%; max-width: none;  display: block; position: relative;}
 .page_recherche .encart_recherche .input_border{ width: 100%;  border-bottom: 1px solid #F3F3F3}
@@ -685,6 +712,11 @@ responsive
 @media (max-width: 1440px) {
   section{  font-size: .7vw; }
   .bt_rounded{  font-size: 1.7vw; }
+
+  .modale_container .bt_close{ font-size: 12px; }
+  .modale {    width: 90%; margin-top: 0;  }
+
+
 }
 
 /*
@@ -703,6 +735,11 @@ responsive iPad
 
 @media (max-width: 800px) {
 
+  p, address{ font-size: 20px;   }
+
+  /* fullpage */
+  #section0{ display: none; }
+
   /* global font size */
   section { font-size: 5px;   }
 
@@ -713,16 +750,26 @@ responsive iPad
   .bt_rounded{ font-size: 20px }
   /* layout */
   .layout_container{ padding:0 6em;  max-width: 100%; display: inline-block; }
+  .layout_condensed{  width: 100%;  }
   main{ margin: 8em 0 0em 0 }
 
   /* header */
-  .header .logo { width: 44em; }
+  #homePage_header{ top: 0;  padding: 0; }
+  #homePage_header .header{  padding: 0 6em; }
+  .header{ padding: 0 6em;   }
+  .header.condensed{ padding: 0 6em; }
+
+
+  .header.condensed .logo,
+  .header .logo { width: 44em;  margin: 3em 0 3em 0; }
+
   .header .menu_desktop{ display: none; }
   .header .icon_burger{ display: block; transition:all .3s .3s }
   .header .icon_burger.hide{  opacity: 0; transition:all .3s .3s }
-.header .icon_burger{ transform: scale(0.8) translateY(-50%); }
+  .header .icon_burger{ transform: scale(0.8) translateY(-50%); }
 
-.modale{ width: 100% ;}
+  .modale{ width: 100% ;}
+  #modale_recherche{ top: 30%; }
    /* menu mobile**/
   .menu_mobile_container.active{ transform:translateX(0); opacity: 0.95 }
   .menu_mobile_container{ transform:translateX(105vw); display: block; height: 100vh; min-height: 100%; opacity: 1; transition:all .63s cubic-bezier(.03,.68,.27,.97) 0s; background: #fff; width: 100%; min-width: 100vw; position: fixed;  z-index: 100; top: 0; left: 0 }
@@ -749,7 +796,8 @@ responsive iPad
   .menu_mobile_container.active .bt_close div:nth-child(1){ opacity: 0;  animation:  appear_menuMobile .3s cubic-bezier(.03,.68,.27,.97)  1s 1 normal forwards;  }
   .menu_mobile_container.active .bt_search { opacity: 0.4;  transition: all .3s ease-out 1s;  }
   /* intro */
-  .layout_intro .title{ font-size: 8em;}
+  .layout_intro .title{ font-size: 8em;  margin: 100px auto; }
+  .layout_intro p{ font-size: 26px;  }
 
   /* homepage */
   .homePage { margin-top:0; }
@@ -761,14 +809,15 @@ responsive iPad
   .zone_social_huge .signature{ font-size: 4vw; position: absolute; right: 10%; bottom: 10%;  }
   .homePage .header_container{ position: fixed; }
   .homeStart{ display: none; }
-  .homePage .layout_intro{ padding-top: 16em!important; min-height: 100vh; position: relative; display: block;}
+
+  .homePage .layout_intro{ padding-top: 36em!important; min-height: 100vh; position: relative; display: block;}
   .homePage .layout_intro .zone_logo{ display: block; z-index: 2; position: relative; top: 10em; width: 100%; height:50em; clear: both;  display: block; }
   .homePage .layout_intro .logo{ position: relative; width: 48em; left: 50%; transform:translateX(-50%) }
   .homePage .layout_intro .buble_trio_logo{ position: relative;width: 30em; height: 30em; left: 50%; margin-left: -15em;  max-width: 30em; max-height: 30em;  }
   .homePage .layout_intro .bg_topscreen{ z-index: 1;  position: absolute; min-height: 100vh; width: 100%; top: 0; left: 0; }
   .homePage .layout_intro .bg_topscreen img{  position: absolute; top : 50%; left: 50%; transform: translate3d(-50%, -50%, 0); width: 100vw; height: 100vw;}
   .homePage .layout_intro .zone_txt{     top: 18em; width: 100%;  display: block; position: relative;  }
-  .homePage .layout_intro  p{ font-size: 18px ;}
+  .homePage .layout_intro  p{ font-size: 26px ;}
   .homePage .layout_intro  .title{ font-size: 25px ;}
   .homePage .layout_intro .logo{ display: block; }
   .homePage .layout_intro .bg_topscreen{ display: block; }
@@ -849,10 +898,13 @@ responsive iPad
   .page_case_study .mosaique_case_study .mosaique_item:nth-child(4n+2) {   width:100%;  float: left; text-align: left; }
   .page_case_study .mosaique_case_study .mosaique_item:nth-child(4n+3) {   width:100%;  float: left; text-align: left; }
   .page_case_study .mosaique_case_study .mosaique_item:nth-child(4n+4) {  width:100%;  float: left; text-align: left; }
-  .page_case_study .mosaique_case_study .mosaique_item img{ width: 100% }
+  .page_case_study .mosaique_case_study .mosaique_item img{ width: 100%; height: auto;}
   .page_case_study .mosaique_case_study .mosaique_item{ border-bottom: none; border-left: none; border-right: none }
 
-
+  .mozaique_operations .operation_item .tag_container .tag{ font-size: 20px; }
+  .mozaique_operations .operation_item .tag_container{  left: 6vw; right: auto; }
+  .mozaique_operations .operation_item:nth-child(4n+2) .tag_container,
+  .mozaique_operations .operation_item:nth-child(4n+3) .tag_container{  left: 6vw; right: auto; }
 
   /* nous-rejoindre */
   .page_nous_rejoindre .layout_container_100vh{ height: 100vw }
@@ -892,6 +944,8 @@ responsive iPad
   .footer .adress_separator{ display: block; width: 10vw; margin: 30px auto 0px auto; height: 2px; background: #000; }
   .footer .social a{ width: 16em; height: 16em; margin: 0 2em; }
   .footer .bt_circle{ position: relative; margin:10vw auto; right: auto;  bottom: auto; }
+
+  .footer .menu{ font-size: 20px; }
   .footer .menu a{ font-size: 20px; height: 1.6em}
   .footer .menu .title{ font-size: 20px; height: 1.6em; margin-top: 0px; margin-bottom: 10px }
   .footer .col4{ min-height: 100px; width: 100%; }
@@ -914,6 +968,9 @@ responsive iPhone
 
 @media (max-width: 500px) {
 
+  .zone_cookies{  left: 5%;  max-width: 90%; width: 90%; }
+  .zone_cookies .txt{ font-size: 13px; line-height: 20px; }
+  .zone_cookies .cookies_ok{ font-size: 13px; }
 
     #section0{ display: none;}
 
@@ -978,6 +1035,8 @@ responsive iPhone
   .page_case_study .zone_color_yellow{ margin-left: 20%; margin-top: -10em; margin-bottom: 8em; }
   .page_case_study .zone_color .buble_container{  width:100%; height: 100%}
   .page_case_study .txt_container{ width: 100%}
+
+  .page_case_study .txt_container p { padding-left: 2%; padding-right: 2%; }
 
   /* page vision */
   .page_vision .swiper-container{  width: 100vw; height: auto; }
@@ -1044,9 +1103,11 @@ responsive iPhone
   .modale{ font-size: 2px;  width: 92%; }
   .modale_recherche .input_border{ font-size: 8px; }
 
+    .modale_recherche{ top: 40%; transform: translate3d(-50%,-50%,0);}
+
   /* rechercher */
   .page_recherche .title{   font-size: 18px; padding: 2em  }
-    .page_recherche .encart_recherche .zone_tags { padding: 5px 15px; }
+  .page_recherche .encart_recherche .zone_tags { padding: 5px 15px; }
   .page_recherche .encart_recherche .zone_tags .title{  padding:5px;  font-size: 14px; margin: 3px 10px;    display: inline-block;  float: none; }
   .page_recherche .encart_recherche .zone_tags a {     font-size: 12px;  display: inline-block; margin: 3px 10px;    float: none; }
 
@@ -1056,6 +1117,10 @@ responsive iPhone
 
 
 /* keyframes  **************************************************************************/
+
+@keyframes fadeOut{
+    to { opacity: 0; }
+}
 
 @keyframes fadeIn{
     to { opacity: 1; }

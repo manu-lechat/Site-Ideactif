@@ -46,5 +46,11 @@
         <li></li>
       </ul>
     </section>
+    
+    <div class="zone_cookies">
+      <p class="txt">Nous utilisons des cookies.</p>
+      <a href="#" class="txt cookies_infos">En savoir plus</a>
+      <a href="#" class="cookies_ok">J’accepte</a>
+    </div>
 
     <?php include ('modales.php'); ?>
