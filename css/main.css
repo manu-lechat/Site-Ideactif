@@ -199,7 +199,7 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .homePage .zone_social_huge .signature{  z-index: 3;   font-size: 3.6em; position: absolute; right: 10%; bottom: 10%;  }
 .homePage .zone_newsletter { padding: 0 5em}
 .homePage .zone_newsletter  .zone_txt{     float: left; position: relative; padding: 7em 0; width: 50%; height: 200px; }
-.homePage .zone_newsletter .input_border{ position: absolute; right:7.5em; top: 50%; transform: translateY(-50%); border: 2px solid #000; border-right: 2px solid #000; float: right; width: auto; border-radius: 5em; }
+.homePage .zone_newsletter .input_border{     height: 60px; position: absolute; right:7.5em; top: 50%; transform: translateY(-50%); border: 2px solid #000; border-right: 2px solid #000; float: right; width: auto; border-radius: 5em; }
 .homePage .zone_newsletter .input_border:hover{  }
 .homePage .zone_newsletter input{ font-size: 1.5em;  min-width: 30em; padding: 0.5em; opacity: 0.5}
 .homePage .zone_newsletter .send{ width: 6em; border-radius: 5em; border-top-left-radius: 0; border-bottom-left-radius: 0;background-repeat: no-repeat; position: absolute; right: 0; top:0; height: 100%; background-color: #000; background-image: url('../img/icon_send.png'); background-size: auto 50%; background-position: center;}
@@ -237,34 +237,29 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 
  .homePage .zone_newsletter .input_border{  }
 
+
 form#sib_signup_form_1 p.sib-alert-message {
-padding: 6px 12px;
-margin-bottom: 20px;
-border: 1px solid transparent;
-border-radius: 4px;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
+background-color: #fff;  border-color: #fff;
 }
 form#sib_signup_form_1 p.sib-alert-message-error {
-background-color: #f2dede;
-border-color: #ebccd1;
-color: #a94442;
+background-color: #fff;  border-color: #fff;
 }
 form#sib_signup_form_1 p.sib-alert-message-success {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #3c763d;
+background-color: #fff;  border-color: #fff;
 }
 form#sib_signup_form_1 p.sib-alert-message-warning {
-background-color: #fcf8e3;
-border-color: #faebcc;
-color: #8a6d3b;
+background-color: #fff;  border-color: #fff;
 }
 
 
+form#sib_signup_form_1 div {    margin: 0;     height: 60px; top: 0;  position: absolute;  padding: 1em 2em 1em 1em;  display: inline-block; }
 
+form#sib_signup_form_1 input{ margin-top:11px;    font-size: 16px;     }
+form#sib_signup_form_1 .send {  height: 56px; }
+form#sib_signup_form_1 .sib_msg_disp {  height: 60px;  }
 
+form#sib_signup_form_1 p.sib-alert-message {  background-color: #fff;  border-color: #fff;  color: #666;  position: absolute;  top: 62px; }
+form#sib_signup_form_1 p.sib-alert-message-success { color: #1913C1;     margin-left: 20px; }
 
 
 .homePage .zone_story { min-height: 70em;}
