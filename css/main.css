@@ -1,12 +1,49 @@
 /* Cascading by Manu Lechat */
 
-@font-face {  font-family: SofiaProMedium; src: url("../fonts/SofiaProMedium.otf"); }
-@font-face {  font-family: SofiaProRegular; src: url("../fonts/SofiaProRegular.otf"); }
-@font-face {  font-family: SofiaProLight; src: url("../fonts/SofiaProLight.otf"); }
-@font-face {  font-family: SofiaProUltraLight; src: url("../fonts/SofiaProUltraLight.otf"); }
-@font-face {  font-family: SofiaProLight_Italic; src: url("../fonts/SofiaProLight_Italic.otf"); }
-@font-face {  font-family: SofiaProRegularItalic; src: url("../fonts/SofiaProRegularItalic.otf"); }
-body, html {  box-sizing: border-box; font-family: SofiaProRegular; overflow-x:hidden; scroll-behavior: smooth;    color: #0A0A0A; background: #fff; text-rendering: optimizeLegibility; margin:0; padding:0; }
+/* @font-face {  font-family: SofiaProMedium; src: url("../fonts/SofiaProMedium.otf"); } */
+@font-face {
+  font-family: "SofiaProMedium";
+  src: url("../fonts/sofiapromedium-webfont.woff") format('woff'),
+  url("../fonts/sofiapromedium-webfont.woff2") format('woff'),
+  url("../fonts/SofiaProMedium.otf") format('truetype')
+}
+/* @font-face {  font-family: SofiaProRegular; src: url("../fonts/SofiaProRegular.otf"); } */
+@font-face {
+  font-family: "SofiaProRegular";
+  src:   url("../fonts/sofiaproregular-webfont.woff") format('woff'),
+  url("../fonts/sofiaproregular-webfont.woff2") format('woff'),
+  url("../fonts/SofiaProRegular.otf") format('truetype')
+}
+/* @font-face {  font-family: SofiaProLight; src: url("../fonts/SofiaProLight.otf"); }*/
+@font-face {
+  font-family: "SofiaProLight";
+  src: url("../fonts/sofiaprolight-webfont.woff") format('woff'),
+  url("../fonts/sofiaprolight-webfont.woff2") format('woff'),
+  url("../fonts/SofiaProLight.otf") format('truetype')
+}
+/*@font-face {  font-family: SofiaProUltraLight; src: url("../fonts/SofiaProUltraLight.otf"); }*/
+@font-face {
+  font-family: "SofiaProUltraLight";
+  src: url("../fonts/sofiaproultralight-webfont.woff") format('woff'),
+  url("../fonts/sofiaproultralight-webfont.woff2") format('woff'),
+  url("../fonts/SofiaProUltraLight.otf") format('truetype')
+}
+/*@font-face {  font-family: SofiaProLight_Italic; src: url("../fonts/SofiaProLight_Italic.otf"); }*/
+@font-face {
+  font-family: "SofiaProLight_Italic";
+  src: url("../fonts/sofiaprolight_italic-webfont.woff") format('woff'),
+  url("../fonts/sofiaprolight_italic-webfont.woff2") format('woff'),
+  url("../fonts/SofiaProLight_Italic.otf") format('truetype')
+}
+/*@font-face {  font-family: SofiaProRegularItalic; src: url("../fonts/SofiaProRegularItalic.otf"); }*/
+@font-face {
+  font-family: "SofiaProRegularItalic";
+  src: url("../fonts/sofia_pro_regular_italic-webfont.woff") format('woff'),
+  url("../fonts/sofia_pro_regular_italic-webfont.woff2") format('woff'),
+  url("../fonts/SofiaProRegularItalic.otf") format('truetype')
+}
+
+body, html {  box-sizing: border-box; font-family: 'SofiaProRegular', Arial, Helvetica, sans-serif; overflow-x:hidden; scroll-behavior: smooth;    color: #0A0A0A; background: #fff; text-rendering: optimizeLegibility; margin:0; padding:0; }
 
 body.modalOpen { overflow: hidden; display: inline-block;  height: 99vh; }
 
@@ -14,8 +51,8 @@ body.modalOpen { overflow: hidden; display: inline-block;  height: 99vh; }
 img{ max-width: 100%;     height: auto; }
 div{  box-sizing:border-box;  0 auto; position: relative;}
 section{  font-size: 10px;  position: relative; z-index: 1; width: 100%;  padding: 0; display: table; margin:0 auto; box-sizing:border-box; width: 100%; position: relative;  clear: both;   }
-h1, h2, h3{ font-weight: normal!important; }
-p, address{   font-size: 2em; font-style:normal; display: block; font-family: SofiaProLight;  line-height: 1.6em; padding-top: 0em; padding-bottom: 0em;   }
+h1, h2, h3{ font-weight: normal!important; font-family: "SofiaProRegular" }
+p, address{   font-size: 2em; font-style:normal; display: block; font-family: "SofiaProLight";  line-height: 1.6em; padding-top: 0em; padding-bottom: 0em;   }
 ul{ margin: 0; display: inline-block; }
 li{ margin: 0.2em 0;  list-style: none; min-height:1.6em  }
 a{  transition:all .17s ease-in-out;  text-decoration: none; color: #000;   display: block; }
@@ -25,8 +62,8 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 /* typo */
 .italic{ font-family: SofiaProLight_Italic; }
 .bold{ font-family: SofiaProMedium; }
-.medium{ font-family: SofiaProRegular; }
-.light{ font-family: SofiaProLight; }
+.medium{ font-family: "SofiaProRegular"; }
+.light{ font-family: "SofiaProLight"; }
 .center {  text-align: center!important;  margin: 0 auto}
 .maj{ text-transform: uppercase;}
 .title{  line-height: 1.3em; padding-bottom: 0.4em;  }
@@ -44,7 +81,7 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .txt_blue{ color: #1913C1;  }
 .txt_pink{ color:#FF384C }
 /* boutons */
-.bt_rounded{ margin: 0 auto;  background: #000; border: 2px solid #000!important; color: #fff;   font-family: SofiaProRegular; font-size: 28px; padding: 10px 32px 8px 32px; line-height: 1em; text-align: center;  border-radius: 2em; display: table;  margin-top: 30px;  transition: all .17s ease-out;  }
+.bt_rounded{ margin: 0 auto;  background: #000; border: 2px solid #000!important; color: #fff;   font-family: "SofiaProRegular"; font-size: 28px; padding: 10px 32px 8px 32px; line-height: 1em; text-align: center;  border-radius: 2em; display: table;  margin-top: 30px;  transition: all .17s ease-out;  }
 .bt_rounded:hover{ background: #fff; color: #000 }
 .bt_circle{ width: 8em; height: 8em; border-radius: 4em; display: block;  }
 .bt_white_blue{ background: #ffffff;  border: 2px solid #ffffff!important; color: #1913C1  }
@@ -208,7 +245,7 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 /* zone cookies */
 
 
-#catapult-cookie-bar { opacity: 0; animation:  fadeIn 1s linear 2s 1 normal forwards; z-index: 50; position: fixed; top: 100vh; transform: translateY(-80px); left: 30px; max-width: 80%; padding: 15px; 	height: 64px;	width: 354px;	border-radius: 5px;	background-color: #FFFFFF;	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.15);}
+#catapult-cookie-bar { opacity: 0;  animation:  fadeIn 1s linear 2s 1 normal forwards; z-index: 50; position: fixed; top: 100vh; transform: translateY(-80px); left: 30px; max-width: 80%; padding: 15px; 	height: 64px;	width: 354px!important;	border-radius: 5px;	background-color: #FFFFFF!important;	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.15);}
 #catapult-cookie-bar .ctcc-left-side{  margin: 0;	color: #0A0A0A;		font-size: 16px;	    line-height: 1.2em; }
 #catapult-cookie-bar .ctcc-more-info-link{ 	color: #21A2EA;  }
 #catapult-cookie-bar #catapultCookie{ outline: none; border: none; position: absolute; font-size: 16px; color: white; padding: 8px 15px; text-align: center; right: 15px; top: 50%;	 transform: translate3d(0,  -50%, 0);	border-radius: 4px;	background-color: #FFC258; }
