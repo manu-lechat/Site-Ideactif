@@ -49,6 +49,62 @@
 
             <div class="team_item">
               <div class="portrait">
+                  <img src="img/tmp/mag2.jpg" alt="">
+                  <img src="img/tmp/mag3.jpg" alt="" class="hover">
+              </div>
+              <div class="info">
+                <h3 class='title'>titre</h3>
+                <p>loria metus quis vulputate consectetur. Integer in tell amet turpis augue.</p>
+              </div>
+            </div>
+
+            <div class="team_item">
+              <div class="portrait">
+                  <img src="img/tmp/mag3.jpg" alt="">
+                  <img src="img/tmp/mag2.jpg" alt="" class="hover">
+              </div>
+              <div class="info">
+                <h3 class='title'>titre</h3>
+                <p>lortibulum lacinia metus quis vulputate cque urna eu, eleifend felis. Proin non suscipit enim. Maecenas sit amet turpis augue.</p>
+              </div>
+            </div>
+
+
+            <div class="team_item">
+              <div class="portrait">
+                  <img src="img/tmp/mag2.jpg" alt="">
+                  <img src="img/tmp/mag3.jpg" alt="" class="hover">
+              </div>
+              <div class="info">
+                <h3 class='title'>titre</h3>
+                <p>loria metus quis vulputate consectetur. Integer in tell amet turpis augue.</p>
+              </div>
+            </div>
+
+            <div class="team_item">
+              <div class="portrait">
+                  <img src="img/tmp/mag3.jpg" alt="">
+                  <img src="img/tmp/mag2.jpg" alt="" class="hover">
+              </div>
+              <div class="info">
+                <h3 class='title'>titre</h3>
+                <p>lortibulum lacinia metus quis vulputate cque urna eu, eleifend felis. Proin non suscipit enim. Maecenas sit amet turpis augue.</p>
+              </div>
+            </div>
+
+            <div class="team_item">
+              <div class="portrait">
+                  <img src="img/tmp/mag4.jpg" alt="">
+                  <img src="img/tmp/mag3.jpg" alt="" class="hover">
+              </div>
+              <div class="info">
+                <h3 class='title'>titre</h3>
+                <p>lor sit amet, cotibuleifend felis. Proin non suscipit enim. Maecenas sit amet turpis augue.</p>
+              </div>
+            </div>
+
+            <div class="team_item">
+              <div class="portrait">
                   <img src="img/tmp/mag5.jpg" alt="">
                   <img src="img/tmp/mag2.jpg" alt="" class="hover">
               </div>

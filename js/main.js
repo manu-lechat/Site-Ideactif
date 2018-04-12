@@ -31,7 +31,6 @@ window.onload = function() {
 
 function init_ContentScrollFx() {
 
-    console.log('init_ContentScrollFx()');
     var apear_items = document.querySelectorAll(".appear_on_scroll");
     var isScrolling = false;
 
@@ -42,7 +41,6 @@ function init_ContentScrollFx() {
     window.addEventListener("scroll", throttleScroll, false);  
 
     function throttleScroll(e) {
-        console.log("scrolling");
         if (isScrolling == false) {
             window.requestAnimationFrame(function() {
                 scrolling(e);
@@ -71,8 +69,12 @@ function init_ContentScrollFx() {
                 // hide logo
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                   document.querySelector('.header').classList.add('condensed');
+                  if(document.querySelector('.header_container')){  document.querySelector('.header_container').classList.add('condensed');}
+                  if(document.querySelector('.header_mag_container')){  document.querySelector('.header_mag_container').classList.add('condensed');}
                 } else {
                   document.querySelector('.header').classList.remove('condensed');
+                  if(document.querySelector('.header_container')){  document.querySelector('.header_container').classList.remove('condensed');}
+                  if(document.querySelector('.header_mag_container')){  document.querySelector('.header_mag_container').classList.remove('condensed');}
                 }
               }
 
@@ -96,7 +98,6 @@ function init_homePage(){
 
     document.body.classList.add('pageIn');
 
-    console.log($( document ).width());
     if($( document ).width()>800){
 
       // fullpage uniquement en mode desktop
@@ -125,25 +126,6 @@ function init_homePage(){
 
     }
 
-
-    //
-    // // bt_gotop : scroll to top
-    // var fleche_container = document.querySelector('.fleche_container');
-    // fleche_container.addEventListener('click', function(event) {
-    //     scrollToMenu();
-    //     event.preventDefault();
-    // });
-    //
-    //
-    // function scrollToMenu(){
-    //   console.log('scrollToMenu()');
-    //   var body = document.body; // Safari
-    //   var html = document.documentElement; // Chrome, Firefox, IE and Opera
-    //   body.scrollTop = window.innerHeight;
-    //   html.scrollTop = window.innerHeight;
-    // }
-
-
     // scroll story
     var firstScroll = false;
     var xScrollPosition;
@@ -166,31 +148,6 @@ function init_homePage(){
         isScrolling = true;
     }
 
-    function dealWithScrolling(e) {
-
-        xScrollPosition = window.scrollX;
-        yScrollPosition = window.scrollY;
-
-        if(document.getElementById('homePage_header')){
-
-
-        //
-        //   /* menu fx */
-        //   if (yScrollPosition >= menuPosition) {
-        //      document.getElementById('homePage_header').classList.add('sticky');
-        //      document.querySelector('.header').classList.add('condensed');
-        //      document.getElementById('homePage_intro').style.paddingTop= '24em';
-        //      document.getElementById('homeStart').classList.add('hidden');
-        //   } else if (yScrollPosition < menuPosition) {
-        //      document.getElementById('homePage_header').classList.remove('sticky');
-        //      document.querySelector('.header').classList.remove('condensed');
-        //      document.getElementById('homePage_intro').style.marginTop= "0";
-        //      document.getElementById('homeStart').classList.remove('hidden');
-        //   }
-        }
-
-
-    }
 }
 
 
@@ -230,8 +187,9 @@ function config_UiSlider(){
     } else if (index === length - 1) {
       acc["max"] = date;
     } else {
-      acc[`${index/(length - 1)*100}%`] = date
+      acc[index/(length - 1)*100 + "%"] = date
     }
+
 
     return acc
   }, {});
@@ -274,13 +232,7 @@ function init_page_vision(){
       },
       speed:1000
     });
-  swiper_timeline.slideTo(8);
-  swiper_timeline.on('slideChange', function () {
-    var slider = document.getElementById('slider');
-    var sliderRangeTo = swiper_timeline.activeIndex + 1992;
-    console.log(sliderRangeTo);
-    slider.noUiSlider.set(sliderRangeTo);
-  });
+
 
 
 
@@ -301,21 +253,7 @@ function init_page_vision(){
         prevEl: '#team_leader_swiper_prev',
       }
     });
-  /*var team_swiper = new Swiper('#team_swiper', {
-      slidesPerView: 'auto',
-      spaceBetween: 600,
-      centeredSlides:true,
-      speed:800,
-      grabcursor:true,
-      threshold:20,
-      loop:true,
-      navigation: {
-        nextEl: '#team_swiper_next',
-        prevEl: '#team_swiper_prev',
-      },
-    });
-    team_swiper.controller.control = team_leader_swiper;
-    team_leader_swiper.controller.control = team_swiper;*/
+
 
   }, 500);
 
@@ -438,18 +376,6 @@ function init_ui() {
       });
     }
 
-    // lien partenaires : modale
-    var bt_partenaires = document.querySelectorAll('.bt_partenaires');
-    for( i=0; i < bt_partenaires.length; i++ ) {
-      bt_partenaires[i].addEventListener('click', function(event) {
-        document.querySelector("#modale_container").classList.add('active');
-        document.querySelector("#modale_bg").classList.add('active');
-        document.querySelector("#modale_partenaires").classList.add('modale_active');
-        document.body.classList.add('modalOpen');
-        document.querySelector("#modale_container").focus();
-        event.preventDefault();
-      });
-    }
 
     // bt_contact : modale
     var bt_contact = document.querySelectorAll('.bt_contact');
@@ -464,7 +390,7 @@ function init_ui() {
       });
     }
 
-  
+
 
 
     // bt_close_modale
@@ -483,6 +409,7 @@ function init_ui() {
     function close_modale(){
       document.querySelector("#modale_container").classList.remove('active');
       document.querySelector("#modale_bg").classList.remove('active');
+      document.querySelector("#modale_bg").classList.remove('white');
       var active = document.querySelectorAll('.modale_active');
       for( i=0; i < active.length; i++ ) {
         active[i].classList.remove('modale_active');
