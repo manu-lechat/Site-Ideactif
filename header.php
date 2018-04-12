@@ -57,10 +57,24 @@
     </ul>
   </section>
 
-  <div class="zone_cookies">
+  <!-- <div class="zone_cookies">
     <p class="txt">Nous utilisons des cookies.</p>
     <a href="#" class="txt cookies_infos">En savoir plus</a>
     <a href="#" class="cookies_ok">J’accepte</a>
-  </div>
+  </div> -->
+
+<div id="catapult-cookie-bar" class="rounded-corners drop-shadow">
+  <h3></h3>
+  <span class="ctcc-left-side">Nous utilisons des cookies
+    <a class="ctcc-more-info-link" tabindex="0" target="_blank" href="http://localhost/~benoit/idactif/cookie-policy/">En savoir plus</a>
+  </span>
+  <span class="ctcc-right-side">
+    <button class="" id="catapultCookie" tabindex="0" onclick="catapultAcceptCookies();">J'accepte</button>
+  </span>
+</div>
+
+
+
+
 
 <?php include ('modales.php'); ?>

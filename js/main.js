@@ -464,6 +464,9 @@ function init_ui() {
       });
     }
 
+  
+
+
     // bt_close_modale
     var bt_close_modale = document.querySelector('#bt_close_modale');
     bt_close_modale.addEventListener('click', function(event) {

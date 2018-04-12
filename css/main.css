@@ -77,14 +77,14 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 
 /* appear_on_scroll */
 
-.appear_on_scroll{ opacity: 0; transform:translateY(2em) }
+.appear_on_scroll{ opacity: 1 }
 .appear_on_scroll.appear{ opacity: 1; transform:translateY(0); transition : all 2s .3s   }
 .appear_on_scroll.appear:nth-child(3n+1){  transition : opacity .6s ease-out .1s   }
 .appear_on_scroll.appear:nth-child(3n+2){  transition : opacity .8s ease-out .3s  }
 .appear_on_scroll.appear:nth-child(3n+3){  transition : opacity .9s ease-out .2s  }
 
 /* intro */
-.layout_intro .title{ font-size: 4.8em;  text-align: center;  margin: 0 auto  }
+.layout_intro .title{	font-size: 48px; text-align: center;  margin: 80px auto 2em auto  }
 .layout_intro h1{ font-size: 4.8em;  text-align: center;  margin: 0 auto; line-height: 1.3em; padding-bottom: 0.4em; }
 .layout_intro p{ font-size: 3.2em; text-align: center; }
 
@@ -165,7 +165,7 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .homeStart .buble_trio_logo  .buble_blue {  animation: anim_buble 35s linear 5s infinite normal forwards;  }
 .homeStart .buble_trio_logo .buble_yellow {  animation: anim_bubleBis 32s linear 8s infinite normal forwards; left: -10%;  top: 3%; }
 .homeStart .buble_trio_logo .buble_pink {  animation: anim_buble 30s linear 10s infinite normal forwards; left: -15%;  top: 8%; }
-.homePage{ position: relative;  background: white; margin: 0 }
+.homePage{ position: relative;  background: white; margin-top: 0 }
 
 .fullpage-wrapper .appear_on_scroll{ opacity: 1!important }
 
@@ -183,7 +183,8 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .homePage .layout_intro .zone_logo{ display: none; }
 .homePage .layout_intro .logo{ display: none; }
 .homePage .layout_intro .bg_topscreen{ display: none; }
-.homePage #homePage_intro{   padding: 10em; padding-top: 24em;  }
+.homePage #homePage_intro{   padding:  12em;  }
+.homePage #homePage_intro h1{  margin-top: 40px; }
 .homePage .zone_text_pink{ padding-top: 6em; padding-bottom: 6em; text-align: center;}
 .homePage .zone_text_pink p{ font-size: 4.8em; text-align: center; }
 .homePage .zone_social_huge .social_huge{ overflow: hidden; color: white; position: relative;  width: 50%; float: left;  height: 53em; }
@@ -206,10 +207,12 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 
 /* zone cookies */
 
-.zone_cookies { opacity: 0; animation:  fadeIn 1s linear 2s 1 normal forwards; z-index: 50; position: fixed; top: 100vh; transform: translateY(-80px); left: 30px; max-width: 80%; padding: 15px; 	height: 64px;	width: 354px;	border-radius: 5px;	background-color: #FFFFFF;	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.15);}
-.zone_cookies .txt{  margin: 0;	color: #0A0A0A;		font-size: 16px;	    line-height: 1.2em; }
-.zone_cookies .cookies_infos{ 	color: #21A2EA;  }
-.zone_cookies .cookies_ok{ position: absolute; font-size: 16px; color: white; padding: 8px 15px; text-align: center; right: 15px; top: 50%;	 transform: translate3d(0,  -50%, 0);	border-radius: 4px;	background-color: #FFC258; }
+
+#catapult-cookie-bar { opacity: 0; animation:  fadeIn 1s linear 2s 1 normal forwards; z-index: 50; position: fixed; top: 100vh; transform: translateY(-80px); left: 30px; max-width: 80%; padding: 15px; 	height: 64px;	width: 354px;	border-radius: 5px;	background-color: #FFFFFF;	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.15);}
+#catapult-cookie-bar .ctcc-left-side{  margin: 0;	color: #0A0A0A;		font-size: 16px;	    line-height: 1.2em; }
+#catapult-cookie-bar .ctcc-more-info-link{ 	color: #21A2EA;  }
+#catapult-cookie-bar #catapultCookie{ outline: none; border: none; position: absolute; font-size: 16px; color: white; padding: 8px 15px; text-align: center; right: 15px; top: 50%;	 transform: translate3d(0,  -50%, 0);	border-radius: 4px;	background-color: #FFC258; }
+#catapult-cookie-bar h3{ line-height: 0;     display: none; }
 
 
 /* containers */
@@ -277,9 +280,9 @@ color: #8a6d3b;
 .homePage .zone_story .zone_color .separator{ border-bottom: 0.7em solid #0A0A0A; }
 
 /* page operation */
-.page_operations { margin-top: 10em; margin-bottom: 10em;}
-.page_operations .menu_tag .title{	font-size: 4.8em; }
-.page_operations .menu_tag .tag_container{  padding: 3em 0% 8em 0%; text-align: center;}
+.page_operations { margin-top: 12em; margin-bottom: 10em;}
+.page_operations .menu_tag .title{	font-size: 48px; margin-top: 80px; }
+.page_operations .menu_tag .tag_container{  padding: 0em 0% 8em 0%; text-align: center;}
 .page_operations .menu_tag .tag_container a{ font-family: SofiaProLight;  color:rgba(0,0,0,0.7); margin: 0.5em .6em;	 font-size: 2.8em; padding: 0.25em 1em 0.15em 1em; display: inline-block;; 	border: 2px solid rgba(0,0,0,0.7);	border-radius: 3em; }
 .page_operations .menu_tag .tag_container a.active{  background-color: #FF384C; 	border: 2px solid #FF384C;	color: #fff  }
 .page_operations .menu_tag .tag_container a:hover{  background-color: #FF384C; 	border: 2px solid #FF384C;	color: #fff  }
