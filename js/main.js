@@ -103,18 +103,18 @@ function init_homePage(){
       $('#fullpage').fullpage({
         scrollOverflow: true,
         onLeave: function(anchorLink, index){
-      	      		//using index
-        		if(index == 2){
+                  //using index
+            if(index == 2){
                document.getElementById('homePage_header').classList.add('visible');
                document.getElementById('homeStart').classList.add('invisible');
                document.getElementById('section0').classList.add('invisible');
-        		}else{
+            }else{
                document.getElementById('homePage_header').classList.remove('visible');
                document.getElementById('homeStart').classList.remove('invisible');
                document.getElementById('section0').classList.remove('invisible');
             }
 
-      	}
+        }
       });
 
       // bt_gotop : scroll to top
@@ -208,11 +208,11 @@ function config_UiSlider(){
       },
       speed:1000
     });
-
+  
 
   /* init range cursor slider by noUiSlider.js */
   var slider = document.getElementById('slider');
-
+  
   /* get slide list */
   var slides = $('#swiper_timeline .story_item');
 
@@ -232,24 +232,28 @@ function config_UiSlider(){
     } else {
       acc[`${index/(length - 1)*100}%`] = date
     }
-
+    
     return acc
   }, {});
 
-
   noUiSlider.create(slider, {
-  	start: dates_range["min"],
+    start: dates_range["min"],
+    snap: true,
     connect: true,
     format: wNumb({
       decimals: 0
     }),
     tooltips: true,
-  	range: dates_range
+    range: dates_range
   });
 
   slider.noUiSlider.on('update', function(range){
     var date = parseInt(range[0], 10);
-    swiper_timeline.slideTo(dates.indexOf(date));
+    var index = dates.indexOf(date);
+
+    if (index > -1) {
+      swiper_timeline.slideTo(index);
+    }
   });
 }
 
@@ -361,14 +365,18 @@ function init_page_ideamag(){
 
 
 function init_nous_rejoindre(){
+  //close the select
+  function close_select() {
+    document.querySelector("#selectZone").classList.remove('open');
+    var mySwiper = document.querySelector('.page_nous_rejoindre #selectZone .swiper-container').swiper
+    mySwiper.destroy();
+  }
 
-  // show select menu
+  //show select menu
   document.querySelector('#open_selectZone').addEventListener('click', function(event) {
-    if( document.querySelector("#selectZone").classList.contains('open')){
-      document.querySelector("#selectZone").classList.remove('open');
-      var mySwiper = document.querySelector('.page_nous_rejoindre #selectZone .swiper-container').swiper
-      mySwiper.destroy();
-    }else{
+    if ( document.querySelector("#selectZone").classList.contains('open')) {
+      close_select();
+    } else {
       document.querySelector("#selectZone").classList.add('open');
       setTimeout(function(){
         var swiper = new Swiper('.page_nous_rejoindre #selectZone .swiper-container', {
@@ -386,22 +394,53 @@ function init_nous_rejoindre(){
     event.preventDefault();
   });
 
-  // affichage de la zone annonce
-  var bt_showAnnone = document.querySelectorAll(".show_annonce");
-  for( i=0; i < bt_showAnnone.length; i++ ) {
-    bt_showAnnone[i].addEventListener('click', function(event) {
-        // affichage de la zone annonce
+  //affichage de la zone annonce
+  var job_links = document.querySelectorAll(".show_annonce");
+
+  //click listener 
+  job_links.forEach(function(job_link, index) {
+    
+    job_link.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      //get link
+      var link = job_link.href;
+
+      //ajax request to get the job
+      $.get(link, function(data) {
+
+        //close the select
+        close_select();
+
+        var html_content = $(data);
+
+        var add = html_content.toArray().filter(function(content) {
+          return content.id === "zone_annonce"
+        });
+
+        $("#zone_annonce").html($(add[0]).children());
+        
         document.querySelector("#zone_annonce").classList.add('open');
-        // scrool à l'annonce
-        var scrollTo = Math.round(document.querySelector(".layout_container_100vh").clientHeight - document.querySelector(".header_container").scrollHeight);
-        document.body.scrollTop = scrollTo;
-        document.documentElement.scrollTop = scrollTo;
-        event.preventDefault();
-    });
-  }
 
+        // bt_contact : modale
+        var bt_contact = document.querySelectorAll('.bt_contact');
+        for( i=0; i < bt_contact.length; i++ ) {
+          bt_contact[i].addEventListener('click', function(event) {
+            document.querySelector("#modale_container").classList.add('active');
+            document.querySelector("#modale_bg").classList.add('active');
+            document.querySelector("#modale_contact").classList.add('modale_active');
+            document.body.classList.add('modalOpen');
+            document.querySelector("#modale_container").focus();
+            event.preventDefault();
+          });
+        }
 
+        $('html, body').animate( { scrollTop: $("#zone_annonce").offset().top }, 500 );
 
+      })
+
+    })
+  })
 }
 
 
