@@ -160,7 +160,7 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .header .icon_burger .line2{ top: 11px; }
 .header .icon_burger .line3{ top: 22px; }
 
-#homePage_header{ height: 70px; display: block; opacity: 1; top: -200px; z-index: 3; transition: all .3s; padding: 0em 5em; }
+#homePage_header{ height: 70px; top:0!important; display: block; opacity: 1; top: -200px; z-index: 3; transition: all .3s; padding: 0em 5em; }
 #homePage_header.sticky { display: block; opacity: 1; }
 #homePage_header.visible { top: 0; }
 #homePage_header.visible .logo{ top: 35px;  }
@@ -294,7 +294,7 @@ background-color: #fff;  border-color: #fff;
 }
 
 
-form#sib_signup_form_1 div {    margin: 0;     height: 60px; top: 0;  position: absolute;  padding: 1em 2em 1em 1em;  display: inline-block; }
+form#sib_signup_form_1 div {    margin: 0;  left: 0;   height: 60px; top: 0;  position: absolute;  padding: 1em 2em 1em 1em;  display: inline-block; }
 
 form#sib_signup_form_1 input{ margin-top:11px;    font-size: 16px;     }
 form#sib_signup_form_1 .send {  height: 56px; }
@@ -335,7 +335,7 @@ form#sib_signup_form_1 p.sib-alert-message-success { color: #1913C1;     margin-
 .mozaique_operations .operation_item .tag_container{ z-index: 2; position: absolute; bottom:3vw; left: 3vw; }
 .mozaique_operations .operation_item:nth-child(4n+2)  .tag_container,
 .mozaique_operations .operation_item:nth-child(4n+3)  .tag_container{ left: auto; right: 3vw;}
-.mozaique_operations .operation_item .tag_container .tag{ float: right; margin: 0 0.3em;  transition: all .3s ease-out .1s; background: #FF384C; color:#fff; font-size: 2em; border-radius: 3em;     padding: 0.2em 1em 0.4em 1em; }
+.mozaique_operations .operation_item .tag_container .tag{ float: right; margin: 0.3em 0.3em;  transition: all .3s ease-out .1s; background: #FF384C; color:#fff; font-size: 2em; border-radius: 3em;     padding: 0.2em 1em 0.4em 1em; }
 
 .mozaique_operations .operation_item .txt_container{ z-index: 1;  width: 100%; padding: 3vw; transition: all .3s ease-out}
 .mozaique_operations .operation_item .title{  font-size: 4.8em; text-transform: uppercase; 	text-shadow: 0 2px 4px 0 rgba(10,10,10,0.5); }
@@ -523,7 +523,7 @@ form#sib_signup_form_1 p.sib-alert-message-success { color: #1913C1;     margin-
 .page_nous_rejoindre .zone_decompte .title{ font-family: SofiaProLight;	font-size: 6em; }
 .page_nous_rejoindre .zone_decompte .decompte{ font-family: SofiaProUltraLight; font-size: 8.5em; width: 100%; margin-bottom: 0em; clear: both; display: block; }
 .page_nous_rejoindre .zone_decompte .bt_white_pink{ float: right; clear: both;  }
-.page_nous_rejoindre .layout_intro .title{  background: #fff; z-index: 2 }
+.page_nous_rejoindre .layout_intro .title{  background: #fff; z-index: 2;     margin: 80px auto 30px auto; }
 .page_nous_rejoindre .layout_gris{ background-image: url('../img/bg_mid_pink.png'); background-size: 100% 100% }
 .page_nous_rejoindre .zone_recherche{  width: 85em;   display: table; z-index: 2;  padding: 3em; height: 25em; position: absolute; top: 50%; left:50%; transform: translate3d(-50%, -50%, 0);}
 .page_nous_rejoindre .zone_recherche .selectZone{ display: inline-block;; transition: all .1s ease-out; height: 8em;  overflow: hidden;  z-index: 10; position: absolute; width: 90%;  left:5%;  	border: 0.2px solid #979797; 	background-color: #FCFCFC;  }
@@ -698,7 +698,7 @@ a.bt_bump:hover .hover{  cursor: pointer; animation:  anim_bt_pop .15s cubic-bez
 .modale_bg{ display: none; z-index: 99;  position: fixed;; top: 0; left: 0; width: 100%; height: 100%; 	background-color:rgba(220,220,220,0.9);}
 .modale_bg.active{ display: block; }
 .modale_bg.white{ background: white}
-.modale{ display: none; z-index:100; opacity: 0; transition:all .3s .2s; font-size: 10px; position: relative; width: 50%; max-width: 910px; margin-left: 50%; margin-top: 10vh;  transform:translate3d(-50%, 0,0); background: white; padding: 8em}
+.modale{ display: none; z-index:100; opacity: 0; transition:all .3s .2s; font-size: 10px; position: relative; width: 910px;  margin-left: 50%; margin-top: 10vh;  transform:translate3d(-50%, 0,0); background: white; padding: 8em}
 .modale.modale_active{  display: block; animation:  anim_show_modale .15s cubic-bezier(.17,.67,.87,1)  0s 1 normal forwards;  }
 .modale .title{ font-size: 2.4em; }
 .modale .col_alf{ width: 50%; float: left;}
@@ -720,7 +720,7 @@ a.bt_bump:hover .hover{  cursor: pointer; animation:  anim_bt_pop .15s cubic-bez
 .modale_recherche form input{ border: none; font-size: 2em; display: inline-block; color: #ccc;  padding: .2em .8em;	width: 80%; position: relative; }
 
 /* form */
-.modale_container form{ width: 100%; font-size: 10px; max-width: 600px; color: #4A4A4A; }
+.modale_container form{ width: 100%; font-size: 10px; max-width: 600px; color: #4A4A4A; margin: 0 auto; }
 form *{ outline:none }
 form div{ width: 100%; padding: 1em 2em 1em 1em; display: inline-block;}
 form label{ font-size: 1.7em;    line-height: 2em; }
@@ -798,14 +798,16 @@ responsive iPad
   main{ margin: 8em 0 0em 0 }
 
   /* header */
-  #homePage_header{ top: 0;  padding: 0; }
-  #homePage_header .header{  padding: 0 6em; }
-  .header{ padding: 0 6em;   }
-  .header.condensed{ padding: 0 6em; }
-
-
+  #homePage_header{     padding: 0; }
+  #homePage_header .header{   }
+  .header{    }
+  .header.condensed{  }
+  .header_mag_container{ height: 70px;}
+  .header_container{ height: 70px;}
+  .header_container .header{ width: 100%; }
+.header .icon_burger{ top: 17px; }
   .header.condensed .logo,
-  .header .logo { width: 44em;  margin: 3em 0 3em 0; }
+  .header .logo { width: 44em;     top: 22px!important;  }
 
   .header .menu_desktop{ display: none; }
   .header .icon_burger{ display: block; transition:all .3s .3s }
@@ -840,7 +842,7 @@ responsive iPad
   .menu_mobile_container.active .bt_close div:nth-child(1){ opacity: 0;  animation:  appear_menuMobile .3s cubic-bezier(.03,.68,.27,.97)  1s 1 normal forwards;  }
   .menu_mobile_container.active .bt_search { opacity: 0.4;  transition: all .3s ease-out 1s;  }
   /* intro */
-  .layout_intro .title{ font-size: 8em;  margin: 100px auto; }
+  .layout_intro .title{ font-size: 8em;  margin: 70px auto; }
   .layout_intro p{ font-size: 26px;  }
 
   /* homepage */
@@ -875,8 +877,7 @@ responsive iPad
   .homePage .zone_story .separator{ width: 80px;}
   .homePage .zone_newsletter .zone_txt{ width: 100%; font-size: 10px;}
   .homePage .zone_newsletter{ text-align: center;}
-  .homePage .zone_newsletter .input_border{ position: relative; font-size: 12px;  width: 60%; margin: 0 auto; float: none; right: 0; display: inline-block;  }
-
+  .homePage .zone_newsletter .input_border{  margin: 30px auto; position: relative; font-size: 12px;  width: 60%; float: none; right: 0; display: inline-block;  }
 
 
 
@@ -919,7 +920,7 @@ responsive iPad
   .page_operations .menu_tag .tag_container{ padding: 2em 0; }
   .page_operations .menu_tag { padding-bottom: 10em; }
   .page_operations  .mozaique_operations{ padding: 0}
-  .mozaique_operations .operation_item .bg_img{ width: 100% }
+  .mozaique_operations .operation_item .bg_img{  }
   .mozaique_operations .operation_item{ border-top: none; border-left: none; border-right: none}
   .mozaique_operations .operation_item{ height: 50vw}
   .mozaique_operations .operation_item .title{ font-size: 6.4em}
@@ -1031,16 +1032,21 @@ responsive iPhone
 
   /* header mobile */
   .header .logo{ width: 30em; }
-  .header { padding: 2em 5em; }
-  .header.condensed{ padding: 2em 5em; }
+  .header {  }
+  .header.condensed{  }
+.header_container {  height: 70px; }
 
+  .header_container .logo,
+  .header.condensed .logo, .header .logo{ width: 30em!important;   top: 22px;  left: 15px;  }
+  .header .icon_burger {  top: 22px; }
+  .homePage .layout_intro{ padding: 80px 10% 120px 10%!important;   }
   /* menu */
-  .menu_mobile li {   padding: 3vh 1em;  }
+  .menu_mobile li {  padding: 8px 1em;  }
 
   /* intro */
   .layout_intro {  padding: 0 25px; }
-  .layout_intro .title{  font-size: 25px }
-  .layout_intro p { text-align:center; }
+  .layout_intro .title{  font-size: 25px; margin: 20px auto; }
+  .layout_intro p { text-align:center; font-size: 18px; }
 
   /* homepage */
   .homePage .layout_intro{ font-size: 5px; }
@@ -1061,6 +1067,9 @@ responsive iPhone
   .mozaique_operations .operation_item{ font-size: 3px; height: auto; padding-bottom: 60px; }
   .mozaique_operations .operation_item title{ font-size: 32px; }
   .mozaique_operations .operation_item p{ font-size: 16px; }
+    .mozaique_operations .operation_item .tag_container .tag{ font-size: 14px!important}
+    .mozaique_operations .operation_item{ height: 310px!important}
+    .mozaique_operations .operation_item .txt_container{ padding: 6em; }
 
   /* page nous-rejoindre */
   .page_nous_rejoindre .layout_container_100vh { height: 100vh; overflow: hidden;}
@@ -1115,7 +1124,7 @@ responsive iPhone
   .page_vision .team_swiper .swiper-button-next{ top: 10em; display: none }
   .page_vision .team_swiper .swiper-button-prev{ top: 10em; display: none  }
   .page_vision .vision_zone_blue .equipe_container { width: 100%; padding: 0 5%; }
-  .page_vision .team_item { margin: 2em 4em; }
+  .page_vision .team_item { margin: 2em 3em 2em 1em; }
 
   /* ideamag */
   .page_ideamag { margin-bottom: 5em!important; }
@@ -1155,7 +1164,18 @@ responsive iPhone
   .page_recherche .encart_recherche .zone_tags .title{  padding:5px;  font-size: 14px; margin: 3px 10px;    display: inline-block;  float: none; }
   .page_recherche .encart_recherche .zone_tags a {     font-size: 12px;  display: inline-block; margin: 3px 10px;    float: none; }
 
+  .page_operations{ margin-top: 110px; }
+  .page_operations .menu_tag .title{ font-size: 25px; padding: 0 10%; margin-top: 0; }
+  .page_operations .menu_tag .tag_container{ padding: 0 10px; margin-top: 30px; }
+  .page_operations .menu_tag .tag_container a{ font-size: 16px; }
 
+  .page_case_study .zone_color .title{ font-size: 35px; }
+  .page_case_study .zone_color_pink{  left: -9em; }
+  .page_case_study .zone_color_blue{  left: -9em; }
+  .page_case_study .zone_color_yellow{  right: 0; }
+  .page_vision .team_item .info p{ font-size: 12px; }
+  .page_vision .team_item .info h3{ font-size: 12px; }
+  .page_vision .vision_zone_blue.active .equipe_container{ padding-bottom: : 30em; }
 }
 
 
