@@ -34,7 +34,7 @@
                             <img src="http://www.ideactest.com/wp-content/themes/idactif/img/quote_out.png" class="quote_out">
                             <h3 class="title">Boris PEYROLES</h3>
                             <h2 class="subtitle">Directeur du pôle Digital</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum elementum tellus vitae accumsan. Nulla augue tellus, gravida nec diam ac, consequat sagittis ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi vestibulum, augue in pulvinar ornare, nunc mi tempus elit, a porta ipsum leo et augue. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum elementum tellus vitae accu dolor sit amet, consectetur adipiscing elit. Maecenas elementum elementum tellus vitae accumsan. Nulla augue tellus, gravida nec diam ac, msan. Nulla augue tellus, gravida nec diam ac, consequat sagittis ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi vestibulum, augue in pulvinar ornare, nunc mi tempus elit, a porta ipsum leo et augue. </p>
                         </article>
                     </div>
 

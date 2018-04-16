@@ -439,7 +439,7 @@ form#sib_signup_form_1 p.sib-alert-message-success { color: #1913C1;     margin-
 
 /* vision zone team leader */
 .page_vision .teams_leader_swiper{}
-.page_vision .teams_leader_swiper .zone_temoignage_txt{ transition:all .3s .2s; opacity: 0; position: absolute;  width: 56%; left: 46em; top: 8em;}
+.page_vision .teams_leader_swiper .zone_temoignage_txt{ position: relative; width: 56%; float: right; margin-right: 6em; margin-bottom: 20px; margin-top: 40px; }
 .page_vision .teams_leader_swiper .title{   font-family: SofiaProRegularItalic; font-size: 4.8em }
 .page_vision .teams_leader_swiper .subtitle{   font-family: SofiaProRegularItalic; font-size: 3.6em }
 .page_vision .teams_leader_swiper p{  font-family: SofiaProLight_Italic; font-size: 3em ; line-height: 1.3em }
@@ -825,7 +825,7 @@ responsive iPad
   main{ margin: 8em 0 0em 0 }
 
   /* header */
-  #homePage_header{     padding: 0; }
+  #homePage_header{   top: 0;  padding: 0; }
   #homePage_header .header{   }
   .header{    }
   .header.condensed{  }
@@ -906,7 +906,8 @@ responsive iPad
   .homePage .zone_newsletter{ text-align: center;}
   .homePage .zone_newsletter .input_border{  margin: 30px auto; position: relative; font-size: 12px;  width: 60%; float: none; right: 0; display: inline-block;  }
 
-
+      .homePage .zone_social_huge .social_huge{     height: 63em; }
+  .homePage .zone_newsletter input{ min-width: 3em; }
 
   /* vision */
   .page_vision .intro{ text-align: center; font-size: 6px;  padding: 0 15px;}
@@ -918,9 +919,18 @@ responsive iPad
   .page_vision .zone_time_story  .zone_color .title{  font-size: 28px; }
   .page_vision .zone_time_story .zone_color p{  font-size: 22px }
   .page_vision .zone_time_story .img_container{ position: absolute; padding: 0;  z-index: 2; right: auto; top: 0em; left: 50%;  transform:translate3d(-50%, -50%, 0); height: 35vw; width: 0%;  overflow: hidden; }
-  .page_vision .zone_time_story #swiper_timeline .swiper-slide-active .img_container {  transition: all .4s .4s; width: 50vw;}
+  .page_vision .zone_time_story #swiper_timeline .swiper-slide .img_container {  transition: all .4s .6s;  opacity: 0;  transform: translate3d(-50%, -40%, 0); width: 50vw!important;}
+  .page_vision .zone_time_story #swiper_timeline .swiper-slide-active .img_container {  opacity: 1;  transform: translate3d(-50%, -50%, 0);  width: 50vw!important;}
   .page_vision .zone_time_story .img_container img{ width: 100%; }
   .page_vision .zone_time_story #swiper_timeline { overflow: visible; }
+
+  .page_vision .teams_leader_swiper .zone_temoignage_txt{ position: relative; width: 56%; float: right; margin-right: 0px; margin-bottom: 20px; margin-top: 20px; }
+  .page_vision .zone_time_story #swiper_timeline .swiper-slide-active .zone_color{ padding-right: 5em; }
+  .page_vision .zone_time_story #swiper_timeline .swiper-slide .zone_color{ padding: 25vw 10vw 10vw 10vw!important; }
+  .page_vision .zone_time_story #swiper_timeline{ padding-bottom: 0em;}
+
+.page_vision .team_item p{ font-size: 12px; }
+.page_vision .team_item .title{ font-size: 12px; }
 
   .zone_temoignage{ background: #1913C1; color: #fff; font-family: SofiaProLight_Italic; }
   .zone_temoignage .zone_temoignage_txt{ width: 100%; margin:0; padding: 7vw }
@@ -973,10 +983,14 @@ responsive iPad
   .page_case_study .mosaique_case_study .mosaique_item img{ width: 100%; height: auto;}
   .page_case_study .mosaique_case_study .mosaique_item{ border-bottom: none; border-left: none; border-right: none }
 
+  .page_case_study .layout_intro h1{ font-size: 40px; }
+
   .mozaique_operations .operation_item .tag_container .tag{ font-size: 20px; }
   .mozaique_operations .operation_item .tag_container{  left: 6vw; right: auto; }
   .mozaique_operations .operation_item:nth-child(4n+2) .tag_container,
   .mozaique_operations .operation_item:nth-child(4n+3) .tag_container{  left: 6vw; right: auto; }
+
+
 
   /* nous-rejoindre */
   .page_nous_rejoindre .layout_container_100vh{ height: 100vw }
@@ -1034,6 +1048,11 @@ responsive iPad
     .page_recherche .title{ font-size: 38px;     margin: 70px auto  }
     .page_recherche .encart_recherche{ max-width: none; }
     .page_recherche #algolia-search-box input{ font-size: 32px; }
+
+    .modale_bg{ background-color: rgba(220,220,220,1)}
+    .page_case_study .zone_color .title{ font-size: 35px; }
+
+
 }
 
 
@@ -1101,6 +1120,13 @@ responsive iPhone
   .homePage .layout_intro .zone_logo .buble_trio_logo  .buble_blue {  animation: anim_buble 35s linear 5s infinite normal forwards;  }
   .homePage .layout_intro .zone_logo .buble_trio_logo .buble_yellow {  animation: anim_bubleBis 32s linear 8s infinite normal forwards; left: -10%;  top: 3%; }
   .homePage .layout_intro .zone_logo .buble_trio_logo .buble_pink {  animation: anim_buble 30s linear 10s infinite normal forwards; left: -15%;  top: 8%; }
+.homePage .zone_social_huge .social_huge{     height: 45em; }
+
+    #fullpage .footer {  margin-top: 0em; }
+    .homePage .zone_newsletter{  padding: 0; text-align: center;}
+  .homePage .zone_newsletter .input_border{ width: 80% }
+  form#sib_signup_form_1 input{ margin-left: 0; padding-left: 0; font-size: 13px;  margin-left: 15px; padding-top: 8px;    width: 70%;  float: left; }
+  form#sib_signup_form_1 .send{ width: 60px; }
 
   /* mosaique operations */
   .mozaique_operations .operation_item{ font-size: 3px; height: auto; padding-bottom: 60px; }
@@ -1163,7 +1189,8 @@ responsive iPhone
   .page_vision .team_swiper .swiper-button-next{ top: 10em; display: none }
   .page_vision .team_swiper .swiper-button-prev{ top: 10em; display: none  }
   .page_vision .vision_zone_blue .equipe_container { width: 100%; padding: 0 5%; }
-  .page_vision .team_item { margin: 2em 3em 2em 1em; }
+  .page_vision .team_item { margin: 2em 3em 2em 2em; }
+
 
   /* ideamag */
   .page_ideamag { margin-bottom: 5em!important; }
@@ -1224,6 +1251,10 @@ responsive iPhone
 
   .modale_recherche .search-field{ font-size: 28px; }
   .modale_recherche .search-submit{ width: 50px; height: 50px; }
+
+  #catapult-cookie-bar .ctcc-left-side{ font-size: 12px; }
+  #catapult-cookie-bar #catapultCookie{ font-size: 12px; }
+  #catapult-cookie-bar{ padding-top: 10px; height: 54px; left: 15px;  transform: translateY(-71px); width: 274px!important; }
 }
 
 
