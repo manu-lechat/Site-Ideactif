@@ -3,21 +3,25 @@
 
     <!-- modale recherche -->
     <section class="modale modale_recherche" id="modale_recherche">
-      <form class="" action="index.html" method="post">
+      <!-- <form class="" action="index.html" method="post">
         <div class="input_border">
           <input id="rechercher" type="text" value="rechercher un contenu..." class="input_rechercher" />
           <a href="recherche.php" class="send"></a>
         </div>
-      </form>
+      </form> -->
+      <form class="" action="index.html" method="post">
+        <div class="input_border">
+
+				<label>
+					<span class="screen-reader-text">Rechercher&nbsp;:</span>
+					<input type="search" class="search-field" placeholder="Recherche…" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Rechercher">
+
+        </div></form>
+      
     </section>
 
-
-    <!-- modale contact -->
-    <section class="modale modale_partenaires" id="modale_partenaires">
-        <div>
-          <h2 class='title'>Partenaires</h2>
-        </div>
-    </section>
 
   <!-- modale contact -->
   <section class="modale modale_contact" id="modale_contact">
