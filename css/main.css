@@ -174,11 +174,11 @@ main { margin-top: 12em; margin-bottom: 10em; width: 100% }
 .menu_mobile_container{ display: none;}
 
 /* loader 3 points */
-.bullets_loader{ width: 20em; height: 5em; margin: 3em auto; }
+.bullets_loader{ width: 140px; height: 50px; margin: 30px auto auto; }
 .bullets_loader img{ width: 100%; position: absolute;}
-.bullets_loader .blue{ opacity: 0; animation:  anim_bullets_loader 3s linear   0s infinite normal forwards; left:-5%; top: 5% }
-.bullets_loader .yellow{ opacity: 0; animation:  anim_bullets_loader 3s linear  0.4s infinite normal forwards; left:-5%; top: 5% }
-.bullets_loader .red{ opacity: 0;  animation:  anim_bullets_loader 3s linear   0.8s infinite normal forwards; left:-5%; top: 5% }
+.bullets_loader .blue{ opacity: 0; animation:  anim_bullets_loader 3s linear   0s infinite normal forwards; left:0%; top: 5% }
+.bullets_loader .yellow{ opacity: 0; animation:  anim_bullets_loader 3s linear  0.4s infinite normal forwards; left:0%; top: 5% }
+.bullets_loader .red{ opacity: 0;  animation:  anim_bullets_loader 3s linear   0.8s infinite normal forwards; left:0%; top: 5% }
 
 /* homePage */
 
@@ -384,7 +384,7 @@ form#sib_signup_form_1 p.sib-alert-message-success { color: #1913C1;     margin-
 .page_case_study .zone_color_pink .buble_container{ top: -8em;  z-index: 1; position: absolute; width: 60em; height: 55em;   }
 .page_case_study .mosaique_case_study{ margin-top: 10em; }
 .page_case_study .mosaique_case_study .mosaique_item{ position: relative; display: block; height: 50em; overflow: hidden; border:4px solid white; color: white; float: left;}
-.page_case_study .mosaique_case_study .mosaique_item img{  position: absolute; top: 50%; left:50%; transform: translate3d(-50%, -50%, 0) }
+.page_case_study .mosaique_case_study .mosaique_item img{  position: absolute; height: 100%; max-width: none; top: 50%; left:50%; transform: translate3d(-50%, -50%, 0) }
 .page_case_study .mosaique_case_study .mosaique_item:nth-child(4n+1){  width:40%; float: left; text-align: right; }
 .page_case_study .mosaique_case_study .mosaique_item:nth-child(4n+2) {   width:60%;  float: right; text-align: left; }
 .page_case_study .mosaique_case_study .mosaique_item:nth-child(4n+3) {   width:60%;  float: left; text-align: right; }
@@ -1053,6 +1053,7 @@ responsive iPad
     .page_case_study .zone_color .title{ font-size: 35px; }
 
 
+
 }
 
 
@@ -1255,6 +1256,12 @@ responsive iPhone
   #catapult-cookie-bar .ctcc-left-side{ font-size: 12px; }
   #catapult-cookie-bar #catapultCookie{ font-size: 12px; }
   #catapult-cookie-bar{ padding-top: 10px; height: 54px; left: 15px;  transform: translateY(-71px); width: 274px!important; }
+
+
+  .page_vision .zone_rangeslider .noUi-horizontal .noUi-handle{  }
+  .noUi-horizontal .noUi-handle{ top: -3px; }
+  html:not([dir="rtl"]) .noUi-horizontal .noUi-handle{ right: -10px; left: auto;}
+
 }
 
 
