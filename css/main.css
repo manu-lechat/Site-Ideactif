@@ -57,7 +57,7 @@ ul{ margin: 0; display: inline-block; }
 li{ margin: 0.2em 0;  list-style: none; min-height:1.6em  }
 a{  transition:all .17s ease-in-out;  text-decoration: none; color: #000;   display: block; }
 a:hover{ cursor: pointer; text-decoration: none; color: #000;  }
-main { margin-top: 12em; margin-bottom: 10em; width: 100% }
+main { margin-top: 12em; margin-bottom: 10em; width: 100%; display: block;}
 ::selection {  background:rgba(0,0,0,0.07) }
 /* typo */
 .italic{ font-family: SofiaProLight_Italic; }
@@ -523,9 +523,9 @@ form#sib_signup_form_1 p.sib-alert-message-success { color: #1913C1;     margin-
 .page_nous_rejoindre .zone_decompte .title{ font-family: SofiaProLight;	font-size: 6em; }
 .page_nous_rejoindre .zone_decompte .decompte{ font-family: SofiaProUltraLight; font-size: 8.5em; width: 100%; margin-bottom: 0em; clear: both; display: block; }
 .page_nous_rejoindre .zone_decompte .bt_white_pink{ float: right; clear: both;  }
-.page_nous_rejoindre .layout_intro .title{  background: #fff; z-index: 2;     margin: 80px auto 30px auto; }
+.page_nous_rejoindre .layout_intro .title{  background: none; z-index: 2;     margin: 20px auto 10px auto; }
 .page_nous_rejoindre .layout_gris{ background-image: url('../img/bg_mid_pink.png'); background-size: 100% 100% }
-.page_nous_rejoindre .zone_recherche{  width: 85em;   display: table; z-index: 2;  padding: 3em; height: 25em; position: absolute; top: 50%; left:50%; transform: translate3d(-50%, -50%, 0);}
+.page_nous_rejoindre .zone_recherche{  width: 85em;   display: table; z-index: 2;  padding: 0em; height: 25em; position: absolute; top: 48%; left:50%; transform: translate3d(-50%, -50%, 0);}
 .page_nous_rejoindre .zone_recherche .selectZone{ display: inline-block;; transition: all .1s ease-out; height: 8em;  overflow: hidden;  z-index: 10; position: absolute; width: 90%;  left:5%;  	border: 0.2px solid #979797; 	background-color: #FCFCFC;  }
 .page_nous_rejoindre .zone_recherche .selectZone ul{ width: 98%; margin: 0 1% }
 .page_nous_rejoindre .zone_recherche .selectZone li{ width: 100%;  padding: 0;  }
@@ -768,6 +768,8 @@ form textarea{ font-size: 1.7em;min-height: 6em;	color: #4A4A4A; border: 1px sol
 
 .page_recherche #algolia-search-box input {  border: none; height: 1.6em; font-size:24px; left: 30px;   display: inline-block;   color:#3D3D3D;    padding: 10px 0;  width: 80%;  position: relative; }
 
+
+.error_404{ margin: 80px auto; max-width: 80%}
 /*
 
 
@@ -1052,7 +1054,7 @@ responsive iPad
     .modale_bg{ background-color: rgba(220,220,220,1)}
     .page_case_study .zone_color .title{ font-size: 35px; }
 
-
+  .page_nous_rejoindre .zone_recherche{  width: 80%; }
 
 }
 
